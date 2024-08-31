@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+ .active {
+@apply underline text-orange
+  }
+}
+
+html{
+scroll-behavior:"smooth"
+}

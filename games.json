@@ -1,0 +1,21 @@
+{
+   "games": [
+       {   
+           "img": "/home/Rectangle 23.png",
+           "followers": "40"
+       },
+       {
+           "img": "/home/Rectangle 26 (1).png",
+           "followers": "60"
+       },
+       {
+         "img":"/home/Rectangle 24.png",
+         "followers":"75"
+       },
+       {
+         "img":"/home/Rectangle 26.png",
+         "followers":"95"
+       }
+       
+   ]
+}
