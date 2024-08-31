@@ -3,6 +3,7 @@ import SubHeading from "../../components/SubHeading"
 import Button from "../../ui/Button"
 import Button2 from "../../ui/Button2"
 import Card from "../../ui/Card"
+import TopScroll from "../../ui/TopScroll.index"
 
 function HomePage() {
   return (
@@ -82,6 +83,7 @@ function HomePage() {
         <Button2 />
       </section>
       <SubHeading />
+      <TopScroll />
     </>
   )
 }
