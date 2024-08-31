@@ -1,5 +1,4 @@
 import Data from "../../components/MyData"
-import SubHeading from "../../components/SubHeading"
 import Button from "../../ui/Button"
 import Button2 from "../../ui/Button2"
 import Card from "../../ui/Card"
@@ -82,7 +81,6 @@ function HomePage() {
         </div>
         <Button2 />
       </section>
-      <SubHeading />
       <TopScroll />
     </>
   )
