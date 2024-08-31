@@ -8,7 +8,7 @@ function Footer() {
         <div className="p-5">
           <div className="flex justify-around gap-4 p-4">
             <div className=" flex flex-col gap-4">
-              <p className="font-bold text-[1.4rem]">LOGO</p>
+              <Link to={'/'} className="font-bold text-[1.4rem]">LOGO</Link>
               <p className="w-[20vw]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, aliquid sapiente. </p>
               <p>@logo</p>
             </div>

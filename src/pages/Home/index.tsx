@@ -1,5 +1,8 @@
 import Data from "../../components/MyData"
+import SubHeading from "../../components/SubHeading"
 import Button from "../../ui/Button"
+import Button2 from "../../ui/Button2"
+import Card from "../../ui/Card"
 
 function HomePage() {
   return (
@@ -9,7 +12,7 @@ function HomePage() {
           <p className="text-orange font-bold">3D game Dev </p>
           <p className="text-[3rem] font-bold ">Work that we produce for our clients</p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-          <Button txt='Get more details' still='rounded-[20px] w-[15vw]' />
+          <Button txt='Get more details' still='rounded-[20px] w-[15vw] py-3 text-[1.4rem] ' />
         </div>
         <div className="">
           <img className="absolute top-[32%] right-[42%]" src="/home/cry 1.png" alt="" />
@@ -22,7 +25,7 @@ function HomePage() {
       <section>
         <div className="flex justify-between  place-items-end bg-black h-[30vh]">
           <p className="text-[1.8rem] font-bold text-white  ml-[5vw]">Currently Trending Games</p>
-          <button className="border text-white bg-stone py-3 mr-[5vw] text-[1.3rem] font-rubik w-[8vw] rounded-[10px]">SEE ALL</button>
+          <Button2 />
         </div>
 
         <div className="flex justify-evenly place-items-center bg-black h-[70vh]">
@@ -36,24 +39,49 @@ function HomePage() {
           <p className="text-[2rem] font-bold w-[50vw] py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati!</p>
         </div>
 
-        <div className="w-[50vw] h-[30vh] flex flex-col place-items-center justify-evenly">
+        <div className="w-[50vw] h-[30vh] flex flex-col place-items-center justify-evenly pl-10">
           <p className="text-[1.3rem] font-bold  w-[35vw] text-white">Lorem ipsum</p>
-          <p className="text-wstone w-[35vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vel, praesentium fugit sed debitis corporis ipsa aliquam in nesciunt temporibus magni ad dicta optio facere.</p>
+          <p className="text-wstone w-[35vw] text-[1.4rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vel, praesentium fugit sed debitis corporis ipsa aliquam in nesciunt temporibus magni ad dicta optio facere.</p>
         </div>
 
-        <div className="flex justify-center py-5 ">
-          <img className="object-cover" src="../public/home/Rectangle 4.png" alt="image" />
+        <div className="flex justify-center h-[100vh] ">
+          <img className="object-cover h-[70vh]" src="../home/Rectangle 4.png" alt="image" />
         </div>
       </section>
 
-      <section className="relative z-10 bg-[url('/home/bg-image.png')]  h-[100vh] text-white text-center">
-      <div className="absolute bg-[rgba(0,0,0,0.7)] inset-0"></div>
-       <div className="flex flex-col justify-center place-items-center gap-5 h-[40vh]">
-       <h2 className="relative z-30 text-[1.8rem] font-poppins font-bold w-[50vw] bg-orange ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-        <p className="relative z-30 font-semibold w-[50vw] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-  
-        </div> 
+      <section className="relative z-10 bg-[url('/home/bg-image.png')] bg-no-repeat bg-cover h-[100vh]  text-white text-center">
+        <div className="absolute bg-[rgba(0,0,0,0.7)] inset-0"></div>
+        <article className="flex flex-col  place-items-center">
+          <div className="flex flex-col justify-center place-items-center gap-7 h-[60vh] ">
+            <h2 className="relative z-30 text-[1.8rem] font-poppins font-bold w-[50vw]  ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+            <p className="relative z-30 font-semibold w-[50vw] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          </div>
+          <div className="grid grid-cols-4  relative z-30 w-[60vw]">
+            <Card txt="Mobile Game Development">{<i className="fa-solid fa-mobile-screen rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
+            <Card txt="PC Game Development" >{<i className="fa-solid fa-laptop rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
+            <Card txt="PS4 Game Development" >{<i className="fa-brands fa-playstation rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
+            <Card txt="3D Design" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem]"></i>} </Card>
+          </div>
+        </article>
       </section>
+
+      <section className="bg-bg-stone text-white flex flex-col place-items-center justify-evenly h-[120vh]">
+        <div>
+          <p className="text-[2rem] font-bold">Our Recent Projects</p>
+          <p className="text-[1.4rem]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+
+        <div className="grid grid-cols-3 gap-5 w-[80vw] ">
+          <img src="/home/Rectangle 15.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 16.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 17.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 18.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 19.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 20.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
+        </div>
+        <Button2 />
+      </section>
+      <SubHeading />
     </>
   )
 }

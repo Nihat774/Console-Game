@@ -13,3 +13,7 @@ export type IGames = {
     img:string;
     followers:string;
 }
+export interface ICard{
+    txt:string;
+    children:React.ReactNode;
+}
