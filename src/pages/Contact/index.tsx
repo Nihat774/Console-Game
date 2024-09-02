@@ -1,7 +1,9 @@
+import React from 'react'
+
 function ContactPage() {
   return (
     <>
-      contact
+     <div>contactpage</div> 
     </>
   )
 }

@@ -17,3 +17,10 @@ export interface ICard{
     txt:string;
     children:React.ReactNode;
 }
+export interface IData{
+    img:string,
+    to:string,
+    price:string,
+    oldPrice:string,
+    name:string
+}

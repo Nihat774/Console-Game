@@ -9,7 +9,7 @@ function TopScroll() {
         return (
             <>
                 <div>
-                    <i className="fa-solid fa-arrow-up border p-3 fixed right-[5%] bottom-[15%] text-[1.4rem] bg-white z-99 "
+                    <i className="fa-solid fa-arrow-up border p-3 fixed right-[5%] bottom-[15%] rounded-full text-[1.4rem] bg-white z-99 "
                         onClick={ScrollTop}></i>
                 </div>
             </>
