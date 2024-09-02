@@ -7,7 +7,7 @@ function AboutPage() {
         <div><p className="py-5"><a href="Home">Home</a> <i className="fa-solid fa-arrow-right"></i>  <a className="text-orange" href="About us">About us</a></p><h1 className="font-bold text-4xl py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit?</h1>
           <p py-5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis atque ab tenetur placeat culpa ullam deserunt minima
             omnis error, porro exercitationem molestiae?</p>
-          <Button txt='Get in touch' />  <i className="fa-solid fa-arrow-right"></i>  </div>
+          <Button txt='Get in touch' still={""} />  <i className="fa-solid fa-arrow-right"></i>  </div>
         <div><img src="/about/photo1.jpeg" alt="" /></div>
       </div>
       <div className="bg-black text-white">
