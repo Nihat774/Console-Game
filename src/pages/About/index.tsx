@@ -1,3 +1,4 @@
+
 import Button from "../../ui/Button"
 function AboutPage() {
   return (
@@ -61,9 +62,8 @@ function AboutPage() {
     </div >
       </div >
    
-    </>
-  )
-}
+    </>)}
+
+
 
 export default AboutPage
-

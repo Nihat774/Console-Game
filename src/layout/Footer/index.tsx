@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import Icon from "../../ui/SocialIcon"
 import Copy from "../CopyRight"
+import React from "react"
 function Footer() {
   return (
     <>
@@ -8,7 +9,9 @@ function Footer() {
         <div className="p-5">
           <div className="flex justify-around gap-4 p-4">
             <div className=" flex flex-col gap-4">
-              <Link to={'/'} className="font-bold text-[1.4rem]">LOGO</Link>
+            <Link to={'/'} >
+            <img className="w-[5vw] h-[5vw] object-cover" src="../logo/logo-new.jpg" alt="" />
+            </Link>
               <p className="w-[20vw]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, aliquid sapiente. </p>
               <p>@logo</p>
             </div>

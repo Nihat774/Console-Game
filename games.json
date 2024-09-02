@@ -17,5 +17,63 @@
          "followers":"95"
        }
        
+   ],
+   "allgames":[
+    {
+      "img":"/games/game1.jpeg",
+      "name":"Modern Warfare",
+      "oldPrice":"$120",
+      "price":"$100",
+      "to":"/contact"
+    },
+    {
+      "img":"/games/game2.webp",
+      "name":"World War",
+      "oldPrice":"$70",
+      "price":"$50",
+      "to":"/about"
+    },
+    {
+      "img":"/games/game3.jpg",
+      "name":"Call of Duty",
+      "oldPrice":"$100",
+      "price":"$80",
+      "to":"/news"
+    },
+    {
+      "img":"/games/game4.webp",
+      "name":"Ninja",
+      "oldPrice":"$50",
+      "price":"$30",
+      "to":"/about"
+    },
+    {
+      "img":"/games/blur.jpg",
+      "name":"Blur",
+      "oldPrice":"$30",
+      "price":"$20",
+      "to":"/about"
+    },
+    {
+      "img":"/games/psgame2.jpeg",
+      "name":"Days Gone",
+      "oldPrice":"$20",
+      "price":"$15",
+      "to":"/about"
+    },
+    {
+      "img":"/games/psgame3.jpeg",
+      "name":"Farcry 5",
+      "oldPrice":"$20",
+      "price":"$15",
+      "to":"/about"
+    },
+    {
+      "img":"/games/game5.webp",
+      "name":"Constrike",
+      "oldPrice":"$45",
+      "price":"$30",
+      "to":"/about"
+    }
    ]
 }

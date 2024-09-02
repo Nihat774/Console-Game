@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { IGames } from '../MyTypes';
 import { Link } from 'react-router-dom';
-
+import React from 'react';
 function Data() {
     const [games, setPages] = useState([]);
     useEffect(() => {

@@ -1,4 +1,5 @@
 import { IChildren } from "../../components/MyTypes"
+import SubHeading from "../../components/SubHeading"
 import Footer from "../Footer"
 import Header from "../Header"
 
@@ -9,6 +10,7 @@ function LayoutComponent({children}:IChildren
     <>
       <Header />
       {children}
+      <SubHeading />
       <Footer />
     </>
   )

@@ -21,7 +21,7 @@ function SubHeading() {
                                 className=" flex items-center h-[10vh] w-fit px-7"
                                 >
                                 <input type="email" name="email" className="w-[30vw] py-4 px-2 border rounded-[10px] bg-white text-[1.4rem]" placeholder="Enter your email" />
-                                <button type="submit" className="bg-orange py-3 px-5 text-white rounded-[10px] absolute right-[11.5%]">Continue</button>
+                                <button type="submit" className="bg-orange py-3 px-5 text-white rounded-[10px] absolute right-[12.5%]">Continue</button>
                             </form>
                         </article>
                     </div>
