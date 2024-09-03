@@ -18,9 +18,15 @@ export interface ICard{
     children:React.ReactNode;
 }
 export interface IData{
+    index:number,
+    id:number,
     img:string,
-    to:string,
     price:string,
     oldPrice:string,
-    name:string
+    name:string;
+}
+export type INewData = {
+    name:string;
+    img:string;
+    id:number
 }

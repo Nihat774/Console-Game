@@ -1,4 +1,4 @@
-import Data from "../../components/MyData"
+import Data from "../../components/MyDataHome"
 import Button from "../../ui/Button"
 import Button2 from "../../ui/Button2"
 import Card from "../../ui/Card"
@@ -59,7 +59,7 @@ function HomePage() {
             <Card txt="Mobile Game Development">{<i className="fa-solid fa-mobile-screen rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="PC Game Development" >{<i className="fa-solid fa-laptop rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="PS4 Game Development" >{<i className="fa-brands fa-playstation rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
-            <Card txt="3D Design" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem]"></i>} </Card>
+            <Card txt="3D Design Developer" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem] w-fit"></i>} </Card>
           </div>
         </article>
       </section>

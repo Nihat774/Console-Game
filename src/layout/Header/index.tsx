@@ -6,10 +6,12 @@ function Header() {
     <>
       <header className="bg-black text-white  py-7 ">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="font-bold text-[1.8rem] w-[30%] ">
+          <div className="font-bold text-[1.8rem] w-[25%] ">
+            {/* LOGO HISSESI*/}
             <Link to={'/'} >
-            <img className="w-[5vw] h-[5vw] object-cover" src="../logo/logo-new.jpg" alt="" />
+            <img className="h-[13vh] w-[35vw] object-contain" src="../logo/console game-endlogo.png" alt="" />
             </Link>
+            {/*  */}
           </div>
           <div className="flex justify-evenly gap-5 w-[70%] text-[1.5rem] place-items-center">
             <NavLink to={'/'}>Əsas səhifə</NavLink>

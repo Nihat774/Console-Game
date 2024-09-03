@@ -1,79 +1,158 @@
 {
-   "games": [
-       {   
-           "img": "/home/Rectangle 23.png",
-           "followers": "40"
-       },
-       {
-           "img": "/home/Rectangle 26 (1).png",
-           "followers": "60"
-       },
-       {
-         "img":"/home/Rectangle 24.png",
-         "followers":"75"
-       },
-       {
-         "img":"/home/Rectangle 26.png",
-         "followers":"95"
-       }
-       
-   ],
-   "allgames":[
+  "games": [
     {
-      "img":"/games/game1.jpeg",
-      "name":"Modern Warfare",
-      "oldPrice":"$120",
-      "price":"$100",
-      "to":"/contact"
+      "img": "/home/Rectangle 23.png",
+      "followers": "40"
     },
     {
-      "img":"/games/game2.webp",
-      "name":"World War",
-      "oldPrice":"$70",
-      "price":"$50",
-      "to":"/about"
+      "img": "/home/Rectangle 26 (1).png",
+      "followers": "60"
     },
     {
-      "img":"/games/game3.jpg",
-      "name":"Call of Duty",
-      "oldPrice":"$100",
-      "price":"$80",
-      "to":"/news"
+      "img": "/home/Rectangle 24.png",
+      "followers": "75"
     },
     {
-      "img":"/games/game4.webp",
-      "name":"Ninja",
-      "oldPrice":"$50",
-      "price":"$30",
-      "to":"/about"
-    },
-    {
-      "img":"/games/blur.jpg",
-      "name":"Blur",
-      "oldPrice":"$30",
-      "price":"$20",
-      "to":"/about"
-    },
-    {
-      "img":"/games/psgame2.jpeg",
-      "name":"Days Gone",
-      "oldPrice":"$20",
-      "price":"$15",
-      "to":"/about"
-    },
-    {
-      "img":"/games/psgame3.jpeg",
-      "name":"Farcry 5",
-      "oldPrice":"$20",
-      "price":"$15",
-      "to":"/about"
-    },
-    {
-      "img":"/games/game5.webp",
-      "name":"Constrike",
-      "oldPrice":"$45",
-      "price":"$30",
-      "to":"/about"
+      "img": "/home/Rectangle 26.png",
+      "followers": "95"
     }
-   ]
+  ],
+  "allgames": [
+    {
+      "id": 1,
+      "img": "/games/game1.jpeg",
+      "name": "Modern Warfare",
+      "oldPrice": "$120",
+      "price": "$100"
+    },
+    {
+      "id": 2,
+      "img": "/games/game2.webp",
+      "name": "World War",
+      "oldPrice": "$70",
+      "price": "$50"
+    },
+    {
+      "id": 3,
+      "img": "/games/game3.jpg",
+      "name": "Call of Duty",
+      "oldPrice": "$100",
+      "price": "$80"
+    },
+    {
+      "id": 4,
+      "img": "/games/game4.webp",
+      "name": "Ninja",
+      "oldPrice": "$50",
+      "price": "$30"
+    },
+    {
+      "id": 5,
+      "img": "/games/blur.jpg",
+      "name": "Blur",
+      "oldPrice": "$30",
+      "price": "$20"
+    },
+    {
+      "id": 6,
+      "img": "/games/psgame2.jpeg",
+      "name": "Days Gone",
+      "oldPrice": "$20",
+      "price": "$15"
+    },
+    {
+      "id": 7,
+      "img": "/games/psgame3.jpeg",
+      "name": "Farcry 5",
+      "oldPrice": "$20",
+      "price": "$15"
+    },
+    {
+      "id": 8,
+      "img": "/games/game5.webp",
+      "name": "Constrike",
+      "oldPrice": "$45",
+      "price": "$30"
+    },
+    {
+      "id": 9,
+      "img": "/games/psgame1.jpg",
+      "name": "Uncharted 4",
+      "oldPrice": "$40",
+      "price": "$30"
+    },
+    {
+      "id": 10,
+      "img": "/games/psgame4.jpeg",
+      "name": "Counter Strike",
+      "oldPrice": "$45",
+      "price": "$35"
+    },
+    {
+      "id": 11,
+      "img": "/games/psgame5.jpeg",
+      "name": "Subway Surfies",
+      "oldPrice": "$55",
+      "price": "$55"
+    },
+    {
+      "id": 12,
+      "img": "/games/psgame6.jpeg",
+      "name": "Minecraft",
+      "oldPrice": "$35",
+      "price": "$25"
+    },
+    {
+      "id": 13,
+      "img": "/games/psgame7.jpeg",
+      "name": "Hawked",
+      "oldPrice": "$30",
+      "price": "$20"
+    },
+    {
+      "id": 14,
+      "img": "/games/psgame8.jpeg",
+      "name": "Core Keeper",
+      "oldPrice": "$20",
+      "price": "$10"
+    },
+    {
+      "id": 15,
+      "img": "/games/psgame9.jpeg",
+      "name": "Assasins creed",
+      "oldPrice": "$25",
+      "price": "$15"
+    }
+  ],
+  "ourTeams":[
+    {
+      "id":1,
+      "img":"../news/photo.jpg",
+      "name":"Nihat Məmmədov",
+      "specialty":"Web Developer",
+      "about":"Lorem ipsum dolor sit amet consectetur."
+    },
+    {
+      "id":2,
+      "img":"../news/man-carousel-2.jpeg",
+      "name":"Fərid Abbaslı",
+      "specialty":"3D Design",
+      "about":"Lorem ipsum dolor sit amet consectetur."
+    },
+    {
+      "id":3,
+      "img":"../news/man-carousel-3.jpeg",
+      "name":"Murad Babayev",
+      "specialty":"Mobile Developer",
+      "about":"Lorem ipsum dolor sit amet consectetur."
+    },
+    {
+      "id":4,
+      "name":"Jon Brown",
+      "img":"public/news/photoNew.jpg",
+      "specialty":"PS4 Game Developer",
+      "about":"Lorem ipsum dolor sit amet consectetur."
+    }
+    
+  ]
 }
