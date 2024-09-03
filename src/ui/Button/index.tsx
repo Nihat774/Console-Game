@@ -1,5 +1,5 @@
 import { IButton } from "../../components/MyTypes"
-
+import React from "react"
 function Button(props:IButton) {
   return (
     <>

@@ -17,7 +17,8 @@ export default {
      'bg-green':'#166534',
      'purple':'#631682',
      'yellow':'#606b0f',
-     'qara':'#21211d'
+     'qara':'#21211d',
+     'gradient':'#c6ffdd'
       
     },
     fontFamily: {

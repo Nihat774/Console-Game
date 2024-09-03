@@ -1,4 +1,4 @@
-// import Button from "../../ui/Button"
+import React from "react"
 function AboutPage() {
   return (
     <>
@@ -29,7 +29,7 @@ function AboutPage() {
               Bizə etibar edin, kompüteriniz bizim əlimizdə ən yaxşı xidmətə  layiqdir!</p></div>
         </div>
       </div>
-      <div className="flex flex justify-center bg-qara text-white  flex items-end">
+      <div className="flex  justify-center bg-qara text-white items-end">
         <div><img className="w-96 h-80 pr-12 ph-5 rounded-xl	 " src="/about/photo2.jpeg " alt="" /></div>
         <div className="w-2/6 h-96 pt-10 pl-10 ">
           <span>Lorem, ipsum.</span>
@@ -64,8 +64,5 @@ function AboutPage() {
       </div >
 
     </>
-  )
-}
-
+  )}
 export default AboutPage
-

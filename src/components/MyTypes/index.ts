@@ -17,3 +17,16 @@ export interface ICard{
     txt:string;
     children:React.ReactNode;
 }
+export interface IData{
+    index:number,
+    id:number,
+    img:string,
+    price:string,
+    oldPrice:string,
+    name:string;
+}
+export type INewData = {
+    name:string;
+    img:string;
+    id:number
+}
