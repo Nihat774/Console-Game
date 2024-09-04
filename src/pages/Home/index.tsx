@@ -1,18 +1,17 @@
-import Data from "../../components/MyData"
-import SubHeading from "../../components/SubHeading"
+import Data from "../../components/MyDataHome"
 import Button from "../../ui/Button"
 import Button2 from "../../ui/Button2"
 import Card from "../../ui/Card"
-
+import React from 'react'
 function HomePage() {
   return (
     <>
       <section className=" bg-black text-white flex justify-around ">
         <div className="w-[30vw]  flex flex-col justify-around">
           <p className="text-orange font-bold">3D game Dev </p>
-          <p className="text-[3rem] font-bold ">Work that we produce for our clients</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-          <Button txt='Get more details' still='rounded-[20px] w-[15vw] py-3 text-[1.4rem] ' />
+          <p className="text-[3rem] font-bold ">Müştərilərimiz üçün hansı işləri görürük?</p>
+          <p>Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
+          <Button txt='Ətraflı >' still='rounded-[20px] w-[15vw] py-3 text-[1.4rem] ' />
         </div>
         <div className="">
           <img className="absolute top-[32%] right-[42%]" src="/home/cry 1.png" alt="" />
@@ -24,7 +23,7 @@ function HomePage() {
 
       <section>
         <div className="flex justify-between  place-items-end bg-black h-[30vh]">
-          <p className="text-[1.8rem] font-bold text-white  ml-[5vw]">Currently Trending Games</p>
+          <p className="text-[1.8rem] font-bold text-white  ml-[5vw]">Hazırda trend olan oyunlar</p>
           <Button2 />
         </div>
 
@@ -39,7 +38,7 @@ function HomePage() {
           <p className="text-[2rem] font-bold w-[50vw] py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati!</p>
         </div>
 
-        <div className="w-[50vw] h-[30vh] flex flex-col place-items-center justify-evenly pl-10">
+        <div className="w-[46vw]  flex flex-col items-end justify-evenly ">
           <p className="text-[1.3rem] font-bold  w-[35vw] text-white">Lorem ipsum</p>
           <p className="text-wstone w-[35vw] text-[1.4rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vel, praesentium fugit sed debitis corporis ipsa aliquam in nesciunt temporibus magni ad dicta optio facere.</p>
         </div>
@@ -48,7 +47,7 @@ function HomePage() {
           <img className="object-cover h-[70vh]" src="../home/Rectangle 4.png" alt="image" />
         </div>
       </section>
-
+ 
       <section className="relative z-10 bg-[url('/home/bg-image.png')] bg-no-repeat bg-cover h-[100vh]  text-white text-center">
         <div className="absolute bg-[rgba(0,0,0,0.7)] inset-0"></div>
         <article className="flex flex-col  place-items-center">
@@ -60,7 +59,7 @@ function HomePage() {
             <Card txt="Mobile Game Development">{<i className="fa-solid fa-mobile-screen rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="PC Game Development" >{<i className="fa-solid fa-laptop rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="PS4 Game Development" >{<i className="fa-brands fa-playstation rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
-            <Card txt="3D Design" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem]"></i>} </Card>
+            <Card txt="3D Design Developer" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem] w-fit"></i>} </Card>
           </div>
         </article>
       </section>
@@ -81,7 +80,6 @@ function HomePage() {
         </div>
         <Button2 />
       </section>
-      <SubHeading />
     </>
   )
 }

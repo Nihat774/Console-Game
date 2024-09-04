@@ -1,7 +1,8 @@
+import React from 'react'
 function NewsPage() {
   return (
     <>
-      news
+    <div>news page</div>
     </>
   )
 }

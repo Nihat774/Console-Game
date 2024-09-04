@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { ICard } from "../../components/MyTypes"
-
+import React from "react"
 function Card({ txt, children }: ICard) {
     return (
         <>

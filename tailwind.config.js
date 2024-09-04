@@ -13,7 +13,12 @@ export default {
       'white': '#fff',
       'stone': '#44403c',
       'wstone': '#87837f',
-      'bg-stone':'#0f0600'
+      'bg-stone':'#0f0600',
+     'bg-green':'#166534',
+     'purple':'#631682',
+     'yellow':'#606b0f',
+     'qara':'#21211d',
+     'gradient':'#c6ffdd'
       
     },
     fontFamily: {
@@ -24,4 +29,5 @@ export default {
   },
   plugins: [require('daisyui')],
 }
+
 

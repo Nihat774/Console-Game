@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { IGames } from '../MyTypes';
 import { Link } from 'react-router-dom';
-
+import React from 'react';
 function Data() {
-    const [games, setPages] = useState([]);
+    const [allgames, setPages] = useState([]);
     useEffect(() => {
         fetch("http://localhost:3000/games")
             .then((response) => response.json())
@@ -12,7 +12,7 @@ function Data() {
     return (
         <>
             {
-                games.map(({ followers, img }: IGames) => {
+                allgames.map(({followers, img }: IGames) => {
                     return (
                         <>
                             <Link to={'/games'} className=''>
@@ -30,21 +30,6 @@ function Data() {
             }
         </>
 
-        // <div>
-        //     {
-        //         games.filter(({ followers , img }:IGames) => {
-        //             return (
-        //                 <>
-        //                     <div className='border border-white text-white'>
-        //                         <img src={img} alt="" />
-        //                         <div >{followers}</div>
-        //                         </div>
-        //                 </>
-        //             )
-        //         }
-        //         )
-        //     }
-        // </div>
     )
 }
 
