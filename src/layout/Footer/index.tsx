@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import Icon from "../../ui/SocialIcon"
 import Copy from "../CopyRight"
-import React from "react"
+
 function Footer() {
   return (
     <>
@@ -9,11 +9,11 @@ function Footer() {
         <div className="p-5">
           <div className="flex justify-around gap-4 p-4">
             <div className=" flex flex-col gap-4">
-              {/* LOGO */}
+
             <Link to={'/'} >
             <img className="h-[13vh] w-[15vw] object-contain" src="../logo/console game-endlogo.png" alt="" />
             </Link>
-            {/*  */}
+
               <p className="w-[20vw]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, aliquid sapiente. </p>
               <p>@logo</p>
             </div>

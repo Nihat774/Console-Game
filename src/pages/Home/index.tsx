@@ -1,9 +1,12 @@
+import {  useNavigate } from "react-router-dom"
 import Data from "../../components/MyDataHome"
 import Button from "../../ui/Button"
 import Button2 from "../../ui/Button2"
 import Card from "../../ui/Card"
-import React from 'react'
 function HomePage() {
+  let pathname=useNavigate()
+
+  
   return (
     <>
       <section className=" bg-black text-white flex justify-around ">
@@ -11,7 +14,10 @@ function HomePage() {
           <p className="text-orange font-bold">3D game Dev </p>
           <p className="text-[3rem] font-bold ">Müştərilərimiz üçün hansı işləri görürük?</p>
           <p>Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
-          <Button txt='Ətraflı >' still='rounded-[20px] w-[15vw] py-3 text-[1.4rem] ' />
+          <Button onClick={()=>pathname("/about")
+         
+          }
+           txt1='Ətraflı' txt2={<i className="fa-solid fa-chevron-right"></i>} still='rounded-[20px] w-[15vw] py-3 text-[1.4rem] ' />
         </div>
         <div className="">
           <img className="absolute top-[32%] right-[42%]" src="/home/cry 1.png" alt="" />
@@ -52,22 +58,22 @@ function HomePage() {
         <div className="absolute bg-[rgba(0,0,0,0.7)] inset-0"></div>
         <article className="flex flex-col  place-items-center">
           <div className="flex flex-col justify-center place-items-center gap-7 h-[60vh] ">
-            <h2 className="relative z-30 text-[1.8rem] font-poppins font-bold w-[50vw]  ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-            <p className="relative z-30 font-semibold w-[50vw] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <h2 className="relative z-30 text-[1.8rem] font-poppins font-bold w-[50vw]  ">Siz də zövqünüzə uyğun oyunları bizimlə dizayn edə bilərsiniz.</h2>
+            <p className="relative z-30 font-semibold w-[50vw] text-[1.4rem]">Bu günə qədər 100+ müştəriyə xidmət göstərmiş, bir çox yeni oyunların diyaznında iştirak etmişik.</p>
           </div>
           <div className="grid grid-cols-4  relative z-30 w-[60vw]">
             <Card txt="Mobile Game Development">{<i className="fa-solid fa-mobile-screen rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="PC Game Development" >{<i className="fa-solid fa-laptop rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="PS4 Game Development" >{<i className="fa-brands fa-playstation rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
-            <Card txt="3D Design Developer" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem] w-fit"></i>} </Card>
+            <Card txt="3D Grafic Design Developer" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem] w-fit"></i>} </Card>
           </div>
         </article>
       </section>
 
       <section className="bg-bg-stone text-white flex flex-col place-items-center justify-evenly h-[120vh]">
-        <div>
-          <p className="text-[2rem] font-bold">Our Recent Projects</p>
-          <p className="text-[1.4rem]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <div className="flex flex-col gap-5">
+          <p className="text-[2rem] font-bold">Hazırladığımız oyunlar</p>
+          <p className="text-[1.4rem]">Oyunlarımız yüksək funksiyonallıqla daha əlçatandır.</p>
         </div>
 
         <div className="grid grid-cols-3 gap-5 w-[80vw] ">
