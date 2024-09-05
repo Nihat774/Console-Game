@@ -1,3 +1,4 @@
+
 function SubHeading() {
     return (
         <>
@@ -5,15 +6,16 @@ function SubHeading() {
                 <div className="contanier flex flex-col  items-center">
                     <div className="flex flex-col justify-center gap-7 h-[60vh]">
                         <div className="flex flex-col  gap-5 w-fit">
-                            <p className="relative z-30 text-[2rem] font-poppins font-bold text-white  ">Lorem Ipsum</p>
-                            <p className="relative z-30 font-semibold w-[27vw] text-[1.3rem] text-white ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <p className="relative z-30 text-[2rem] font-poppins font-bold text-white  ">Bizimlə əlaqə</p>
+                            <p className="relative z-30 font-semibold w-[27vw] text-[1.3rem] text-white ">Console Game komandasıyla birlikdə işləmək istəyirsiniz? </p>
                         </div>
 
                         <article className="flex w-[80vw] h-[25vh]  justify-between items-center rounded-[15px] bg-stone">
                             <div className=" flex flex-col gap-3 ml-[30px] font-poppins text-white">
-                                <p className=" text-[2rem] font-semibold">Stay in the loop</p>
-                                <p className=" font-medium w-[70%]">Subscribe to receive the latest news and updates about TDA.
-                                    We promise not to spam you! </p>
+                                <p className=" text-[2rem] font-semibold">Şərh göndərmək</p>
+                                <p className=" font-medium w-[70%]">
+                                Fikir və maraqlarınızı bizimlə bölüşün
+                                </p>
                             </div>
                             <form
                                 action="https://formspree.io/f/mqaznvlk"

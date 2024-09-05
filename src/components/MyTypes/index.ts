@@ -2,7 +2,9 @@ export type IChildren = {
     children:object;
 }
 export type IButton = {
-    txt:string;
+    txt2:React.ReactNode;
+    onClick?:()=>void;
+    txt1:string;
     still:string;
 }
 export type IIcon = {
@@ -10,6 +12,7 @@ export type IIcon = {
     link:string;
 }
 export type IGames = {
+    id:number
     img:string;
     followers:string;
 }
@@ -29,4 +32,11 @@ export type INewData = {
     name:string;
     img:string;
     id:number
+}
+
+// About Page
+export type ITeamType={
+    img:string,
+    name:string,
+    text:string
 }

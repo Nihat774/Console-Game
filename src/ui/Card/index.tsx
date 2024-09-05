@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { ICard } from "../../components/MyTypes"
-import React from "react"
+
 function Card({ txt, children }: ICard) {
     return (
         <>
@@ -9,7 +9,7 @@ function Card({ txt, children }: ICard) {
                     {children}
                 </div>
                 <p className="text-[1.4rem]">{txt}</p>
-                <Link to={'/salam'}><i className="fa-solid fa-arrow-right text-orange text-[1.4rem]"></i></Link>
+               <i className="fa-solid fa-arrow-right text-orange text-[1.4rem]"></i>
             </Link>
         </>
     )

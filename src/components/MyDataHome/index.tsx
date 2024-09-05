@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { IGames } from '../MyTypes';
 import { Link } from 'react-router-dom';
-import React from 'react';
 function Data() {
     const [allgames, setPages] = useState([]);
     useEffect(() => {
@@ -12,10 +11,10 @@ function Data() {
     return (
         <>
             {
-                allgames.map(({followers, img }: IGames) => {
+                allgames.map(({followers, img,id }: IGames) => {
                     return (
-                        <>
-                            <Link to={'/games'} className=''>
+                       
+                            <Link key={id}  to={`/games/${id}`} className=''>
                                 <div><img src={img} alt="" />
                                 <p className='flex gap-2 font-bold  p-4 justify-center text-white'>
                                     <img src="../public/home/fire 1.svg" className='bg-black' alt="" />
@@ -23,7 +22,7 @@ function Data() {
                                 </div>
                                 
                             </Link>
-                        </>
+                       
                     )
 
                 })

@@ -1,8 +1,9 @@
-import React from "react"
-import {AllGames} from "../../components/MyDataGames"
-import { Link, useLocation } from "react-router-dom"
-function Games() {
 
+import {AllGames} from "../../components/MyDataGames"
+import { Link, useParams } from "react-router-dom"
+function Games() {
+  const { id } = useParams()
+  console.log(id);
   return (
     <>
       <div className="flex justify-between items-center px-4 h-[15vh] bg-orange">
