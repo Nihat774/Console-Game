@@ -11,8 +11,8 @@ function HomePage() {
       <section className=" bg-black text-white flex justify-around px-5">
         <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-5">
           <p className="text-orange font-bold">3D game Dev </p>
-          <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold md:w-[27vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
-          <p>Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
+          <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold  md:w-[27vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
+          <p className="lg:w-[30vw]">Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
           <Button onClick={() => pathname("/about")}
             txt1='Ətraflı' txt2={<i className="fa-solid fa-chevron-right"></i>} still='rounded-[20px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] ' />
         </div>

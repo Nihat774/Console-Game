@@ -12,7 +12,6 @@ function Header() {
               <img className="h-[13vh] md:w-[35vw] object-contain" src="../logo/console game-endlogo.png" alt="" />
             </Link>
           </div>
-          {/* flex  justify-evenly gap-5 w-[70%] text-[1.5rem] place-items-center */}
           <nav className="md:flex md:justify-between md:text-[1.4rem] gap-4 items-center xs:hidden w-[75%]">
               <NavLink to={'/'}>Əsas səhifə</NavLink>
               <NavLink className={({ isActive }) =>
@@ -30,7 +29,7 @@ function Header() {
               <Button txt1="Əlaqə" txt2="" onClick={() => location('/contact')} still="rounded-[10px] p-3" />
             </nav>
 {/* PHONE NAVBAR */}
-          {/* <header className="w-full bg-green h-fit sm:flex md:hidden ">
+          <header className="w-full bg-green h-fit sm:flex md:hidden ">
 
             <div className="flex justify-between items-center bg-red p-3">
               <div className="">
@@ -54,7 +53,7 @@ function Header() {
               } to={'/servis'}>Servis</NavLink>
               <Button txt1="Əlaqə" txt2="" onClick={() => location('/contact')} still="rounded-[10px] p-3" />
             </nav>
-          </header> */}
+          </header>
 
         </div>
       </header>
