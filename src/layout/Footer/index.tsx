@@ -14,22 +14,20 @@ function Footer() {
             <img className="md:h-[13vh] md:w-[15vw] xs:w-[40vw] object-contain" src="../logo/console game-endlogo.png" alt="" />
             </Link>
 
-              <p className="md:w-[20vw] xs:w-full ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, aliquid sapiente. </p>
+              <p className="md:w-[20vw] xs:w-full ">Console Game komandası olaraq xidmətinizdəyik.</p>
               <Link to={'/'} className="text-red">consolegame.com</Link>
             </div>
 
             <div className="flex flex-col gap-4 xs:text-[1.5rem] ">
-              <Link to={'/about'}>About us</Link>
-              <Link to={'/zeux'}>Zeux</Link>
-              <Link to={'/portfolio'}>Portfolio</Link>
-              <Link to={'/career'}>Careers</Link>
-              <Link to={'/contact'}>Contact us</Link>
+              <Link to={'/about'}>Haqqımızda</Link>
+              <Link to={'/zeux'}>Əməkdaşlıq</Link>
+              <Link to={'/portfolio'}>Komandamız</Link>
+              <Link to={'/career'}>Oyunlar</Link>
             </div>
-
             <div className=" flex flex-col gap-4 ">
-              <p className="md:w-[20vw] xs:w-full xs:text-[1.4rem]">Contact us</p>
-              <p className="md:w-[20vw] xs:w-full xs:text-[1.4rem]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum maiores aliquid nam alias eos, culpa fuga.</p>
-              <Link to={'tel:+90889097890'} className="md:w-[20vw] xs:w-full xs:text-[1.4rem]">+908 89097 890</Link>
+              <Link to={'/servis'} className="md:w-[20vw] xs:w-full xs:text-[1.4rem]">Servis</Link>
+              <p className="lg:w-[25vw] xs:w-full xs:text-[1.4rem]">Oyun dünyasında özünüzü itirin və ən yaxşı təcrübə üçün saytımıza qoşulun!</p>
+              <Link to={'tel:+90889097890'} className="md:w-[20vw] xs:w-full xs:text-[1.4rem]">+994 55 774 85 48</Link>
             </div>
             <div className="flex gap-4 md:justify-end md:place-items-end xs:justify-evenly py-2 ">
               <Icon link="https://www.facebook.com/" ><i className="fa-brands fa-facebook-f  text-[1.4rem] border rounded-full py-2 px-3 text-black bg-white"></i></Icon>
