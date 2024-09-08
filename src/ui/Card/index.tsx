@@ -4,7 +4,7 @@ import { ICard } from "../../components/MyTypes"
 function Card({ txt, children }: ICard) {
     return (
         <>
-            <Link to={'/games'} className=" flex flex-col gap-4">
+            <Link to={'/games'} className=" flex flex-col gap-4 ">
                 <div>
                     {children}
                 </div>

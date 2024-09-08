@@ -9,8 +9,6 @@ export default {
         'orange': '#f97316',
         'red': '#ef4444',
         'green': '#22c55e',
-        'black': '#000',
-        'white': '#fff',
         'stone': '#44403c',
         'wstone': '#87837f',
         'bg-stone':'#0f0600',
@@ -18,7 +16,7 @@ export default {
        'purple':'#631682',
        'yellow':'#606b0f',
        'qara':'#21211d',
-       'gradient':'#c6ffdd'
+       'gradient':'#d9822b'
         
       },
     },
@@ -27,6 +25,23 @@ export default {
       'rubik': ' "Rubik", sans-serif',
       'poppins': ' "Poppins" , sans-serif',
 
+    },
+    screens: {
+      'xs': '300px',
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
     }
   },
   plugins: [require('daisyui')],

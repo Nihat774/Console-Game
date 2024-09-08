@@ -20,8 +20,7 @@ export interface ICard{
     txt:string;
     children:React.ReactNode;
 }
-export interface IData{
-    index:number,
+export interface IAllGames{
     id:number,
     img:string,
     price:string,
@@ -39,4 +38,13 @@ export type ITeamType={
     img:string,
     name:string,
     text:string
+}
+export interface ICardInfo{
+    txt1:string,
+    txt2:string,
+    desc:string,
+    classes:string,
+}
+export type Button = {
+    onClick?: () => void;
 }

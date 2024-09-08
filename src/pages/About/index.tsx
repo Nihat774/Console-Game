@@ -27,7 +27,7 @@ function AboutPage() {
             <p className="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis atque ab tenetur placeat culpa ullam deserunt minima
               omnis error, porro exercitationem molestiae?</p>
 
-            <Button still=" w-[14vw] py-4 text-[1.4rem] rounded-[20px]" txt2={<i className="fa-solid fa-arrow-right px-3"></i>} txt1="Get in touch" />
+            <Button still=" w-[14vw] py-2 text-[1.4rem] rounded-[20px] pl-3" txt2={<i className="fa-solid fa-arrow-right px-3"></i>} txt1="Get in touch" />
           </div>
         </div>
 
@@ -54,6 +54,7 @@ function AboutPage() {
       <div className="bg-black text-white py-7">
         <h3 className="text-2xl flex items-center px-10 font-bold h-[20vh] ">Why work with us</h3>
         <div className="flex justify-around ">
+
           <CardInfo classes="bg-purple" txt1="Peşəkarlıq və Təcrübə" txt2="Peşəkarlıq və Təcrübə" desc="Bizim komandamız illərdir bu sahədə təcrübəyə malik peşəkar mütəxəssislərdən ibarətdir. Probleminizi ən qısa müddətdə və yüksək keyfiyyətlə həll edəcəyik!" />
           <CardInfo classes="bg-red" txt1="Müştəri məmnuniyyəti" txt2="Müştəri məmnuniyyəti" desc="Sizin rahatlığınız bizim üçün önəmlidir! Müştəri məmnuniyyəti bizim üçün prioritetdir və biz hər zaman müştərilərimiz üçün ən yaxşısını etməyə çalışırıq." />
           <CardInfo classes="bg-orange" txt1="Güvən və Keyfiyyət" txt2="Güvən və Keyfiyyət" desc="Güvən və keyfiyyət bizim əsas dəyərlərimizdir. Bizə etibar edin, kompüteriniz bizim əlimizdə ən yaxşı xidmətə layiqdir!" />

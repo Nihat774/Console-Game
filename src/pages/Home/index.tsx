@@ -1,88 +1,92 @@
-import {  useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import Data from "../../components/MyDataHome"
 import Button from "../../ui/Button"
 import Button2 from "../../ui/Button2"
 import Card from "../../ui/Card"
+import MyAccordion from "../../ui/Accordion"
 function HomePage() {
-  let pathname=useNavigate()
-
-  
+  let pathname = useNavigate()
   return (
     <>
-      <section className=" bg-black text-white flex justify-around ">
-        <div className="w-[30vw]  flex flex-col justify-around">
+      <section className=" bg-black text-white flex justify-around px-5">
+        <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-5">
           <p className="text-orange font-bold">3D game Dev </p>
-          <p className="text-[3rem] font-bold ">Müştərilərimiz üçün hansı işləri görürük?</p>
+          <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold md:w-[27vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
           <p>Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
-          <Button onClick={()=>pathname("/about")
-         
-          }
-           txt1='Ətraflı' txt2={<i className="fa-solid fa-chevron-right"></i>} still='rounded-[20px] w-[15vw] py-3 text-[1.4rem] ' />
+          <Button onClick={() => pathname("/about")}
+            txt1='Ətraflı' txt2={<i className="fa-solid fa-chevron-right"></i>} still='rounded-[20px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] ' />
         </div>
+
         <div className="">
-          <img className="absolute top-[32%] right-[42%]" src="/home/cry 1.png" alt="" />
-          <img className="absolute right-[22%] top-[35%]" src="/home/unreal 1.png" alt="" />
-          <img className="absolute top-[60%] left-[40%]" src="/home/unity 1.png" alt="" />
-          <div className="h-[85vh] w-[40vw] object-contain "><img className="w-[100%] h-[100%]" src="../public/home/joy_stick 1.png" alt="console page" /></div>
+          <img className="md:absolute md:top-[27%] md:right-[43%] lg:right-[36%]  md:block xs:hidden" src="/home/cry 1.png" alt="" />
+          <img className="md:absolute lg:right-[12%] lg:top-[35%] md:top-[28%] md:right-[17%] md:block xs:hidden" src="/home/unreal 1.png" alt="" />
+          <img className="md:absolute lg:top-[55%] md:top-[43%] md:left-[37%] md:block xs:hidden" src="/home/unity 1.png" alt="" />
+          <div className="lg:h-[85vh] md:w-[40vw] md:h-[40vh] md:object-contain md:flex xs:hidden "><img className="w-[100%] h-[100%]" src="../public/home/joy_stick 1.png" alt="console page" /></div>
         </div>
       </section>
 
-      <section>
-        <div className="flex justify-between  place-items-end bg-black h-[30vh]">
-          <p className="text-[1.8rem] font-bold text-white  ml-[5vw]">Hazırda trend olan oyunlar</p>
+      <section className="">
+        <div className="flex justify-between  place-items-center bg-black  lg:h-[30vh] xs:h-[15vh]">
+          <p className="md:text-[1.8rem] xs:text-[1.4rem] font-bold text-white  ml-[5vw]">Hazırda trend olan oyunlarımız</p>
           <Button2 />
         </div>
 
-        <div className="flex justify-evenly place-items-center bg-black h-[70vh]">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 xs:grid-cols-1 place-items-center bg-black xs:h-fit xs:py-5 md:h-[70vh]">
           <Data />
         </div>
       </section>
 
       <section className="bg-black flex flex-col gap-4 ">
 
-        <div className="bg-black text-white flex justify-center ">
-          <p className="text-[2rem] font-bold w-[50vw] py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati!</p>
+        <div className=" text-white flex justify-center ">
+          <p className="md:text-[2rem] font-bold md:w-[70vw] lg:w-[50vw] py-3 xs:full xs:text-[1.5rem] xs:px-4">Köhnə oyunlardan yoruldunuz? Elə isə doğru məkandasınız.</p>
         </div>
 
-        <div className="w-[46vw]  flex flex-col items-end justify-evenly ">
-          <p className="text-[1.3rem] font-bold  w-[35vw] text-white">Lorem ipsum</p>
-          <p className="text-wstone w-[35vw] text-[1.4rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vel, praesentium fugit sed debitis corporis ipsa aliquam in nesciunt temporibus magni ad dicta optio facere.</p>
+        <div className="md:w-full xs-full  flex flex-col md:items-center xs:items-center justify-evenly ">
+          <p className="lg:text-[1.3rem] md:text-[1.5rem] font-bold  md:w-[35vw] xs-full xs:py-3 text-white">Console Game</p>
+          <p className="text-wstone
+           md:w-[70vw] xs:w-full md:text-[1.6rem] lg:text-[1.4rem] xs:text-[1.2rem] xs:p-3">Yeni,effektiv oyunlarımızı sizin istifadənizə verməkdən qürür duyuruq. </p>
         </div>
 
-        <div className="flex justify-center h-[100vh] ">
-          <img className="object-cover h-[70vh]" src="../home/Rectangle 4.png" alt="image" />
+        <div className="flex justify-center md:h-[100vh] xs:h-fit ">
+          <img className="object-cover md:h-[70vh] xs:h-[50vh]" src="../home/Rectangle 4.png" alt="image" />
         </div>
       </section>
- 
-      <section className="relative z-10 bg-[url('/home/bg-image.png')] bg-no-repeat bg-cover h-[100vh]  text-white text-center">
+
+      <section className=" relative z-10 bg-[url('/home/bg-image.png')] bg-no-repeat bg-cover md:h-[100vh] xs:h-fit text-white text-center">
         <div className="absolute bg-[rgba(0,0,0,0.7)] inset-0"></div>
         <article className="flex flex-col  place-items-center">
-          <div className="flex flex-col justify-center place-items-center gap-7 h-[60vh] ">
-            <h2 className="relative z-30 text-[1.8rem] font-poppins font-bold w-[50vw]  ">Siz də zövqünüzə uyğun oyunları bizimlə dizayn edə bilərsiniz.</h2>
-            <p className="relative z-30 font-semibold w-[50vw] text-[1.4rem]">Bu günə qədər 100+ müştəriyə xidmət göstərmiş, bir çox yeni oyunların diyaznında iştirak etmişik.</p>
+          <div className="flex flex-col justify-center place-items-center gap-7 h-[60vh]  md:w-[50vw] xs:w-[70vw]">
+            <h2 className="relative z-30 md:text-[1.8rem] font-poppins font-bold xs:text-[1.4rem] ">Siz də zövqünüzə uyğun oyunları bizimlə dizayn edə bilərsiniz.</h2>
+            <p className="relative z-30 font-semibold  text-[1.4rem]">Bu günə qədər 100+ müştəriyə xidmət göstərmiş, bir çox yeni oyunların diyaznında iştirak etmişik.</p>
           </div>
-          <div className="grid grid-cols-4  relative z-30 w-[60vw]">
+          <div className="grid md:grid-cols-4  xs:grid-cols-1 xs:gap-7   relative z-30 md:w-[60vw] xs:w-[80vw]">
             <Card txt="Mobile Game Development">{<i className="fa-solid fa-mobile-screen rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
+
             <Card txt="PC Game Development" >{<i className="fa-solid fa-laptop rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="PS4 Game Development" >{<i className="fa-brands fa-playstation rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
-            <Card txt="3D Grafic Design Developer" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem] w-fit"></i>} </Card>
+            <Card txt="3D Grafic Design" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem] w-fit"></i>} </Card>
           </div>
         </article>
       </section>
+      <section className="bg-black"> 
+        <p className="bg-black text-white text-[1.5rem] font-bold py-3 text-center">Ən çox verilən suallar</p>
+        <MyAccordion />
+      </section>
 
-      <section className="bg-bg-stone text-white flex flex-col place-items-center justify-evenly h-[120vh]">
-        <div className="flex flex-col gap-5">
-          <p className="text-[2rem] font-bold">Hazırladığımız oyunlar</p>
+      <section className="bg-black text-white flex flex-col place-items-center justify-evenly xs:py-4 xs:gap-5 md:h-[90vh] lg:h-[110vh] xs:h-fit">
+        <div className="flex flex-col gap-5 xs:p-3">
+          <p className="md:text-[2rem] xs:text-[1.7rem] font-bold ">Hazırladığımız oyunlar</p>
           <p className="text-[1.4rem]">Oyunlarımız yüksək funksiyonallıqla daha əlçatandır.</p>
         </div>
 
-        <div className="grid grid-cols-3 gap-5 w-[80vw] ">
-          <img src="/home/Rectangle 15.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
-          <img src="/home/Rectangle 16.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
-          <img src="/home/Rectangle 17.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
-          <img src="/home/Rectangle 18.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
-          <img src="/home/Rectangle 19.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
-          <img src="/home/Rectangle 20.png" className="w-[25vw] h-[30vh]  rounded-[15px] object-cover" alt="" />
+        <div className="grid md:grid-cols-3 xs:grid-cols-2 gap-5 w-[80vw] ">
+          <img src="/home/Rectangle 15.png" className="md:w-[25vw] xs:w-full h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 16.png" className="md:w-[25vw] xs:w-full h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 17.png" className="md:w-[25vw] xs:w-full h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 18.png" className="md:w-[25vw] xs:w-full h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 19.png" className="md:w-[25vw] xs:w-full h-[30vh]  rounded-[15px] object-cover" alt="" />
+          <img src="/home/Rectangle 20.png" className="md:w-[25vw] xs:w-full h-[30vh]  rounded-[15px] object-cover" alt="" />
         </div>
         <Button2 />
       </section>

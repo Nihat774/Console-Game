@@ -11,18 +11,19 @@ function Data() {
     return (
         <>
             {
-                allgames.map(({followers, img,id }: IGames) => {
+                allgames.map(({ followers, img, id }: IGames) => {
                     return (
-                       
-                            <Link key={id}  to={`/games/${id}`} className=''>
-                                <div><img src={img} alt="" />
+
+                        <Link key={id} to={`/games/${id}`} className=''>
+                            <div>
+                                <img src={img} alt="" />
                                 <p className='flex gap-2 font-bold  p-4 justify-center text-white'>
                                     <img src="../public/home/fire 1.svg" className='bg-black' alt="" />
-                                {` ${followers} Followers`}</p>
-                                </div>
-                                
-                            </Link>
-                       
+                                    {` ${followers} Followers`}</p>
+                            </div>
+
+                        </Link>
+
                     )
 
                 })
