@@ -48,3 +48,8 @@ export interface ICardInfo{
 export type Button = {
     onClick?: () => void;
 }
+export type ShareBtn = {
+    icon:string,
+    storeName:string,
+    to:string
+}
