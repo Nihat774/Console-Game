@@ -1,10 +1,11 @@
+import { AllNews } from "../../components/MyDataNews"
 
-function NewsPage() {
+const index = () => {
   return (
-    <>
-    <div>news page</div>
-    </>
+   <>
+   <AllNews/>
+   </>
   )
 }
 
-export default NewsPage
+export default index
