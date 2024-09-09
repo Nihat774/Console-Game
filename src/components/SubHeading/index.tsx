@@ -21,8 +21,8 @@ function SubHeading() {
                                 action="https://formspree.io/f/mqaznvlk"
                                 method="POST" 
                                 className=" flex xs:gap-5 items-center md:h-[10vh] w-fit px-7">
-                                <input type="email" name="email" className="lg:w-[30vw] md:w-[50vw] xs:w-[40vw] xs:py-2 md:py-4 md:px-3 lg:px-2 border rounded-[10px] bg-white md:text-[1.6rem] lg:text-[1.4rem]" placeholder="mesaj" />
-                                <button type="submit" className="bg-orange md:py-5 md:px-7 lg:py-3 lg:px-5 text-white rounded-[10px] md:absolute md:right-[14%] lg::right-[12.5%] xs:flex">Continue</button>
+                                <input type="email" name="email" className="lg:w-[30vw] md:w-[50vw] xs:w-[40vw] xs:py-2 md:py-4 md:px-3 xs:px-2 lg:px-2 border rounded-[10px] bg-white md:text-[1.6rem] lg:text-[1.4rem]" placeholder="mesaj" />
+                                <button type="submit" className="bg-orange md:py-5 md:px-7 lg:py-3 lg:px-5 xs:py-2 xs:px-3 text-white rounded-[10px] md:absolute md:right-[14%] lg:right-[12.5%] xs:flex">Continue</button>
                             </form>
                         </article>
                     </div>

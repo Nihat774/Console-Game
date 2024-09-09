@@ -15,7 +15,8 @@ function MyAccordion() {
                 <div className="collapse-title text-xl font-medium">Oyunlarınız yalnız PC üçündür?</div>
                 <div className="collapse-content">
                     <p>Əlbəttə ki xeyr, bizim oyunlarımızı AppStore və ya PlayStore'dan əldə edə bilərsiniz.</p>
-                    <p>play Store : <Link className="hover:text-red font-bold" to={'https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf&pcampaignid=web_share'}>Console game</Link></p>
+                    <p>Play Store : <Link className="hover:text-red font-bold" to={'https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf&pcampaignid=web_share'}>Console game</Link></p>
+                    <p>App Store : <Link className="hover:text-red font-bold" to={'https://www.apple.com/app-store/'}>Console game</Link></p>
                 </div>
             </div>
             <div className="collapse collapse-arrow  text-white border-white border bg-stone ">
