@@ -53,3 +53,15 @@ export type ShareBtn = {
     storeName:string,
     to:string
 }
+export type INewsType = {
+    id: number;
+    name: string;
+    img: string;
+    specialty: string;
+    about: string,
+    cv:string
+}
+export type CvButtonType= {
+    cv:string,
+    to:string
+}

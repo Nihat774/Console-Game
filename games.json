@@ -1,22 +1,22 @@
 {
   "games": [
     {
-      "id":1,
+      "id": 1,
       "img": "/home/Rectangle 23.png",
       "followers": "40"
     },
     {
-      "id":4,
+      "id": 4,
       "img": "/home/Rectangle 26 (1).png",
       "followers": "60"
     },
     {
-      "id":2,
+      "id": 2,
       "img": "/home/Rectangle 24.png",
       "followers": "75"
     },
     {
-      "id":3,
+      "id": 3,
       "img": "/home/Rectangle 26.png",
       "followers": "95"
     }
@@ -28,16 +28,15 @@
       "name": "Modern Warfare",
       "oldPrice": "$120",
       "price": "$100",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 2,
       "img": "/games/game2.webp",
       "name": "World War",
       "oldPrice": "$70",
-      "price": "$50"
-      ,
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "price": "$50",
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 3,
@@ -45,7 +44,7 @@
       "name": "Call of Duty",
       "oldPrice": "$100",
       "price": "$80",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 4,
@@ -53,7 +52,7 @@
       "name": "Ninja",
       "oldPrice": "$50",
       "price": "$30",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 5,
@@ -61,7 +60,7 @@
       "name": "Blur",
       "oldPrice": "$30",
       "price": "$20",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 6,
@@ -69,7 +68,7 @@
       "name": "Days Gone",
       "oldPrice": "$20",
       "price": "$15",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 7,
@@ -77,7 +76,7 @@
       "name": "Farcry 5",
       "oldPrice": "$20",
       "price": "$15",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 8,
@@ -85,7 +84,7 @@
       "name": "Constrike",
       "oldPrice": "$45",
       "price": "$30",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 9,
@@ -93,7 +92,7 @@
       "name": "Uncharted 4",
       "oldPrice": "$40",
       "price": "$30",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 10,
@@ -101,7 +100,7 @@
       "name": "Counter Strike",
       "oldPrice": "$45",
       "price": "$35",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 11,
@@ -109,7 +108,7 @@
       "name": "Subway Surfies",
       "oldPrice": "$55",
       "price": "$55",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 12,
@@ -117,7 +116,7 @@
       "name": "Minecraft",
       "oldPrice": "$35",
       "price": "$25",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 13,
@@ -125,7 +124,7 @@
       "name": "Hawked",
       "oldPrice": "$30",
       "price": "$20",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 14,
@@ -133,7 +132,7 @@
       "name": "Core Keeper",
       "oldPrice": "$20",
       "price": "$10",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     },
     {
       "id": 15,
@@ -141,38 +140,41 @@
       "name": "Assasins creed",
       "oldPrice": "$25",
       "price": "$15",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur."
     }
   ],
-  "ourTeams":[
+  "ourTeams": [
     {
-      "id":21,
-      "img":"../news/photo.jpg",
-      "name":"Nihat Məmmədov",
-      "specialty":"Web Developer",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "id": 21,
+      "img": "../news/photo.jpg",
+      "name": "Nihat Məmmədov",
+      "specialty": "Web Developer",
+      "about": "Hər kəsə salam , mənim 20 yaşım var, Hal-hazırda web developer olaraq işləyirəm . Sizlərə yeni üev oyunlar hazırlamaqdan məmnunluq duyuram . Oynayın, əylənin və dostlarınızla yarışın!",
+      "cv": "public/CV/Nihat CV.pdf"
     },
     {
-      "id":22,
-      "img":"../news/man-carousel-2.jpeg",
-      "name":"Fərid Abbaslı",
-      "specialty":"3D Design",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "id": 22,
+      "img": "../news/newImage.jpg",
+      "name": "Fərid Abbaslı",
+      "specialty": "3D Design",
+      "about": "Hər kəsə salam.Mən Fərid Abbaslı. 23 yaşım var. 3D dizayner olaraq işləyirəm. Bir çox xarici layihələrdə aktivlik göstərmişəm. Oyunlarınızın dizaynında bizə güvənə bilərsiniz. ",
+      "cv": "public/CV/Fərid CV.pdf"
     },
     {
-      "id":23,
-      "img":"../news/man-carousel-3.jpeg",
-      "name":"Murad Babayev",
-      "specialty":"Mobile Developer",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "id": 23,
+      "img": "../news/man-carousel-3.jpeg",
+      "name": "Murad Babayev",
+      "specialty": "Mobile Developer",
+      "about": "Hər kəsə salam. Mən Murad Babayev.Bu komandada Mobile developer olaraq işləyirəm. Yeni texnologiyalardan istifadə etdiyim üçün layihələrim daha maraqlı bəyəniləndir.",
+      "cv": "public/CV/Murad CV.pdf"
     },
     {
-      "id":24,
-      "name":"Jon Brown",
-      "img":"public/news/photoNew.jpg",
-      "specialty":"PS4 Game Developer",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "id": 24,
+      "name": "Aslan Həmidli",
+      "img": "public/news/photoNew.jpg",
+      "specialty": "PS4 Game Developer",
+      "about": "Hər kəsə salam. Mən Brown. Təhsilimi və təcrübəmi Amerikada almışam.  Bu komandada sizə xidmıt göstərməkdən qürür duyuram.",
+      "cv": "public/CV/Aslan CV.pdf"
     }
-    
   ]
 }

@@ -1,8 +1,10 @@
+import Phone from "../../ui/Phone"
 
 function ContactPage() {
   return (
     <>
      <div>contactpage</div> 
+     <Phone />
     </>
   )
 }
