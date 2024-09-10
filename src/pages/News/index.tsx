@@ -1,8 +1,9 @@
+import { AllNews } from "../../components/MyDataNews"
 
 function NewsPage() {
   return (
     <>
-    <div>news page</div>
+      <AllNews />
     </>
   )
 }
