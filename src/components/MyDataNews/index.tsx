@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { INewsType } from "../MyTypes";
 import CvButton from "../../ui/CvButton";
 
@@ -6,9 +6,11 @@ import CvButton from "../../ui/CvButton";
 export function AllNews() {
     const [news, setNews] = useState([])
     const url = "http://localhost:3000/ourTeams"
+   useEffect(()=>{
     fetch(url)
-        .then((response) => response.json())
-        .then((data) => setNews(data))
+    .then((response) => response.json())
+    .then((data) => setNews(data))
+   },[])
     return (
         <>
             {news.map(({ id, name, img, specialty, about, cv }: INewsType) => {
@@ -19,7 +21,7 @@ export function AllNews() {
                             <div className="flex justify-evenly bg-qara border-1 m-2  p-3 h-[70vh] w-[80vw] ">
 
                                 <div >
-                                    <img className="h-[60vh] w-[35vw] object-cover rounded-[10px]" src={img} alt="game-image" />
+                                    <img className="lg:h-[60vh]  w-[35vw] object-cover rounded-[10px]" src={img} alt="game-image" />
                                 </div>
 
                                 <div className="flex flex-col  h-[60vh] justify-center gap-5 text-white ">

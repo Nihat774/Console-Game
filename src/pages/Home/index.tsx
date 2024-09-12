@@ -8,13 +8,13 @@ function HomePage() {
   let pathname = useNavigate()
   return (
     <>
-      <section className=" bg-black text-white flex justify-around px-5">
+      <section className=" bg-black text-white flex justify-around p-5">
         <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-5">
           <p className="text-orange font-bold">3D game Dev </p>
           <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold  md:w-[27vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
           <p className="lg:w-[30vw]">Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
           <Button onClick={() => pathname("/about")}
-            txt1='Ətraflı' txt2={<i className="fa-solid fa-chevron-right"></i>} still='rounded-[20px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] ' />
+            txt1='Ətraflı' txt2={<i className="fa-solid fa-caret-right"></i>} still='rounded-[20px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] ' />
         </div>
 
         <div className="">
@@ -53,7 +53,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className=" relative z-10 bg-[url('/home/bg-image.png')] bg-no-repeat bg-cover md:h-[100vh] xs:h-fit text-white text-center">
+      <section className=" relative bg-[url('/home/bg-image.png')] bg-no-repeat bg-cover md:h-[100vh] xs:h-fit text-white text-center">
         <div className="absolute bg-[rgba(0,0,0,0.7)] inset-0"></div>
         <article className="flex flex-col  place-items-center">
           <div className="flex flex-col justify-center place-items-center gap-7 h-[60vh]  md:w-[50vw] xs:w-[70vw]">

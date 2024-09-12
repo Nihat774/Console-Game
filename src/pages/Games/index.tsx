@@ -1,27 +1,35 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { IAllGames } from "../../components/MyTypes"
 import { Link } from "react-router-dom"
 
 function GamesPage() {
     const url = "http://localhost:3000/allgames"
     const [games, setGames] = useState([])
-    fetch(url)
-        .then((response) => response.json())
-        .then((data) => setGames(data))
+    useEffect(() => {
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => setGames(data))
+    }, [])
     const [search, setSearch] = useState('');
     const filteredGames = games.filter(({ name }: IAllGames) =>
         name.toLowerCase().includes(search.toLowerCase())
     )
     return (
         <>
-            <div className="bg-red  md:flex md:flex-row md:h-[12vh] lg:h-[15vh] xs:flex-col xs:p-4 xs:gap-7 justify-around items-center  xs:h-fit">
-                <Link to={'/'} className="md:text-[2rem] xs:text-[1.7rem]  text-black font-bold">consolegame.com</Link>
-                <input
-                    type="text"
-                    maxLength={10} value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    className="md:w-[30vw] xs:w-[45vw] xs:py-2 lg:h-[10vh] md:h-[7vh] md:px-3 rounded-[15px] px-2 text-[1.4rem]"
-                    placeholder="Oyun Axtar" />
+            <div className="bg-orange flex justify-between px-3 items-center">
+                <div className="  md:flex md:flex-row md:h-[12vh] lg:h-[15vh] xs:flex-col xs:p-4 xs:gap-7 justify-around items-center  xs:h-fit ">
+                    <Link to={'/'} className="md:text-[2rem] xs:text-[1.7rem]  text-black font-bold">consolegame.com</Link>
+                    <input
+                        type="text"
+                        maxLength={10} value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        className=" md:w-[30vw] xs:w-[45vw] xs:py-2 lg:h-[10vh] md:h-[7vh] md:px-3 rounded-[15px] px-2 text-[1.4rem]"
+                        placeholder="Oyun Axtar" />
+                </div>
+                <div className="">
+                    <i className="fa-solid fa-cart-shopping p-3 text-[1.4rem] text-white "></i>
+                </div>
+
             </div>
             <div className="grid lg:grid-cols-4 md:gap-3 xs:grid-cols-1 xs:place-items-center xs:gap-3 md:grid-cols-2">
                 {
