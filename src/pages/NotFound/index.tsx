@@ -3,7 +3,7 @@
 function NotFoundPage() {
   return (
     <>
-     <div>404 not found</div> 
+     <div className="bg-black text-white text-[1.5rem] px-5">404 not found</div> 
     </>
   )
 }

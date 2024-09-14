@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { IAllGames } from "../../components/MyTypes"
 import { Link, useNavigate } from "react-router-dom"
 
@@ -29,18 +29,14 @@ function GamesPage() {
                             placeholder="Oyun Axtar" />
                     </div>
                 </div>
-                {/* <div className="">
-                    <i className="fa-solid fa-cart-shopping p-3 text-[1.4rem] text-white "></i>
-                </div> */}
-
             </div>
             <div className="grid lg:grid-cols-4 md:gap-3 xs:grid-cols-1 xs:place-items-center xs:gap-3 md:grid-cols-2">
                 {
-                    filteredGames.map(({ name, img, oldPrice, price,id }: IAllGames) => {
+                    filteredGames.map(({ name, img, oldPrice, price, id }: IAllGames) => {
                         return (
-                            <>
+                            <React.Fragment key={id}>
                                 <div className="border w-fit rounded-[10px]">
-                                    <div onClick={()=>gameLocation(`${id}`)}><img className="cursor-pointer md::w-[20vw] md:h-[60vh]  xs:w-[90vw] xs:h-[55vh] md:object-cover xs:object-fill  rounded-[10px]" src={img} alt="" /></div>
+                                    <div onClick={() => gameLocation(`${id}`)}><img className="cursor-pointer md::w-[20vw] md:h-[60vh]  xs:w-[90vw] xs:h-[55vh] md:object-cover xs:object-fill  rounded-[10px]" src={img} alt="" /></div>
                                     <div className="flex justify-between py-3 px-1">
                                         <p className="text-[1.4rem] font-bold ">{name}</p>
                                         <div className="flex gap-2 ">
@@ -67,7 +63,7 @@ function GamesPage() {
                                         </div>
                                     </div>
                                 </div>
-                            </>
+                            </React.Fragment>
                         )
                     })
                 }
