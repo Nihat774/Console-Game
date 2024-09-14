@@ -1,8 +1,4 @@
 import { ICardInfo } from "../../components/MyTypes"
-
-
-
-
 function CardInfo({txt1,txt2,desc,classes}:ICardInfo) {
     return (
         <>

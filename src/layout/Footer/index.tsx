@@ -16,19 +16,19 @@ function Footer() {
               </Link>
 
               <p className="md:w-[20vw] xs:w-full ">Console Game komandası olaraq xidmətinizdəyik.</p>
-              <Link to={'/'} className="text-red">consolegame.com</Link>
+              <Link to={'/'} className="text-orange">consolegame.com</Link>
             </div>
 
             <div className="flex flex-col gap-4 xs:text-[1.5rem] ">
-              <Link to={'/about'}>Haqqımızda</Link>
-              <Link to={'/zeux'}>Əməkdaşlıq</Link>
-              <Link to={'/portfolio'}>Komandamız</Link>
-              <Link to={'/career'}>Oyunlar</Link>
+              <Link to={'/about'} className="hover:text-orange">Haqqımızda</Link>
+              <Link to={'/zeux'} className="hover:text-orange">Əməkdaşlıq</Link>
+              <Link to={'/portfolio'} className="hover:text-orange">Komandamız</Link>
+              <Link to={'/career'} className="hover:text-orange">Oyunlar</Link>
             </div>
             <div className=" flex flex-col gap-4 ">
-              <Link to={'/servis'} className="md:w-[20vw] xs:w-full xs:text-[1.4rem]">Servis</Link>
+              <Link to={'/servis'} className="md:w-[20vw] xs:w-full xs:text-[1.4rem] hover:text-orange">Servis</Link>
               <p className="lg:w-[25vw] xs:w-full xs:text-[1.4rem]">Oyun dünyasında özünüzü itirin və ən yaxşı təcrübə üçün saytımıza qoşulun!</p>
-              <Link to={'tel:+90889097890'} className="md:w-[20vw] xs:w-full xs:text-[1.4rem]">+994 55 774 85 48</Link>
+              <Link to={'tel:+90889097890'} className="md:w-[20vw] xs:w-full xs:text-[1.4rem] hover:text-orange">+994 55 774 85 48</Link>
             </div>
             <div>
               <div className=" flex flex-col gap-3 py-3">
