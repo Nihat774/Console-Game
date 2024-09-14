@@ -1,5 +1,4 @@
 // import { Link } from "react-router-dom"
-
 import { CvButtonType } from "../../components/MyTypes"
 
 function CvButton({cv,to}:CvButtonType) {
