@@ -17,7 +17,7 @@ function Header() {
               <img className="h-[13vh] md:w-[35vw] object-contain" src="../logo/console game-endlogo.png" alt="" />
             </Link>
           </div>
-          <nav className="md:flex md:justify-between md:text-[1.4rem] gap-4 items-center xs:hidden w-[75%] text-white">
+          <nav className="md:flex md:justify-between md:text-[1.4rem] gap-4 items-center xs:hidden w-[75%] text-white lg:text-[1.8rem] ">
             <NavLink to={'/'}>Əsas səhifə</NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "active" : ""
@@ -44,8 +44,8 @@ function Header() {
           </div>
           <i onClick={handleClick} className={clicked ? "fa-solid fa-xmark border w-fit h-fit font-bold text-[1.5rem] p-3 text-black border-black" : "fa-solid fa-bars border w-fit h-fit font-bold text-[1.5rem] p-3 text-black border-black"}></i>
         </div>
-        <nav className={`flex flex-col gap-5 text-[1.4rem] xs:py-3 xs:text-[1.5rem] xs:font-semibold text-black h-fit text-center ${clicked ? "flex" : "hidden"}`}> 
-          <NavLink to={'/'}>Əsas səhifə</NavLink>
+        <nav className={`flex flex-col gap-5  xs:py-3 xs:text-[1.5rem] xs:font-semibold text-black h-fit text-center ${clicked ? "flex" : "hidden"}`}> 
+          <NavLink to={'/'} >Əsas səhifə</NavLink>
           <NavLink className={({ isActive }) =>
             isActive ? "active" : ""
           } to={'/about'}>Haqqımızda</NavLink>

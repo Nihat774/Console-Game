@@ -15,8 +15,8 @@ function Footer() {
                 <img className="md:h-[13vh] md:w-[15vw] xs:w-[40vw] object-contain" src="../logo/console game-endlogo.png" alt="" />
               </Link>
 
-              <p className="md:w-[20vw] xs:w-full ">Console Game komandası olaraq xidmətinizdəyik.</p>
-              <Link to={'/'} className="text-orange">consolegame.com</Link>
+              <p className="md:w-[20vw] xs:w-full text-[1.4rem]">Console Game komandası olaraq xidmətinizdəyik.</p>
+              <Link to={'/'} className="text-orange text-[1.2rem]">consolegame.com</Link>
             </div>
 
             <div className="flex flex-col gap-4 xs:text-[1.5rem] ">

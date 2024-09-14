@@ -9,10 +9,10 @@ function HomePage() {
   return (
     <>
       <section className=" bg-black text-white flex justify-around p-5">
-        <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-5">
-          <p className="text-orange font-bold">3D game Dev </p>
-          <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold  md:w-[27vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
-          <p className="lg:w-[30vw]">Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
+        <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-7">
+          <p className="text-orange font-bold text-[1.4rem]">3D game Dev </p>
+          <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold lg:text-[4rem]  md:w-[27vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
+          <p className="lg:w-[30vw] lg:text-[1.4rem]">Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
           <Button onClick={() => pathname("/about")}
             txt1='Ətraflı' txt2={<i className="fa-solid fa-caret-right"></i>} still='rounded-[20px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] ' />
         </div>
@@ -26,7 +26,7 @@ function HomePage() {
       </section>
 
       <section className="">
-        <div className="flex justify-between  place-items-center bg-black  lg:h-[30vh] xs:h-[15vh]">
+        <div className="flex justify-between  place-items-center bg-black  lg:h-[20vh] xs:h-[15vh]">
           <p className="md:text-[1.8rem] xs:text-[1.4rem] font-bold text-white  ml-[5vw]">Hazırda trend olan oyunlarımız</p>
           <Button2 />
         </div>
