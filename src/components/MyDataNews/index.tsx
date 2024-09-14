@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { INewsType } from "../MyTypes";
 import CvButton from "../../ui/CvButton";
 
-
 export function AllNews() {
     const [news, setNews] = useState([])
     const url = "http://localhost:3000/ourTeams"
@@ -22,8 +21,14 @@ export function AllNews() {
 
                                 <div >
 
+
                                     <img className=" xs:h-[50vh] xs:w-full flex  lg:h-[60vh] lg:w-[35vw] object-cover rounded-[10px]" src={img} alt="game-image" />
 
+
+
+                                    <img className=" xs:h-[50vh] xs:w-full flex  lg:h-[60vh] lg:w-[35vw] object-cover rounded-[10px]" src={img} alt="game-ima
+
+                                    <img className="lg:h-[60vh]  w-[35vw] object-cover rounded-[10px]" src={img} alt="game-image" />
 
                                 </div>
 
@@ -39,6 +44,4 @@ export function AllNews() {
             })}
         </>
     )
-
-
 }
