@@ -21,7 +21,9 @@ export function AllNews() {
 
                                 <div >
 
-                                    <img className=" xs:h-[50vh] xs:w-full flex  lg:h-[60vh] lg:w-[35vw] object-cover rounded-[10px]" src={img} alt="game-image" />
+
+                                    <img className=" xs:h-[50vh] xs:w-full flex  lg:h-[60vh] lg:w-[35vw] object-cover rounded-[10px]" src={img} alt="game-ima
+
                                     <img className="lg:h-[60vh]  w-[35vw] object-cover rounded-[10px]" src={img} alt="game-image" />
                                 </div>
 
