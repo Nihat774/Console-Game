@@ -27,7 +27,7 @@ function AboutPage() {
             <p className="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis atque ab tenetur placeat culpa ullam deserunt minima
               omnis error, porro exercitationem molestiae?</p>
 
-            <Button still=" w-[14vw] py-2 text-[1.4rem] rounded-[20px] pl-3" txt2={<i className="fa-solid fa-arrow-right px-3"></i>} txt1="Xəbərlərə gedin" />
+            <Button still=" w-[14vw] py-2 text-[1.4rem] rounded-[20px] pl-3" txt2={<i className="fa-solid fa-arrow-right px-3"></i>} txt1="get in touch" />
           </div>
         </div>
 
