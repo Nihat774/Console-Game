@@ -23,11 +23,19 @@ function AboutPage() {
               <Link className="text-orange text-[1.5rem]" to={'/about'}>About us</Link>
             </div>
 
+
+            <p className="font-bold xs:text-[1.4rem] lg:text-4xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit?</p>
+            <p className="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis atque ab tenetur placeat culpa ullam deserunt minima
+              omnis error, porro exercitationem molestiae?</p>
+
+            <Button still="  xs:w-[50vw] lg:w-[20vw]  py-2 text-[1.4rem] rounded-[10px] pl-3" txt2={<i className="fa-solid fa-arrow-right px-3"></i>} txt1="get in touch" />
+
             <p className="font-bold  lg:text-4xl md:text-[1.6rem] xs:text-[1.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <p className="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis atque ab tenetur placeat culpa ullam deserunt minima
               omnis error, porro exercitationem molestiae?</p>
 
             <Button still=" w-[16vw] p-2 text-[1.4rem] rounded-[10px] " txt2={<i className="fa-solid fa-arrow-right"></i>} txt1="Get in touch" />
+
           </div>
         </div>
 
@@ -63,10 +71,17 @@ function AboutPage() {
 
       <div className="flex justify-evenly  bg-qara h-fit text-white xs:flex-col lg:flex-row xs:gap-5 ">
         <div className='flex flex-col justify-end '>
+
+          <img className="lg:h-[60vh] lg:w-[30vw] rounded-t-[10px] xs:h-[50vh] xs:w-[100vh]	 " src="/about/photo2.webp" alt="" />
+        </div>
+
+        <div className="lg:w-[40%] lg:h-[83%] flex flex-col lg:justify-end  gap-7 xs:w-[85vw] xs:justify-start xs:h-fit xs:p-5">
+
           <img className="lg:h-[60vh]  lg:w-[40vw] rounded-t-[10px] xs:h-[50vh] xs:w-full md:h-[50vh]	" src="/about/photo2.webp " alt="" />
         </div>
 
         <div className=" md:h-[30vh] lg:w-[30%] lg:h-[60vh] flex flex-col justify-center  gap-7 xs:p-5">
+
           <p className='font-semibold'>Lorem, ipsum.</p>
           <h3 className="text-4xl font-semibold" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, rerum ab. Itaque illo rerum porro, vel facilis nobis eius
