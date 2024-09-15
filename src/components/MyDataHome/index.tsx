@@ -19,7 +19,7 @@ function Data() {
 
                                 <img className='lg:w-[20vw] lg:h-[50vh] md:w-[40vw] md:h-[35vh] rounded-[15px]' src={img} alt="" />
 
-                                <img src={img} className='lg:w-[20vw] rounded-[30px] lg:h-[55vh] md:w-[40vw] md:h-[40vh] xs:w-full' alt="" />
+                                {/* <img src={img} className='lg:w-[20vw] rounded-[30px] lg:h-[55vh] md:w-[40vw] md:h-[40vh] xs:w-full' alt="" /> */}
 
                                 <p className='flex gap-2 font-bold  p-4 justify-center text-white'>
                                     <img src="../public/home/fire 1.svg" className='bg-black' alt="" />

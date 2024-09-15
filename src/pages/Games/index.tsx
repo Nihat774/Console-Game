@@ -19,7 +19,7 @@ function GamesPage() {
         <>
             <div className="bg-orange px-3 items-center">
 
-                <div className="  flex md:flex-row lg:flex-row  lg:justify-between md:h-[12vh] lg:h-[15vh] xs:flex-col xs:p-4 xs:gap-7 xs:justify-around items-center  xs:h-fit ">
+                {/* <div className="  flex md:flex-row lg:flex-row  lg:justify-between md:h-[12vh] lg:h-[15vh] xs:flex-col xs:p-4 xs:gap-7 xs:justify-around items-center  xs:h-fit ">
                     <div><Link to={'/'} className="md:text-[2rem] xs:text-[1.7rem]  text-black font-bold">consolegame.com</Link></div>
                     <div>
                         <input
@@ -28,7 +28,7 @@ function GamesPage() {
                             onChange={(e) => setSearch(e.target.value)}
                             className=" md:w-[30vw] xs:w-[45vw] xs:py-2 lg:h-[10vh] md:h-[7vh] md:px-3 rounded-[15px] px-2 text-[1.4rem]"
                             placeholder="Oyun Axtar" />
-                    </div>
+                    </div> */}
 
                 <div className="  md:flex md:flex-row md:h-[12vh] lg:h-[15vh] xs:flex-col xs:p-4 xs:gap-7 justify-around items-center  xs:h-fit ">
                     <Link to={'/'} className="md:text-[2rem] xs:text-[1.7rem]  text-black font-bold">consolegame.com</Link>
@@ -50,7 +50,7 @@ function GamesPage() {
 
                                     <div onClick={() => gameLocation(`${id}`)}><img className="cursor-pointer md::w-[20vw] md:h-[60vh]  xs:w-[90vw] xs:h-[55vh] md:object-cover xs:object-fill  rounded-[10px]" src={img} alt="" /></div>
 
-                                    <div><img className="md:w-[50vw] md:h-[45vh]  xs:w-[90vw] xs:h-[55vh] md:object-cover xs:object-fill  rounded-[10px]" src={img} alt="" /></div>
+                                    {/* <div><img className="md:w-[50vw] md:h-[45vh]  xs:w-[90vw] xs:h-[55vh] md:object-cover xs:object-fill  rounded-[10px]" src={img} alt="" /></div> */}
 
                                     <div className="flex justify-between py-3 px-1">
                                         <p className="text-[1.4rem] font-bold ">{name}</p>
