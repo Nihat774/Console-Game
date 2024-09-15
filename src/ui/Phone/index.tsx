@@ -36,8 +36,8 @@ function Phone() {
                                     </div>
                                 </div>
 
-                                <div className="flex gap-1">
-                                    <div className="border rounded-[6px] border-blue-500 w-[20vw]">
+                                <div className="flex gap-3">
+                                    <div className="border rounded-[6px] border-blue-500 w-[25vw]">
                                         <p className="text-blue-500 text-[.8rem] font-semibold  flex justify-center items-center py-2"><i className="pt-1 px-2 fa-solid fa-plus"></i> FOLLOW</p>
                                     </div>
 

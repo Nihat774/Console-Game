@@ -21,9 +21,9 @@ function Footer() {
 
             <div className="flex flex-col gap-4 xs:text-[1.5rem] ">
               <Link to={'/about'} className="hover:text-orange">Haqqımızda</Link>
-              <Link to={'/zeux'} className="hover:text-orange">Əməkdaşlıq</Link>
-              <Link to={'/portfolio'} className="hover:text-orange">Komandamız</Link>
-              <Link to={'/career'} className="hover:text-orange">Oyunlar</Link>
+              <Link to={'/contact'} className="hover:text-orange">Əməkdaşlıq</Link>
+              <Link to={'/news'} className="hover:text-orange">Komandamız</Link>
+              <Link to={'/games'} className="hover:text-orange">Oyunlar</Link>
             </div>
             <div className=" flex flex-col gap-4 ">
               <Link to={'/servis'} className="md:w-[20vw] xs:w-full xs:text-[1.4rem] hover:text-orange">Servis</Link>

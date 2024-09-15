@@ -8,30 +8,30 @@ function HomePage() {
   let pathname = useNavigate()
   return (
     <>
-      <section className=" bg-black text-white flex justify-around p-5">
-        <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-5">
-          <p className="text-orange font-bold">3D game Dev </p>
-          <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold  md:w-[27vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
-          <p className="lg:w-[30vw]">Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
+      <section className=" bg-black text-white flex justify-around px-5">
+        <div className="xl:h-[100vh] md:w-[30vw] lg:h-[85vh]  lg:w-full xs:w-full xs:p-5 xs:gap-5 flex flex-col  justify-evenly">
+          <p className="text-orange font-bold md:text-[1.4rem]">3D game Dev </p>
+          <p className="lg:text-[4rem] md:text-[1.6rem] xl:text-[4rem] xs:text-[1.3rem] font-bold  md:w-[27vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
+          <p className="lg:w-[30vw] lg:text-[1.4rem] md:text-[1.3rem]">Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
           <Button onClick={() => pathname("/about")}
-            txt1='Ətraflı' txt2={<i className="fa-solid fa-caret-right"></i>} still='rounded-[20px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] ' />
+            txt1='Ətraflı' txt2={<i className="fa-solid fa-caret-right"></i>} still='rounded-[10px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem]' />
         </div>
 
         <div className="">
-          <img className="md:absolute md:top-[27%] md:right-[43%] lg:right-[36%]  md:block xs:hidden" src="/home/cry 1.png" alt="" />
-          <img className="md:absolute lg:right-[12%] lg:top-[35%] md:top-[28%] md:right-[17%] md:block xs:hidden" src="/home/unreal 1.png" alt="" />
-          <img className="md:absolute lg:top-[55%] md:top-[43%] md:left-[37%] md:block xs:hidden" src="/home/unity 1.png" alt="" />
+          <img className="absolute lg:right-[36%] lg:top-[33%]  md:top-[15%] md:right-[43%]  md:block xs:hidden" src="/home/cry 1.png" alt="" />
+          <img className="absolute lg:right-[12%] lg:top-[35%] md:top-[16%] md:right-[14%] md:block xs:hidden" src="/home/unreal 1.png" alt="" />
+          <img className="absolute lg:top-[55%] md:top-[43%] md:left-[37%] md:block xs:hidden" src="/home/unity 1.png" alt="" />
           <div className="lg:h-[85vh] md:w-[40vw] md:h-[40vh] md:object-contain md:flex xs:hidden "><img className="w-[100%] h-[100%]" src="../public/home/joy_stick 1.png" alt="console page" /></div>
         </div>
       </section>
 
       <section className="">
-        <div className="flex justify-between  place-items-center bg-black  lg:h-[30vh] xs:h-[15vh]">
+        <div className="flex justify-between  place-items-center bg-black  lg:h-[18vh] xs:h-[15vh]">
           <p className="md:text-[1.8rem] xs:text-[1.4rem] font-bold text-white  ml-[5vw]">Hazırda trend olan oyunlarımız</p>
           <Button2 />
         </div>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 xs:grid-cols-1 place-items-center bg-black xs:h-fit xs:py-5 md:h-[70vh]">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 xs:grid-cols-1 place-items-center bg-black xs:h-fit xs:py-5 md:fit">
           <Data />
         </div>
       </section>
@@ -39,16 +39,16 @@ function HomePage() {
       <section className="bg-black flex flex-col gap-4 ">
 
         <div className=" text-white flex justify-center ">
-          <p className="md:text-[2rem] font-bold md:w-[70vw] lg:w-[50vw] py-3 xs:full xs:text-[1.5rem] xs:px-4">Köhnə oyunlardan yoruldunuz? Elə isə doğru məkandasınız.</p>
+          <p className="md:text-[2rem] font-bold md:w-[70vw] lg:w-[50vw] py-5 xs:full xs:text-[1.5rem] xs:px-4">Köhnə oyunlardan yoruldunuz? Elə isə doğru məkandasınız.</p>
         </div>
 
         <div className="md:w-full xs-full  flex flex-col md:items-center xs:items-center justify-evenly ">
-          <p className="lg:text-[1.3rem] md:text-[1.5rem] font-bold  md:w-[35vw] xs-full xs:py-3 text-white">Console Game</p>
+          <p className="lg:text-[1.6rem] md:text-[1.5rem] font-bold md:w-[45vw] xs-full xs:py-3 xs:text-[1.4rem] text-white">Console Game</p>
           <p className="text-wstone
            md:w-[70vw] xs:w-full md:text-[1.6rem] lg:text-[1.4rem] xs:text-[1.2rem] xs:p-3">Yeni,effektiv oyunlarımızı sizin istifadənizə verməkdən qürür duyuruq. </p>
         </div>
 
-        <div className="flex justify-center md:h-[100vh] xs:h-fit ">
+        <div className="flex justify-center md:h-[80vh] xs:h-fit ">
           <img className="object-cover md:h-[70vh] xs:h-[50vh]" src="../home/Rectangle 4.png" alt="image" />
         </div>
       </section>
@@ -60,9 +60,8 @@ function HomePage() {
             <h2 className="relative z-30 md:text-[1.8rem] font-poppins font-bold xs:text-[1.4rem] ">Siz də zövqünüzə uyğun oyunları bizimlə dizayn edə bilərsiniz.</h2>
             <p className="relative z-30 font-semibold  text-[1.4rem]">Bu günə qədər 100+ müştəriyə xidmət göstərmiş, bir çox yeni oyunların diyaznında iştirak etmişik.</p>
           </div>
-          <div className="grid md:grid-cols-4  xs:grid-cols-1 xs:gap-7   relative z-30 md:w-[60vw] xs:w-[80vw]">
+          <div className="grid md:grid-cols-4  xs:grid-cols-1 xs:gap-7 py-5   relative z-30 lg:w-[60vw] xs:w-[80vw] ">
             <Card txt="Mobile Game Development">{<i className="fa-solid fa-mobile-screen rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
-
             <Card txt="PC Game Development" >{<i className="fa-solid fa-laptop rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="PS4 Game Development" >{<i className="fa-brands fa-playstation rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="3D Grafic Design" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem] w-fit"></i>} </Card>
