@@ -12,7 +12,11 @@
     },
     {
       "id": 2,
+
       "img": "/about/photo2.webp",
+
+      "img": "/home/Ractangle 24.webp",
+
       "followers": "75"
     },
     {
@@ -173,7 +177,7 @@
       "name": "Aslan Həmidli",
       "img": "public/news/photoNew.jpg",
       "specialty": "PS4 Game Developer",
-      "about": "Hər kəsə salam. Mən Brown. Təhsilimi və təcrübəmi Amerikada almışam.  Bu komandada sizə xidmıt göstərməkdən qürür duyuram.",
+      "about": "Hər kəsə salam. Mən Aslan. Təhsilimi və təcrübəmi Amerikada almışam. Bu komandada sizə xidmət göstərməkdən qürür duyuram.",
       "cv": "public/CV/Aslan CV.pdf"
     }
   ]

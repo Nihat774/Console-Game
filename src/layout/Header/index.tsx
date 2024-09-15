@@ -10,14 +10,22 @@ function Header() {
   return (
     <>
       {/* DESKOP NAVBAR  */}
+
       <header className="bg-black text-white  sm:hidden  lg:flex ">
+
+      <header className="bg-black text-white  xs:hidden  lg:flex ">
+
         <div className="container mx-auto py-5 flex gap-3 items-center ">
-          <div className="font-bold text-[1.8rem] w-fit md:block xs:hidden">
+          <div className="font-bold text-[1.8rem] w-fit lg:block xs:hidden">
             <Link to={'/'} className="">
-              <img className="h-[13vh] md:w-[35vw] object-contain" src="../logo/console game-endlogo.png" alt="" />
+              <img className="h-[13vh] lg:w-[35vw] object-contain" src="../logo/console game-endlogo.png" alt="" />
             </Link>
           </div>
+
           <nav className="md:flex md:justify-between md:text-[1.4rem] gap-4 items-center xs:hidden w-[75%] text-white lg:text-[1.8rem] ">
+
+          <nav className="lg:flex lg:justify-between lg:text-[1.6rem] lg:font-semibold gap-4 items-center xs:hidden w-[75%] text-white">
+
             <NavLink to={'/'}>Əsas səhifə</NavLink>
             <NavLink className={({ isActive }) =>
               isActive ? "active" : ""
@@ -54,7 +62,7 @@ function Header() {
           } to={'/games'}>Oyunlar</NavLink>
           <NavLink className={({ isActive }) =>
             isActive ? "active" : ""
-          } to={'/news'}>Xəbərlər</NavLink>
+          } to={'/news'}>Komandamız</NavLink>
           <NavLink className={({ isActive }) =>
             isActive ? "active" : ""
           } to={'/servis'}>Servis</NavLink>
