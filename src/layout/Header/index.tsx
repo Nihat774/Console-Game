@@ -10,7 +10,7 @@ function Header() {
   return (
     <>
       {/* DESKOP NAVBAR  */}
-      <header className="bg-black text-white  sm:hidden  md:flex ">
+      <header className="bg-black text-white  sm:hidden  lg:flex ">
         <div className="container mx-auto py-5 flex gap-3 items-center ">
           <div className="font-bold text-[1.8rem] w-fit md:block xs:hidden">
             <Link to={'/'} className="">
@@ -36,7 +36,7 @@ function Header() {
         </div>
       </header>
       {/* PHONE NAVBAR */}
-      <header className="w-full bg-white  border h-fit xs:sticky xs:top-0 z-50 md:hidden ">
+      <header className="w-full bg-white  border h-fit xs:sticky xs:top-0 z-50 lg:hidden ">
 
         <div className="flex justify-between items-center  p-3">
           <div className="">

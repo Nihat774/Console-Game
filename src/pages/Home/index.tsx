@@ -11,16 +11,16 @@ function HomePage() {
       <section className=" bg-black text-white flex justify-around p-5">
         <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-7">
           <p className="text-orange font-bold text-[1.4rem]">3D game Dev </p>
-          <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold lg:text-[4rem]  md:w-[27vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
-          <p className="lg:w-[30vw] lg:text-[1.4rem]">Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
+          <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold lg:text-[4rem]  md:w-[30vw] ">Müştərilərimiz üçün hansı işləri görürük ?</p>
+          <p className="lg:w-[30vw] lg:text-[1.4rem] md:w-[40vw]">Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı və yeni oyunların hazırlanmasında bizim komandaya güvənə bilərsiniz. </p>
           <Button onClick={() => pathname("/about")}
-            txt1='Ətraflı' txt2={<i className="fa-solid fa-caret-right"></i>} still='rounded-[20px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] ' />
+            txt1='Ətraflı' txt2={<i className="fa-solid fa-caret-right"></i>} still='rounded-[10px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] ' />
         </div>
 
         <div className="">
-          <img className="md:absolute md:top-[27%] md:right-[43%] lg:right-[36%]  md:block xs:hidden" src="/home/cry 1.png" alt="" />
-          <img className="md:absolute lg:right-[12%] lg:top-[35%] md:top-[28%] md:right-[17%] md:block xs:hidden" src="/home/unreal 1.png" alt="" />
-          <img className="md:absolute lg:top-[55%] md:top-[43%] md:left-[37%] md:block xs:hidden" src="/home/unity 1.png" alt="" />
+          <img className="absolute  md:hidden lg:right-[36%]  xs:hidden" src="/home/cry 1.png" alt="" />
+          <img className="absolute lg:right-[12%] lg:top-[35%] md:top-[17%] md:right-[14%] md:block xs:hidden" src="/home/unreal 1.png" alt="" />
+          <img className="absolute lg:top-[55%] md:top-[57%] md:left-[57%] md:block xs:hidden" src="/home/unity 1.png" alt="" />
           <div className="lg:h-[85vh] md:w-[40vw] md:h-[40vh] md:object-contain md:flex xs:hidden "><img className="w-[100%] h-[100%]" src="../public/home/joy_stick 1.png" alt="console page" /></div>
         </div>
       </section>
@@ -60,16 +60,15 @@ function HomePage() {
             <h2 className="relative z-30 md:text-[1.8rem] font-poppins font-bold xs:text-[1.4rem] ">Siz də zövqünüzə uyğun oyunları bizimlə dizayn edə bilərsiniz.</h2>
             <p className="relative z-30 font-semibold  text-[1.4rem]">Bu günə qədər 100+ müştəriyə xidmət göstərmiş, bir çox yeni oyunların diyaznında iştirak etmişik.</p>
           </div>
-          <div className="grid md:grid-cols-4  xs:grid-cols-1 xs:gap-7   relative z-30 md:w-[60vw] xs:w-[80vw]">
+          <div className="grid md:grid-cols-4  xs:grid-cols-1 xs:gap-7 xs:py-5   relative z-30 md:w-[60vw] xs:w-[80vw]">
             <Card txt="Mobile Game Development">{<i className="fa-solid fa-mobile-screen rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
-
             <Card txt="PC Game Development" >{<i className="fa-solid fa-laptop rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="PS4 Game Development" >{<i className="fa-brands fa-playstation rounded-full p-5 text-orange bg-white text-[2rem]"></i>}</Card>
             <Card txt="3D Grafic Design" >{<i className="fa-solid fa-palette rounded-full p-5 text-orange bg-white text-[2rem] w-fit"></i>} </Card>
           </div>
         </article>
       </section>
-      <section className="bg-black"> 
+      <section className="bg-black">
         <p className="bg-black text-white text-[1.5rem] font-bold py-3 text-center">Ən çox verilən suallar</p>
         <MyAccordion />
       </section>
