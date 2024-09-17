@@ -22,6 +22,7 @@
     "aos": "^2.3.4",
     "flowbite-react": "^0.10.1",
     "font-awesome": "^4.7.0",
+    "framer-motion": "^11.5.4",
     "google-fonts": "^1.0.0",
     "json-server": "^1.0.0-beta.2",
     "react": "^18.3.1",
