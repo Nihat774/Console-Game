@@ -8,6 +8,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 
 function ContactPage() {
+  const googleMapsApiKey = "YOUR_API_KEY";
   return (
     <>
       <section className="contact__us">
@@ -26,7 +27,15 @@ function ContactPage() {
           </p>
         </div>
         <div className="contact__map">
-          <img src="../../public/home/map.jpg" alt="" />
+          {/* <img src="../../public/home/map.jpg" alt="" /> */}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7483178803554!2d49.812870875480556!3d40.37010465847661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc397d94dc3%3A0x617bc46b47244c00!2sAzerbaijan%20Technical%20University!5e0!3m2!1str!2saz!4v1726765730028!5m2!1str!2saz"
+            width="70%"
+            height="500"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div className="contact__us__group">
           <div className="contact__us__group__first">
