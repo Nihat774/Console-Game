@@ -31,8 +31,8 @@ function HomePage() {
           <Button2 />
         </div>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 xs:grid-cols-1 place-items-center bg-black xs:h-fit xs:py-5 md:h-[70vh]">
-          <Data />
+        <div className="grid lg:grid-cols-4 gap-5 md:grid-cols-2 xs:grid-cols-1 place-items-center bg-black xs:h-fit xs:py-5 md:h-fit">
+          <Data/>
         </div>
       </section>
 

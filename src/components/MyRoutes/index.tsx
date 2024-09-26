@@ -8,7 +8,9 @@ const NewsPage = lazy(() => import("../../pages/News"))
 const GamesPage = lazy(() => import("../../pages/Games"))
 const NotFoundPage = lazy(() => import("../../pages/NotFound"))
 const ServicesPage = lazy(() => import("../../pages/Services"))
-// const SingleGamePage = lazy(()=>import("../SingleGame"))
+const SingleGamePage = lazy(()=>import("../SingleGame"))
+const LikedPage = lazy(()=>import('../../pages/LikedPage'))
+
 function MyRoutes() {
     return (
         <>
@@ -19,9 +21,10 @@ function MyRoutes() {
                         <Route path='/contact' element={<ContactPage />} />
                         <Route path='/news' element={<NewsPage />} />
                         <Route path='/games' element={<GamesPage />} />
-                        {/* <Route path={`http://localhost:3000/allgames/${id}`} element={<SingleGamePage />} /> */}
+                        <Route path="/games/:id" element={<SingleGamePage />} />
                         <Route path='/servis' element={<ServicesPage />} />
                         <Route path='*' element={<NotFoundPage />} />
+                        <Route path="likedgame" element={<LikedPage/>} />
                     </Routes>
                 </Suspense>
         </>
