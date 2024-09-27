@@ -1,21 +1,11 @@
-function TopScroll() {
-    function ScrollTop() {
-        return window.scrollTo({ top: 0, behavior: "smooth" })
-    }
-    console.log();
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 50) {
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-        return (
-            <>
-                <div>
-                    <i className="fa-solid fa-arrow-up border p-3 fixed right-[5%] bottom-[15%] rounded-full text-[1.4rem] bg-white z-99 "
-                        onClick={ScrollTop}></i>
-                </div>
-            </>
-        )
-    }
+const ScrollTop: React.FC = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [pathname]);
+    return null
 }
-
-
-export default TopScroll;
+export default ScrollTop;
