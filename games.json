@@ -1,43 +1,24 @@
 {
   "games": [
     {
-      "id":1,
-      "img": "/home/Rectangle 23.png",
-      "followers": "40"
-    },
-    {
-      "id":4,
-      "img": "/home/Rectangle 26 (1).png",
-      "followers": "60"
-    },
-    {
-      "id":2,
-      "img": "/home/Rectangle 24.png",
-      "followers": "75"
-    },
-    {
-      "id":3,
-      "img": "/home/Rectangle 26.png",
-      "followers": "95"
-    }
-  ],
-  "allgames": [
-    {
       "id": 1,
-      "img": "/games/game1.jpeg",
-      "name": "Modern Warfare",
+      "img": "/games/psgame.jpg",
+      "name": "Dom Eternal",
       "oldPrice": "$120",
       "price": "$100",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "followers": "40",
+      "category": "fight"
     },
     {
       "id": 2,
       "img": "/games/game2.webp",
       "name": "World War",
       "oldPrice": "$70",
-      "price": "$50"
-      ,
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "price": "$50",
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "followers": "60",
+      "category": "fight"
     },
     {
       "id": 3,
@@ -45,7 +26,9 @@
       "name": "Call of Duty",
       "oldPrice": "$100",
       "price": "$80",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "followers": "75",
+      "category": "fight"
     },
     {
       "id": 4,
@@ -53,7 +36,9 @@
       "name": "Ninja",
       "oldPrice": "$50",
       "price": "$30",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "followers": "95",
+      "category": "fight"
     },
     {
       "id": 5,
@@ -61,23 +46,26 @@
       "name": "Blur",
       "oldPrice": "$30",
       "price": "$20",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
     },
     {
       "id": 6,
-      "img": "/games/psgame2.jpeg",
-      "name": "Days Gone",
+      "img": "/games/psgame2.jpg",
+      "name": "Cyberpunk 2077",
       "oldPrice": "$20",
       "price": "$15",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
     },
     {
       "id": 7,
       "img": "/games/psgame3.jpeg",
-      "name": "Farcry 5",
+      "name": "Metal Gear Solid V",
       "oldPrice": "$20",
       "price": "$15",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
     },
     {
       "id": 8,
@@ -85,7 +73,8 @@
       "name": "Constrike",
       "oldPrice": "$45",
       "price": "$30",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
     },
     {
       "id": 9,
@@ -93,7 +82,9 @@
       "name": "Uncharted 4",
       "oldPrice": "$40",
       "price": "$30",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
+
     },
     {
       "id": 10,
@@ -101,7 +92,8 @@
       "name": "Counter Strike",
       "oldPrice": "$45",
       "price": "$35",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "fight"
     },
     {
       "id": 11,
@@ -109,7 +101,8 @@
       "name": "Subway Surfies",
       "oldPrice": "$55",
       "price": "$55",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
     },
     {
       "id": 12,
@@ -117,7 +110,8 @@
       "name": "Minecraft",
       "oldPrice": "$35",
       "price": "$25",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
     },
     {
       "id": 13,
@@ -125,7 +119,8 @@
       "name": "Hawked",
       "oldPrice": "$30",
       "price": "$20",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
     },
     {
       "id": 14,
@@ -133,7 +128,8 @@
       "name": "Core Keeper",
       "oldPrice": "$20",
       "price": "$10",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
     },
     {
       "id": 15,
@@ -141,38 +137,78 @@
       "name": "Assasins creed",
       "oldPrice": "$25",
       "price": "$15",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "fight"
+    },
+    {
+      "id": 16,
+      "img": "/games/psgame10.jpg",
+      "name": "Red Dead II",
+      "oldPrice": "$30",
+      "price": "$25",
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "fight"
+    },
+    {
+      "id": 17,
+      "img": "/games/psgame11.jpg",
+      "name": "The witcher",
+      "oldPrice": "$35",
+      "price": "$25",
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
+    },
+    {
+      "id": 18,
+      "img": "/games/psgame12.jpeg",
+      "name": "Halo Infinite",
+      "oldPrice": "$20",
+      "price": "$15",
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
+    },
+    {
+      "id": 19,
+      "img": "/games/psgame13.jpg",
+      "name": "GTA 5",
+      "oldPrice": "$10",
+      "price": "$7",
+      "about": "Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perferendis modi amet quam iusto soluta iste nesciunt, necessitatibus porro veritatis laboriosam optio dicta, eos officia magnam tempora asperiores, facere cumque.",
+      "category": "race"
     }
   ],
-  "ourTeams":[
+  "ourTeams": [
     {
-      "id":21,
-      "img":"../news/photo.jpg",
-      "name":"Nihat Məmmədov",
-      "specialty":"Web Developer",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "id": 21,
+      "img": "../news/photo.jpg",
+      "name": "Nihat Məmmədov",
+      "specialty": "Web Developer",
+      "about": "Hər kəsə salam , mənim 20 yaşım var, Hal-hazırda web developer olaraq işləyirəm . Sizlərə yeni üev oyunlar hazırlamaqdan məmnunluq duyuram . Oynayın, əylənin və dostlarınızla yarışın!",
+      "cv": "public/CV/Nihat CV.pdf"
     },
     {
-      "id":22,
-      "img":"../news/man-carousel-2.jpeg",
-      "name":"Fərid Abbaslı",
-      "specialty":"3D Design",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "id": 22,
+      "img": "../news/newImage.jpg",
+      "name": "Fərid Abbaslı",
+      "specialty": "3D Design",
+      "about": "Hər kəsə salam.Mən Fərid Abbaslı. 23 yaşım var. 3D dizayner olaraq işləyirəm. Bir çox xarici layihələrdə aktivlik göstərmişəm. Oyunlarınızın dizaynında bizə güvənə bilərsiniz. ",
+      "cv": "public/CV/Fərid CV.pdf"
     },
     {
-      "id":23,
-      "img":"../news/man-carousel-3.jpeg",
-      "name":"Murad Babayev",
-      "specialty":"Mobile Developer",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "id": 23,
+      "img": "../news/man-carousel-3.jpeg",
+      "name": "Murad Babayev",
+      "specialty": "Mobile Developer",
+      "about": "Hər kəsə salam. Mən Murad Babayev.Bu komandada Mobile developer olaraq işləyirəm. Yeni texnologiyalardan istifadə etdiyim üçün layihələrim daha maraqlı bəyəniləndir.",
+      "cv": "public/CV/Murad CV.pdf"
     },
     {
-      "id":24,
-      "name":"Jon Brown",
-      "img":"public/news/photoNew.jpg",
-      "specialty":"PS4 Game Developer",
-      "about":"Lorem ipsum dolor sit amet consectetur."
+      "id": 24,
+      "name": "Aslan Həmidli",
+      "img": "public/news/photoNew.jpg",
+      "specialty": "PS4 Game Developer",
+      "about": "Hər kəsə salam. Mən Aslan. Təhsilimi və təcrübəmi Amerikada almışam. Bu komandada sizə xidmət göstərməkdən qürür duyuram.",
+      "cv": "public/CV/Aslan CV.pdf"
     }
-    
   ]
 }

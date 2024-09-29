@@ -1,10 +1,8 @@
 import  {  useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { IData } from "../MyTypes"
 export function AllGames() {
   const [games, setGames] = useState([])
-  const { id } = useParams()
-  console.log(id);
   const url = "http://localhost:3000/allgames"
   fetch(url)
     .then((response) => response.json())

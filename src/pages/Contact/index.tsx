@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import "./Contact.scss";
 import { RiFacebookFill } from "react-icons/ri";
@@ -6,6 +7,9 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
+
+import Phone from "../../ui/Phone"
+
 
 function ContactPage() {
   const googleMapsApiKey = "YOUR_API_KEY";
@@ -131,6 +135,10 @@ function ContactPage() {
           </form>
         </div>
       </section>
+
+     <div>contactpage</div> 
+     <Phone />
+
     </>
   );
 }
