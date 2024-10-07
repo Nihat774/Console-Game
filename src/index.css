@@ -9,6 +9,6 @@
 }
 @layer components{
 .contanier{
-  @apply mx-auto w-[100%] ;
+  @apply w-[100%] ;
 }
 }

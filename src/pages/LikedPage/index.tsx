@@ -8,7 +8,19 @@ function LikedPage() {
   const data = useSelector((state: RootState) => state.cart.value);
   const [cartGame, setCartGame] = useState(data);
   const [say, setSay] = useState(1);
-
+  function increment() {
+    if(say<3){
+      setSay(say + 1);
+    }
+    else{
+      alert("Bir oyundan maksimum 3 ədəd almaq mümkündür!")
+    }
+  }
+  function decrement() {
+    if (say > 1) {
+      setSay(say - 1);
+    }
+  }
   useEffect(() => {
     setCartGame(data);
   }, [data]);
@@ -32,7 +44,7 @@ function LikedPage() {
             Geri
           </Link>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center h-[60vh] items-center">
           <p className="border text-[1.4rem] bg-orange text-white p-3">
             Səbətiniz boşdur.
           </p>
@@ -83,7 +95,11 @@ function LikedPage() {
                         </del>
                         {game.price}
                       </p>
-                      <p className="text-[1.4rem] font-semibold">say : {say}</p>
+                      <div className="flex gap-2">
+                        <p className="border font-semibold border-orange text-[1.5rem] px-2 py-0 cursor-pointer" onClick={decrement}>-</p>
+                        <p className="border font-semibold border-orange text-[1.5rem] px-2 py-0">{say}</p>
+                        <p className="border font-semibold border-orange text-[1.5rem] px-2 py-0 cursor-pointer" onClick={increment}>+</p>
+                      </div>
                     </div>
                   </div>
                 </div>
