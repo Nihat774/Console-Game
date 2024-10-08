@@ -13,20 +13,19 @@ function Modal({ text, style }: IModal) {
 
             <input type="checkbox" id="my_modal_6" className="modal-toggle" />
             <div className="modal flex flex-col gap-5 py-7 md:h-[60vh] xs:h-fit" role="dialog">
-                <form className="modal-box flex flex-col gap-5 py-7 md:h-[45vh]">
+                <form className="modal-box flex flex-col gap-5 py-5 md:h-[45vh]">
                     <p>Card code</p>
-                    <input type="text" required maxLength={12} className="lg:w-[24vw] md:w-[45vw] xs:w-[70vw] border border-black p-3 text-[1.3rem]" placeholder="*** *** *** ***" />
+                    <input type="number" required  maxLength={12} minLength={12} className="lg:w-[24vw] md:w-[45vw] xs:w-[70vw] border border-black p-3 text-[1.3rem]" placeholder="*** *** *** ***" />
 
                     <div className="flex justify-between md:w-[24vw]">
-                        <div>
-                            <p>Date</p>
-                            <input required className="lg:w-[10vw] md:w-[15vw] xs:w-[25vw] p-3 text-[1.5rem] border border-black" placeholder="00/00" type="text" name="" id="" />
-                        </div>
+                        <ruby className=" flex flex-col gap-1 justify-start" >
+                            <rt className="text-[1.4rem]">Date</rt>
+                            <input minLength={4}  required className="lg:w-[10vw] md:w-[15vw] xs:w-[25vw] p-3 text-[1.5rem] border border-black" placeholder="00/00" type="number" name="" id="" />
+                        </ruby>
 
-                        <div>
-                            <p>CVC</p>
-                            <input required className="lg:w-[11vw] md:w-[16vw] xs:w-[20vw] p-3 text-[1.5rem] border border-black" placeholder="***" type="text" name="" id="" />
-                        </div>
+                        <ruby className=" flex flex-col gap-1 justify-start" >
+                            <rt className="text-[1.4rem]">CVV</rt>
+                            <input minLength={4}  required className="lg:w-[10vw] md:w-[15vw] xs:w-[25vw] text-[1.5rem] border p-3 border-black" placeholder="***" type="number" name="" id="" />                        </ruby>
 
 
                     </div>
