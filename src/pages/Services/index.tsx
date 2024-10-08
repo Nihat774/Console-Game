@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 
 import Button2 from "../../ui/Button2";
+import Swipper from "../../ui/SwipperToServices";
+// import Swipper from "../../ui/SwipperToServices";
 function ServicesPage() {
   return (
     <>
@@ -187,7 +189,9 @@ function ServicesPage() {
           </div>
         </section>
 
-        <section className=""></section>
+        <section>
+          <Swipper />
+        </section>
       </div>
     </>
   );
