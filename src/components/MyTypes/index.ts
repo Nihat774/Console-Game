@@ -3,7 +3,7 @@ export type IChildren = {
 };
 export type IButton = {
   txt2: React.ReactNode;
-  onClick?: () => void;
+  onClick?: () =>void;
   txt1: string;
   still: string;
 };

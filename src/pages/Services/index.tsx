@@ -1,292 +1,130 @@
 import { Link } from "react-router-dom";
-
-import { FaUser, FaLocationDot, FaServer } from "react-icons/fa6";
-import { IoIosCheckmarkCircle } from "react-icons/io";
-import {  useRef } from "react";
-
-import "./services.scss";
-import { FaUser } from "react-icons/fa6";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaServer } from "react-icons/fa6";
-import { IoIosCheckmarkCircle } from "react-icons/io";
-import Button from "../../ui/Button";
+import CountUp from "react-countup";
 
 
 function ServicesPage() {
-  const iframeRef = useRef<HTMLIFrameElement | null>(null);
-
   return (
     <>
-
-      <section className="bg-black text-white">
-        <div className="text-center p-6">
-          <ul className="flex justify-center gap-4 text-white">
-
-      <section className="services">
-        <div className="services__header">
-          <ul>
-
-            <li>
-              <Link to={"/"}>Əsas səhifə</Link>
-            </li>
-            <li>&gt;</li>
-
-            <li className="text-orange-500">Servis</li>
-          </ul>
-          <h2 className="text-3xl font-semibold mt-2">
-            Lorem Ipsum is simply dummy text of the printing and.
-          </h2>
-          <p className="mt-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-        </div>
-
-        <div className="flex justify-center mt-12">
-          <div className="bg-[#1C140F] flex p-10 rounded-lg">
-            {[
-              { icon: <FaUser />, count: "90+", label: "Clients" },
-              { icon: <FaLocationDot />, count: "30+", label: "Countries" },
-              { icon: <FaServer />, count: "50+", label: "Projects" },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className={`flex items-center gap-6 p-6 ${
-                  index === 1 ? "border-x-2 border-[#EEEFF2]" : ""
-                }`}
-              >
-                <div className="w-14 h-14 rounded-full bg-[#FFECEC] flex justify-center items-center text-[#DC7000] text-lg">
-                  {item.icon}
-                </div>
-                <span className="text-2xl font-bold">
-                  {item.count}
-                  <br />
-                  <span className="text-lg font-normal">{item.label}</span>
-                </span>
-              </div>
-            ))}
+      <div className="contanier mx-auto bg-black">
+        <section className="bg-black flex flex-col items-center md:h-[70vh] xs:h-fit justify-center gap-7">
+          <div className="flex flex-col items-center gap-5 text-white">
+            <p className="flex items-center gap-2">
+              <Link to={"/"} className="text-[1.3rem]">
+                Home{" "}
+              </Link>
+              <i className="fa-solid fa-chevron-right"></i>
+              <p className="text-orange text-[1.3rem]">Services</p>
+            </p>
+            <p className="text-[1.5rem]">
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           </div>
-        </div>
 
-        <div className="flex justify-center mt-24 gap-20">
+          <div className="flex md:flex-row xs:flex-col justify-around bg-gray items-center border rounded-[15px] md:h-[30vh] w-[70vw] xs:h-fit xs:gap-7 xs:py-5">
+            <div className="flex h-full  gap-5 justify-center items-center">
+              <p>
+                <i className=" rounded-full p-5 fa-solid fa-user text-orange bg-white"></i>
+              </p>
+              <div className=" text-white">
+                <CountUp
+                  className="text-[1.3rem] font-bold"
+                  end={20}
+                  duration={2}
+                />
+                <span className="text-[1.3rem] font-bold">+</span>
+                <p>Clients</p>
+              </div>
+            </div>
+
+            <div className="md:h-[20vh] md:w-[2px] xs:h-[2px] xs:w-[20vh] bg-zinc-400"></div>
+
+            <div className="flex h-full gap-3 items-center">
+              <p>
+                <i className="border rounded-full p-5 fa-solid fa-location-dot text-orange bg-white "></i>
+              </p>
+              <div className=" text-white">
+                <CountUp
+                  className="text-[1.3rem] font-bold"
+                  end={15}
+                  duration={2}
+                />
+                <span className="text-[1.3rem] font-bold">+</span>
+                <p>Countries</p>
+              </div>
+            </div>
+
+            {/* <div className="h-[20vh] w-[2px] bg-zinc-400"></div> */}
+            <div className="md:h-[20vh] md:w-[2px] xs:h-[2px] xs:w-[20vh] bg-zinc-400"></div>
+            <div className="flex  h-full  gap-3 items-center">
+              <p>
+                <i className="border rounded-full p-5 fa-solid fa-bars-progress text-orange bg-white"></i>
+              </p>
+              <div className=" text-white">
+                <CountUp
+                  className="text-[1.3rem] font-bold"
+                  end={40}
+                  duration={2}
+                />
+                <span className="text-[1.3rem] font-bold">+</span>
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex md:flex-row xs:flex-col xs:py-5 xs:gap-5 justify-around items-center md:h-[70vh] xs:h-fit bg-black">
           <div>
             <iframe
-              ref={iframeRef}
-              title="YouTube Video"
-              src="https://www.youtube.com/embed/3wHL2VIaFcs?enablejsapi=1"
-              style={{
-                width: "670px",
-                height: "355px",
-                borderRadius: "15px",
-              }}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+              src="https://www.youtube.com/embed/y6vWl-8_0QI?si=DtcBOX_0IjNZyrSZ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              className="rounded-[20px] md:w-[40vw] md:h-[50vh] xs:h-fit"
+            ></iframe>
           </div>
 
-          <div className="flex flex-col gap-5 w-[425px]">
-            <h4 className="text-3xl font-bold">
-              Lorem Ipsum is simply dummy text.
-            </h4>
 
-            <li>Servis</li>
-          </ul>
-          <h2>24/7 Müştəri Xidməti və Texniki Dəstək</h2>
-          <p>
-          Platformamızda 24/7 texniki dəstək və müştəri xidməti ilə oyun təcrübənizi problemsiz yaşayacaqsınız.{" "}
-          </p>
-        </div>
-        <div className="services__groups">
-          <div className="services__group">
-            <div className="services__group__first">
-              <div className="services__group__first__icon">
-                <FaUser />
-              </div>
-              <span>
-                90+ <br />
-                <span>Clients</span>
-              </span>
-            </div>
-            <div className="services__group__second">
-              <div className="services__group__second__icon">
-                <FaLocationDot />
-              </div>
-              <span>
-                30+ <br />
-                <span>Countries</span>
-              </span>
-            </div>
-            <div className="services__group__third">
-              <div className="services__group__third__icon">
-                <FaServer />
-              </div>
-              <span>
-                50+ <br />
-                <span>Projects</span>
-              </span>
-            </div>
+              <p className="flex gap-2 items-center">
+                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
+                Lorem
+                <span className="">ipsum dolor sit.</span>
+              </p>
+
+              <p className="flex gap-2 items-center">
+                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
+                Lorem
+                <span className="">ipsum dolor sit.</span>
+              </p>
+
+
           </div>
-        </div>
-        <div className="services__video">
-          <div className="services__video__left">
-            <div>
-              <iframe
-                title="YouTube Video"
-                src={`https://www.youtube.com/embed/3wHL2VIaFcs`}
-                style={{
-                  width: "670px",
-                  height: "355px",
-                  borderRadius: "15px",
-                }}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </div>
-          <div className="services__video__right">
-            <h4>Daimi Texniki Dəstək Xidməti
-            </h4>
 
-            <h4>Lorem Ipsum is simply dummy text.</h4>
-
-            <p>
-            Oyunlarınızı problemsiz və sürətli şəkildə oynamaq üçün hər zaman yanınızdayıq. Mütəxəssis komandamız 24/7 sizə texniki dəstək və xidmət göstərir.
-
+          <div className="flex flex-col gap-5 md:w-[30vw] xs:w-full xs:p-3  text-white ">
+            <p className="text-[1.4rem] font-semibold ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              fugiat.
             </p>
-
-            {Array(4)
-              .fill("Lorem Ipsum is simply")
-              .map((text, idx) => (
-                <span key={idx} className="flex items-center text-sm">
-                  <IoIosCheckmarkCircle className="text-green-600 text-lg mr-1" />
-                  {text}
-                </span>
-              ))}
+            <p className="w-inherit">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A cum
+              quae incidunt rerum facere quos officia adipisci rem molestias
+              alias? Quibusdam facere nihil porro facilis doloremque obcaecati
+              adipisci maxime mollitia. Tempore non expedita porro sequi
+              accusantium.
+            </p>
+            <p className="w-inherit">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              minus earum ea!
+            </p>
+            <Button2 />
           </div>
-        </div>
+        </section>
 
-        <div className="flex flex-col gap-40 mt-36">
-          {[...Array(3)].map((_, idx) => (
-            <div key={idx} className="flex justify-center gap-36">
-              <div className="w-[535px] flex flex-col gap-10">
-                <h5 className="text-3xl font-bold">
-                  Lorem Ipsum is simply dummy text dummy text
-                </h5>
-                <p className="text-lg">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries,
-                </p>
-                <p className="text-lg">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <button className="bg-[#DC7000] w-44 h-12">Read more</button>
-              </div>
-              <div>
-                <img
-                  src={
-                    idx === 0
-                      ? "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23613624/Stray2.jpeg?quality=90&strip=all&crop=7.8125,0,84.375,100"
-                      : idx === 1
-                      ? "https://c4.wallpaperflare.com/wallpaper/320/142/500/akali-league-of-legends-akali-league-of-legends-league-of-legends-k-da-video-games-hd-wallpaper-preview.jpg"
-                      : "https://de.gamewallpapers.com/img_script/mobile_dir2/img.php?src=wallpaper_crysis_2_03_ipad.jpg&height=450&width=506&crop-to-fit&sharpen"
-                  }
-                  alt=""
-                  className="w-[490px] h-full"
-                />
-              </div>
-            </div>
-          ))}
-
-            <span>
-              <IoIosCheckmarkCircle className="icon__check" /> Hər zaman operativ dəstək
-
-
-            </span>
-            <span>
-              <IoIosCheckmarkCircle className="icon__check" /> Peşəkar və təcrübəli komanda
-
-            </span>
-            <span>
-              <IoIosCheckmarkCircle className="icon__check" /> Texniki problemlərin sürətli həlli
-
-            </span>
-            <span>
-              <IoIosCheckmarkCircle className="icon__check" /> Yeniliklər və təkmilləşdirmələr barədə məlumat
-
-
-            </span>
-          </div>
-        </div>
-        <div className="services__blogs">
-          <div className="services__blog">
-            <div className="services__blog__left">
-              <h5>Oyun Dünyasının Sərhədsiz Macəraları
-              </h5>
-              <p>
-              Konsol oyunlarında ən yaxşı təcrübəni yaşamaq üçün bizimlə olun. Platformamız, oyunsevərlərin ehtiyaclarını nəzərə alaraq, müxtəlif janr və üslublarda geniş oyun seçimi təqdim edir. İstər yeni çıxan oyunlar, istərsə də klassik əsərlər - hamısı bir arada, hər kəsin zövqünə uyğun bir şey var.
-
-Bizim platforma, sizi virtual dünyaların ən həyəcanlı məkanlarına aparacaq. Oyunçular, geniş açıq dünyalarda sərbəst hərəkət edə, mükəmməl hekayələrdə öz rollarını canlandıraraq, unudulmaz anlar yaşayacaqlar.
-              </p>
-              
-              <Button txt2={undefined} txt1={"Ətraflı"} still={""}/>         
-                 </div>
-            <div className="services__blog__right">
-              <img
-                src="https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23613624/Stray2.jpeg?quality=90&strip=all&crop=7.8125,0,84.375,100"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="services__blog">
-            <div className="services__blog__right">
-              <img
-                src="https://c4.wallpaperflare.com/wallpaper/320/142/500/akali-league-of-legends-akali-league-of-legends-league-of-legends-k-da-video-games-hd-wallpaper-preview.jpg"
-                alt=""
-              />
-            </div>
-            <div className="services__blog__left">
-              <h5>Oyun Təcrübəniz Burada Başlayır
-              </h5>
-              <p>
-              Oyun Platforması, oyunsevərlərin bütün ehtiyaclarını qarşılamaq məqsədilə yaradılmışdır. Müxtəlif janrlarda oyunlar təqdim edərək, hər bir istifadəçiyə unudulmaz bir təcrübə yaşatmağa hədəfləyirik. İstər aksiyon, istər macəra, istərsə də strategiya janrında olsun, burada hər kəs öz zövqünə uyğun oyunlar tapa bilər. Müasir texnologiyalarla təchiz olunmuş serverlərimiz, sürətli yüklənmə və fasiləsiz oyun axışı təmin edərək, oyunçulara optimal təcrübə təqdim edir.
-</p>
-             
-              <Button txt2={undefined} txt1={"Ətraflı"} still={""}/>     
-                     </div>
-          </div>
-          <div className="services__blog">
-            <div className="services__blog__left">
-              <h5> Console Game ilə Oyun Təcrübəsi </h5>
-              <p>
-              "Console Game, oyunsevərlər üçün yaradılmış müasir bir platformadır. Burada müxtəlif janrlarda və yaş qruplarına uyğun oyunlar tapa bilərsiniz. İstər gənc yaşda olan, istərsə də yaşlı oyunçular üçün xüsusi olaraq hazırlanmış oyunlar təqdim edirik. Hər bir oyun, əyləncə və yaradıcılıq dolu unudulmaz bir təcrübə təqdim edir.
-
-Platformamız, istifadəçilərin rahatlıqla oyun seçimi edə biləcəyi geniş bir kataloqdan ibarətdir.
-              </p>
-
-            
-              <Button txt2={undefined} txt1={"Ətraflı"} still={""}/>
-            </div>
-            <div className="services__blog__right">
-              <img
-                src="https://de.gamewallpapers.com/img_script/mobile_dir2/img.php?src=wallpaper_crysis_2_03_ipad.jpg&height=450&width=506&crop-to-fit&sharpen"
-                alt=""
-              />
-            </div>
-          </div>
-
-        </div>
-      </section>
+        <section>
+          <Swipper />
+        </section>
+      </div>
     </>
   );
 }
 
-
-export default ServicesPage;
-
-
+export default ServicesPage;

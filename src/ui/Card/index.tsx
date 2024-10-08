@@ -8,7 +8,7 @@ function Card({ txt, children }: ICard) {
                 <div>
                     {children}
                 </div>
-                <p className="text-[1.6rem]  md:w-[9vw]  xs:w-[40vw]">{txt}</p>
+                <p className="text-[1.6rem]  md:w-[13vw]  xs:w-[40vw]">{txt}</p>
                <i className="fa-solid fa-arrow-right text-orange text-[1.4rem]"></i>
             </Link>
         </>

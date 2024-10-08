@@ -1,6 +1,7 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 import { useState } from "react";
+import Login from "../../ui/LoginRegister";
 
 function Header() {
   let location = useNavigate();
@@ -13,19 +14,15 @@ function Header() {
     <>
       {/* DESKOP NAVBAR  */}
 
-      <header className=" text-white sticky top-0 z-40  xs:hidden  lg:flex bg-black p-5 justify-between">
-        {/* <div className="container py-5 flex  justify-between bg-green"> */}
-          <div className="font-bold text-[1.8rem]  lg:block xs:hidden">
-            <Link to={"/"} className="">
-              <img
-                className="h-[13vh] lg:w-[35vw] object-contain"
-                src="../logo/console game-endlogo.png"
-                alt=""
-              />
+      <header className=" text-white items-center sticky top-0 z-40  xs:hidden bg-black  lg:flex bg- p-5 justify-between">
+        <div className="container mx-auto flex  justify-between ">
+          <div className="font-bold text-[1.8rem]  items-center lg:flex xs:hidden">
+            <Link to={"/"} className="hover:text-orange duration-500">
+              Console Game
             </Link>
           </div>
 
-          <nav className="lg:flex lg:justify-between lg:text-[1.6rem] px-5 lg:font-semibold gap-4 items-center xs:hidden w-[90%]  text-white">
+          <nav className="lg:flex lg:text-[1.3rem] 2xl:text-[1.8rem] px-5 lg:font-semibold gap-9 items-center xs:hidden text-white">
             <NavLink to={"/"}>Əsas səhifə</NavLink>
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -55,11 +52,11 @@ function Header() {
               txt1="Əlaqə"
               txt2=""
               onClick={() => location("/contact")}
-              still="rounded-[10px] p-3"
+              still="rounded-[10px] p-2 hover:bg-transparent"
             />
-                   
           </nav>
-        {/* </div> */}
+                   <Login />
+        </div>
       </header>
       {/* PHONE NAVBAR */}
       <header className="w-full bg-white text-black  border h-fit xs:sticky xs:top-0 z-50 lg:hidden ">
