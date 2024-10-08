@@ -1,7 +1,4 @@
-// import { Link } from "react-router-dom";
-// import { RiFacebookFill } from "react-icons/ri";
-// import { FaInstagram, FaTwitter, FaLinkedinIn, FaPhoneVolume } from "react-icons/fa";
-// import { FaLocationDot } from "react-icons/fa6";
+
 
 function ContactPage() {
   return (
@@ -20,6 +17,7 @@ function ContactPage() {
         </div>
 
         <div className="flex justify-center py-12">
+
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7483178803554!2d49.812870875480556!3d40.37010465847661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc397d94dc3%3A0x617bc46b47244c00!2sAzerbaijan%20Technical%20University!5e0!3m2!1str!2saz!4v1726765730028!5m2!1str!2saz"
             width="70%"
@@ -60,6 +58,7 @@ function ContactPage() {
         </div>
 
         <div className="bg-[#1c140f] py-12 text-center relative flex flex-col items-center">
+
           <svg
             width="1048"
             height="267"
@@ -87,6 +86,7 @@ function ContactPage() {
               stroke="#E4E4E4"
             />
           </svg>
+
 
           <h4 className="text-3xl mb-4">Say hello</h4>
           <p className="mb-8">Lorem Ipsum is simply dummy text of the printing.</p>
@@ -128,7 +128,7 @@ function ContactPage() {
             </button>
           </form>
         </div>
-      </section> */}
+
     </>
   );
 }

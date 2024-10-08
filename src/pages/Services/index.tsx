@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 
-import Button2 from "../../ui/Button2";
-import Swipper from "../../ui/SwipperToServices";
-// import Swipper from "../../ui/SwipperToServices";
+
 function ServicesPage() {
   return (
     <>
@@ -85,19 +83,6 @@ function ServicesPage() {
             ></iframe>
           </div>
 
-          <div className="flex flex-col  xs:h-fit gap-5 text-white">
-            <p className="text-[1.6rem] font-bold">
-              Lorem, ipsum dolor sit amet.
-            </p>
-            <p className="text-[1.3rem] font-semibold">
-              Lorem ipsum dolor sit amet.
-            </p>
-            <div>
-              <p className="flex gap-2 items-center">
-                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
-                Lorem
-                <span className="">ipsum dolor sit.</span>
-              </p>
 
               <p className="flex gap-2 items-center">
                 <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
@@ -111,62 +96,7 @@ function ServicesPage() {
                 <span className="">ipsum dolor sit.</span>
               </p>
 
-              <p className="flex gap-2 items-center">
-                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
-                Lorem
-                <span className="">ipsum dolor sit.</span>
-              </p>
 
-              <p className="flex gap-2 items-center">
-                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
-                Lorem
-                <span className="">ipsum dolor sit.</span>
-              </p>
-
-              <p className="flex gap-2 items-center">
-                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
-                Lorem
-                <span className="">ipsum dolor sit.</span>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="flex md:flex-row xs:flex-col justify-evenly  items-center bg-black md:h-[70vh] xs:h-fit">
-          <div className="flex flex-col gap-5 md:w-[35vw] xs:w-full xs:p-5  text-white">
-            <p className="text-[1.4rem] font-semibold xs:w-full ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-              fugiat.
-            </p>
-            <p className="w-inherit">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A cum
-              quae incidunt rerum facere quos officia adipisci rem molestias
-              alias? Quibusdam facere nihil porro facilis doloremque obcaecati
-              adipisci maxime mollitia. Tempore non expedita porro sequi
-              accusantium.
-            </p>
-            <p className="w-inherit ">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
-              minus earum ea!
-            </p>
-            <Button2 />
-          </div>
-          <div className=" items-center justify-center flex ">
-            <img
-              className="object-cover md:w-[30vw] md:h-[50vh] xs:h-[50vh] xs:w-[90%]  border-white"
-              src="/games/game4.webp"
-              alt="game"
-            />
-          </div>
-        </section>
-
-        <section className="flex md:flex-row xs:flex-col justify-evenly items-center xs:py-5 md:h-[70vh] xs:h-fit bg-black">
-          <div className="flex items-center justify-center">
-            <img
-              className="object-cover md:w-[30vw] md:h-[50vh] xs:h-[50vh] xs:w-[90%]"
-              src="/games/game2.webp"
-              alt="game"
-            />
           </div>
 
           <div className="flex flex-col gap-5 md:w-[30vw] xs:w-full xs:p-3  text-white ">
