@@ -9,6 +9,7 @@ import { FaUser } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaServer } from "react-icons/fa6";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import Button from "../../ui/Button";
 
 
 function ServicesPage() {
@@ -91,10 +92,9 @@ function ServicesPage() {
 
             <li>Servis</li>
           </ul>
-          <h2>Lorem Ipsum is simply dummy text of the printing and.</h2>
+          <h2>24/7 Müştəri Xidməti və Texniki Dəstək</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.{" "}
+          Platformamızda 24/7 texniki dəstək və müştəri xidməti ilə oyun təcrübənizi problemsiz yaşayacaqsınız.{" "}
           </p>
         </div>
         <div className="services__groups">
@@ -146,11 +146,14 @@ function ServicesPage() {
             </div>
           </div>
           <div className="services__video__right">
+            <h4>Daimi Texniki Dəstək Xidməti
+            </h4>
+
             <h4>Lorem Ipsum is simply dummy text.</h4>
 
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy .
+            Oyunlarınızı problemsiz və sürətli şəkildə oynamaq üçün hər zaman yanınızdayıq. Mütəxəssis komandamız 24/7 sizə texniki dəstək və xidmət göstərir.
+
             </p>
 
             {Array(4)
@@ -201,40 +204,38 @@ function ServicesPage() {
           ))}
 
             <span>
-              <IoIosCheckmarkCircle className="icon__check" /> Lorem Ipsum is
-              simply
+              <IoIosCheckmarkCircle className="icon__check" /> Hər zaman operativ dəstək
+
+
             </span>
             <span>
-              <IoIosCheckmarkCircle className="icon__check" /> Lorem Ipsum is
-              simply
+              <IoIosCheckmarkCircle className="icon__check" /> Peşəkar və təcrübəli komanda
+
             </span>
             <span>
-              <IoIosCheckmarkCircle className="icon__check" /> Lorem Ipsum is
-              simply
+              <IoIosCheckmarkCircle className="icon__check" /> Texniki problemlərin sürətli həlli
+
             </span>
             <span>
-              <IoIosCheckmarkCircle className="icon__check" /> Lorem Ipsum is
-              simply
+              <IoIosCheckmarkCircle className="icon__check" /> Yeniliklər və təkmilləşdirmələr barədə məlumat
+
+
             </span>
           </div>
         </div>
         <div className="services__blogs">
           <div className="services__blog">
             <div className="services__blog__left">
-              <h5>Lorem Ipsum is simply dummy text dummy text </h5>
+              <h5>Oyun Dünyasının Sərhədsiz Macəraları
+              </h5>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries,
+              Konsol oyunlarında ən yaxşı təcrübəni yaşamaq üçün bizimlə olun. Platformamız, oyunsevərlərin ehtiyaclarını nəzərə alaraq, müxtəlif janr və üslublarda geniş oyun seçimi təqdim edir. İstər yeni çıxan oyunlar, istərsə də klassik əsərlər - hamısı bir arada, hər kəsin zövqünə uyğun bir şey var.
+
+Bizim platforma, sizi virtual dünyaların ən həyəcanlı məkanlarına aparacaq. Oyunçular, geniş açıq dünyalarda sərbəst hərəkət edə, mükəmməl hekayələrdə öz rollarını canlandıraraq, unudulmaz anlar yaşayacaqlar.
               </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.{" "}
-              </p>
-              <button>Read more</button>
-            </div>
+              
+              <Button txt2={undefined} txt1={"Ətraflı"} still={""}/>         
+                 </div>
             <div className="services__blog__right">
               <img
                 src="https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23613624/Stray2.jpeg?quality=90&strip=all&crop=7.8125,0,84.375,100"
@@ -250,36 +251,26 @@ function ServicesPage() {
               />
             </div>
             <div className="services__blog__left">
-              <h5>Lorem Ipsum is simply dummy text dummy text </h5>
+              <h5>Oyun Təcrübəniz Burada Başlayır
+              </h5>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries,
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.{" "}
-              </p>
-              <button>Read more</button>
-            </div>
+              Oyun Platforması, oyunsevərlərin bütün ehtiyaclarını qarşılamaq məqsədilə yaradılmışdır. Müxtəlif janrlarda oyunlar təqdim edərək, hər bir istifadəçiyə unudulmaz bir təcrübə yaşatmağa hədəfləyirik. İstər aksiyon, istər macəra, istərsə də strategiya janrında olsun, burada hər kəs öz zövqünə uyğun oyunlar tapa bilər. Müasir texnologiyalarla təchiz olunmuş serverlərimiz, sürətli yüklənmə və fasiləsiz oyun axışı təmin edərək, oyunçulara optimal təcrübə təqdim edir.
+</p>
+             
+              <Button txt2={undefined} txt1={"Ətraflı"} still={""}/>     
+                     </div>
           </div>
           <div className="services__blog">
             <div className="services__blog__left">
-              <h5>Lorem Ipsum is simply dummy text dummy text </h5>
+              <h5> Console Game ilə Oyun Təcrübəsi </h5>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries,
+              "Console Game, oyunsevərlər üçün yaradılmış müasir bir platformadır. Burada müxtəlif janrlarda və yaş qruplarına uyğun oyunlar tapa bilərsiniz. İstər gənc yaşda olan, istərsə də yaşlı oyunçular üçün xüsusi olaraq hazırlanmış oyunlar təqdim edirik. Hər bir oyun, əyləncə və yaradıcılıq dolu unudulmaz bir təcrübə təqdim edir.
+
+Platformamız, istifadəçilərin rahatlıqla oyun seçimi edə biləcəyi geniş bir kataloqdan ibarətdir.
               </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.{" "}
-              </p>
-              <button>Read more</button>
+
+            
+              <Button txt2={undefined} txt1={"Ətraflı"} still={""}/>
             </div>
             <div className="services__blog__right">
               <img
