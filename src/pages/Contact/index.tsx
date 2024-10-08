@@ -1,18 +1,14 @@
 
 import { Link } from "react-router-dom";
 import "./Contact.scss";
-import { RiFacebookFill } from "react-icons/ri";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
-
 import Phone from "../../ui/Phone"
+import Icon from "../../ui/SocialIcon";
+import Button from "../../ui/Button";
 
 
 function ContactPage() {
-  const googleMapsApiKey = "YOUR_API_KEY";
   return (
     <>
       <section className="contact__us">
@@ -24,10 +20,11 @@ function ContactPage() {
             <li>&gt;</li>
             <li>Əlaqə</li>
           </ul>
-          <h2>Lorem Ipsum is simply dummy text of the printing and.</h2>
+          <h2>Bizimlə Əlaqə
+          </h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.{" "}
+            Suallarınız, təklifləriniz və ya əlavə məlumat
+            üçün bizimlə əlaqə saxlayın.{" "}
           </p>
         </div>
         <div className="contact__map">
@@ -44,32 +41,23 @@ function ContactPage() {
         <div className="contact__us__group">
           <div className="contact__us__group__first">
             <span>Follow us</span>
-            <div>
-              <div>
-                <RiFacebookFill />
-              </div>
-              <div>
-                <FaInstagram />
-              </div>
-              <div>
-                <FaTwitter />
-              </div>
-              <div>
-                <FaLinkedinIn />
-              </div>
+            <div className="flex gap-4 justify-end place-items-end justify-evenly py-2 ">
+
+              <Icon link="https://www.facebook.com/" ><i className="fa-brands fa-facebook-f  text-[1.4rem] border rounded-full py-2 px-3 text-black bg-white"></i></Icon>
+              <Icon link="https://www.instagram.com/" ><i className="fa-brands fa-instagram text-[1.4rem] border rounded-full p-2 text-black bg-white"></i></Icon>
+              <Icon link="https://twitter.com/?lang=tr" ><i className="fa-brands fa-twitter text-[1.4rem] border rounded-full p-2 text-black bg-white"></i></Icon>
+              <Icon link="https://linkedin.com/"><i className="fa-brands fa-linkedin-in text-[1.4rem] border rounded-full p-2 text-black bg-white"></i></Icon>
             </div>
           </div>
           <div className="contact__us__group__second">
-            <span>
-              <FaPhoneVolume />
-            </span>
-            <span>+94 4444 5555 6</span>
+          
+              <Icon link="tel:+90889097890"><i className="fa-solid fa-phone"></i>+94444455556 </Icon>
+            
+
           </div>
           <div className="contact__us__group__third">
-            <span>
-              <FaLocationDot />
-            </span>
-            <span>but also the leap into electronic typesetting</span>
+            <Icon link={""}><i className="fa-solid fa-location-dot"></i>but also the leap into electronic typesetting  </Icon>
+
           </div>
         </div>
         <div className="contact__us__form">
@@ -99,45 +87,52 @@ function ContactPage() {
             />
           </svg>
 
-          <h4>Say hello</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing .</p>
-          <form>
-            <div className="form-group">
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                placeholder="First Name"
-              />
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                placeholder="Last Name"
-              />
+          <div className="flex gap-20 xs:flex-col lg:flex-row" >
+            <div>
+            <h4>Say hello</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing .</p>
+
+            <form>
+              <div className="form-group">
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div className="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <Button txt2={undefined} txt1={"Təsdiqlə"} still={" "}></Button>
+            </form>
             </div>
-            <div className="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email Address"
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Message"
-              ></textarea>
-            </div>
-            <button type="submit">Get in touch</button>
-          </form>
+          <Phone />
+          </div>
+
         </div>
       </section>
 
-     <div>contactpage</div> 
-     <Phone />
+
+
 
     </>
   );
