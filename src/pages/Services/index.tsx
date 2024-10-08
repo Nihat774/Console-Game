@@ -1,169 +1,196 @@
 import { Link } from "react-router-dom";
-import { FaUser, FaLocationDot, FaServer } from "react-icons/fa6";
-import { IoIosCheckmarkCircle } from "react-icons/io";
-import {  useRef } from "react";
+import CountUp from "react-countup";
 
+import Button2 from "../../ui/Button2";
 function ServicesPage() {
-  const iframeRef = useRef<HTMLIFrameElement | null>(null);
-
-  // useEffect(() => {
-  //   const handleStateChange = (event: any) => {
-  //     if (event.data === 1) {
-  //       if (iframeRef.current) {
-  //         if (iframeRef.current.requestFullscreen) {
-  //           iframeRef.current.requestFullscreen();
-  //         } else if (iframeRef.current.webkitRequestFullscreen) {
-  //           iframeRef.current.webkitRequestFullscreen();
-  //         } else if (iframeRef.current.mozRequestFullScreen) {
-  //           iframeRef.current.mozRequestFullScreen();
-  //         } else if (iframeRef.current.msRequestFullscreen) {
-  //           iframeRef.current.msRequestFullscreen();
-  //         }
-  //       }
-  //     }
-  //   };
-
-  //   const onYouTubeIframeAPIReady = () => {
-  //     if (iframeRef.current) {
-  //       new (window as any).YT.Player(iframeRef.current, {
-  //         events: {
-  //           onStateChange: handleStateChange,
-  //         },
-  //       });
-  //     }
-  //   };
-
-  //   if (!(window as any).YT) {
-  //     const tag = document.createElement("script");
-  //     tag.src = "https://www.youtube.com/iframe_api";
-  //     (window as any).onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
-  //     document.body.appendChild(tag);
-  //   } else {
-  //     onYouTubeIframeAPIReady();
-  //   }
-  // }, []);
-
   return (
     <>
-      <section className="bg-black text-white">
-        <div className="text-center p-6">
-          <ul className="flex justify-center gap-4 text-white">
-            <li>
-              <Link to={"/"}>Əsas səhifə</Link>
-            </li>
-            <li>&gt;</li>
-            <li className="text-orange-500">Servis</li>
-          </ul>
-          <h2 className="text-3xl font-semibold mt-2">
-            Lorem Ipsum is simply dummy text of the printing and.
-          </h2>
-          <p className="mt-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-        </div>
-
-        <div className="flex justify-center mt-12">
-          <div className="bg-[#1C140F] flex p-10 rounded-lg">
-            {[
-              { icon: <FaUser />, count: "90+", label: "Clients" },
-              { icon: <FaLocationDot />, count: "30+", label: "Countries" },
-              { icon: <FaServer />, count: "50+", label: "Projects" },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className={`flex items-center gap-6 p-6 ${
-                  index === 1 ? "border-x-2 border-[#EEEFF2]" : ""
-                }`}
-              >
-                <div className="w-14 h-14 rounded-full bg-[#FFECEC] flex justify-center items-center text-[#DC7000] text-lg">
-                  {item.icon}
-                </div>
-                <span className="text-2xl font-bold">
-                  {item.count}
-                  <br />
-                  <span className="text-lg font-normal">{item.label}</span>
-                </span>
-              </div>
-            ))}
+      <div className="contanier mx-auto bg-black">
+        <section className="bg-black flex flex-col items-center md:h-[70vh] xs:h-fit justify-center gap-7">
+          <div className="flex flex-col items-center gap-5 text-white">
+            <p className="flex items-center gap-2">
+              <Link to={"/"} className="text-[1.3rem]">
+                Home{" "}
+              </Link>
+              <i className="fa-solid fa-chevron-right"></i>
+              <p className="text-orange text-[1.3rem]">Services</p>
+            </p>
+            <p className="text-[1.5rem]">
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           </div>
-        </div>
 
-        <div className="flex justify-center mt-24 gap-20">
+          <div className="flex md:flex-row xs:flex-col justify-around bg-gray items-center border rounded-[15px] md:h-[30vh] w-[70vw] xs:h-fit xs:gap-7 xs:py-5">
+            <div className="flex h-full  gap-5 justify-center items-center">
+              <p>
+                <i className=" rounded-full p-5 fa-solid fa-user text-orange bg-white"></i>
+              </p>
+              <div className=" text-white">
+                <CountUp
+                  className="text-[1.3rem] font-bold"
+                  end={20}
+                  duration={2}
+                />
+                <span className="text-[1.3rem] font-bold">+</span>
+                <p>Clients</p>
+              </div>
+            </div>
+
+            <div className="md:h-[20vh] md:w-[2px] xs:h-[2px] xs:w-[20vh] bg-zinc-400"></div>
+
+            <div className="flex h-full gap-3 items-center">
+              <p>
+                <i className="border rounded-full p-5 fa-solid fa-location-dot text-orange bg-white "></i>
+              </p>
+              <div className=" text-white">
+                <CountUp
+                  className="text-[1.3rem] font-bold"
+                  end={15}
+                  duration={2}
+                />
+                <span className="text-[1.3rem] font-bold">+</span>
+                <p>Countries</p>
+              </div>
+            </div>
+
+            {/* <div className="h-[20vh] w-[2px] bg-zinc-400"></div> */}
+            <div className="md:h-[20vh] md:w-[2px] xs:h-[2px] xs:w-[20vh] bg-zinc-400"></div>
+            <div className="flex  h-full  gap-3 items-center">
+              <p>
+                <i className="border rounded-full p-5 fa-solid fa-bars-progress text-orange bg-white"></i>
+              </p>
+              <div className=" text-white">
+                <CountUp
+                  className="text-[1.3rem] font-bold"
+                  end={40}
+                  duration={2}
+                />
+                <span className="text-[1.3rem] font-bold">+</span>
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex md:flex-row xs:flex-col xs:py-5 xs:gap-5 justify-around items-center md:h-[70vh] xs:h-fit bg-black">
           <div>
             <iframe
-              ref={iframeRef}
-              title="YouTube Video"
-              src="https://www.youtube.com/embed/3wHL2VIaFcs?enablejsapi=1"
-              style={{
-                width: "670px",
-                height: "355px",
-                borderRadius: "15px",
-              }}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+              src="https://www.youtube.com/embed/y6vWl-8_0QI?si=DtcBOX_0IjNZyrSZ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              className="rounded-[20px] md:w-[40vw] md:h-[50vh] xs:h-fit"
+            ></iframe>
+          </div>
+
+          <div className="flex flex-col  xs:h-fit gap-5 text-white">
+            <p className="text-[1.6rem] font-bold">
+              Lorem, ipsum dolor sit amet.
+            </p>
+            <p className="text-[1.3rem] font-semibold">
+              Lorem ipsum dolor sit amet.
+            </p>
+            <div>
+              <p className="flex gap-2 items-center">
+                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
+                Lorem
+                <span className="">ipsum dolor sit.</span>
+              </p>
+
+              <p className="flex gap-2 items-center">
+                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
+                Lorem
+                <span className="">ipsum dolor sit.</span>
+              </p>
+
+              <p className="flex gap-2 items-center">
+                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
+                Lorem
+                <span className="">ipsum dolor sit.</span>
+              </p>
+
+              <p className="flex gap-2 items-center">
+                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
+                Lorem
+                <span className="">ipsum dolor sit.</span>
+              </p>
+
+              <p className="flex gap-2 items-center">
+                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
+                Lorem
+                <span className="">ipsum dolor sit.</span>
+              </p>
+
+              <p className="flex gap-2 items-center">
+                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
+                Lorem
+                <span className="">ipsum dolor sit.</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex md:flex-row xs:flex-col justify-evenly  items-center bg-black md:h-[70vh] xs:h-fit">
+          <div className="flex flex-col gap-5 md:w-[35vw] xs:w-full xs:p-5  text-white">
+            <p className="text-[1.4rem] font-semibold xs:w-full ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              fugiat.
+            </p>
+            <p className="w-inherit">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A cum
+              quae incidunt rerum facere quos officia adipisci rem molestias
+              alias? Quibusdam facere nihil porro facilis doloremque obcaecati
+              adipisci maxime mollitia. Tempore non expedita porro sequi
+              accusantium.
+            </p>
+            <p className="w-inherit ">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              minus earum ea!
+            </p>
+            <Button2 />
+          </div>
+          <div className=" items-center justify-center flex ">
+            <img
+              className="object-cover md:w-[30vw] md:h-[50vh] xs:h-[50vh] xs:w-[90%]  border-white"
+              src="/games/game4.webp"
+              alt="game"
+            />
+          </div>
+        </section>
+
+        <section className="flex md:flex-row xs:flex-col justify-evenly items-center xs:py-5 md:h-[70vh] xs:h-fit bg-black">
+          <div className="flex items-center justify-center">
+            <img
+              className="object-cover md:w-[30vw] md:h-[50vh] xs:h-[50vh] xs:w-[90%]"
+              src="/games/game2.webp"
+              alt="game"
             />
           </div>
 
-          <div className="flex flex-col gap-5 w-[425px]">
-            <h4 className="text-3xl font-bold">
-              Lorem Ipsum is simply dummy text.
-            </h4>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy .
+          <div className="flex flex-col gap-5 md:w-[30vw] xs:w-full xs:p-3  text-white ">
+            <p className="text-[1.4rem] font-semibold ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              fugiat.
             </p>
-            {Array(4)
-              .fill("Lorem Ipsum is simply")
-              .map((text, idx) => (
-                <span key={idx} className="flex items-center text-sm">
-                  <IoIosCheckmarkCircle className="text-green-600 text-lg mr-1" />
-                  {text}
-                </span>
-              ))}
+            <p className="w-inherit">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A cum
+              quae incidunt rerum facere quos officia adipisci rem molestias
+              alias? Quibusdam facere nihil porro facilis doloremque obcaecati
+              adipisci maxime mollitia. Tempore non expedita porro sequi
+              accusantium.
+            </p>
+            <p className="w-inherit">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              minus earum ea!
+            </p>
+            <Button2 />
           </div>
-        </div>
+        </section>
 
-        <div className="flex flex-col gap-40 mt-36">
-          {[...Array(3)].map((_, idx) => (
-            <div key={idx} className="flex justify-center gap-36">
-              <div className="w-[535px] flex flex-col gap-10">
-                <h5 className="text-3xl font-bold">
-                  Lorem Ipsum is simply dummy text dummy text
-                </h5>
-                <p className="text-lg">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries,
-                </p>
-                <p className="text-lg">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <button className="bg-[#DC7000] w-44 h-12">Read more</button>
-              </div>
-              <div>
-                <img
-                  src={
-                    idx === 0
-                      ? "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23613624/Stray2.jpeg?quality=90&strip=all&crop=7.8125,0,84.375,100"
-                      : idx === 1
-                      ? "https://c4.wallpaperflare.com/wallpaper/320/142/500/akali-league-of-legends-akali-league-of-legends-league-of-legends-k-da-video-games-hd-wallpaper-preview.jpg"
-                      : "https://de.gamewallpapers.com/img_script/mobile_dir2/img.php?src=wallpaper_crysis_2_03_ipad.jpg&height=450&width=506&crop-to-fit&sharpen"
-                  }
-                  alt=""
-                  className="w-[490px] h-full"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+        <section className=""></section>
+      </div>
     </>
   );
 }
 
-export default ServicesPage;
+export default ServicesPage;

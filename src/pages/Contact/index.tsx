@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
-import { RiFacebookFill } from "react-icons/ri";
-import { FaInstagram, FaTwitter, FaLinkedinIn, FaPhoneVolume } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+// import { Link } from "react-router-dom";
+// import { RiFacebookFill } from "react-icons/ri";
+// import { FaInstagram, FaTwitter, FaLinkedinIn, FaPhoneVolume } from "react-icons/fa";
+// import { FaLocationDot } from "react-icons/fa6";
 
 function ContactPage() {
   return (
     <>
-      <section className="bg-black text-white py-8">
+      {/* <section className="bg-black text-white py-8">
         <div className="text-center">
           <ul className="flex justify-center gap-4">
             <li>
@@ -128,7 +128,7 @@ function ContactPage() {
             </button>
           </form>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

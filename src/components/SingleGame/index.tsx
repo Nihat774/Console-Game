@@ -15,12 +15,12 @@ function SingleGamePage() {
   return (
     <>
       <div className='h-[12vh] flex flex-col items-center justify-center md:w-[17vw] xs:w-fit'>
-        <Link className='border rounded-[15px]  flex items-center p-3 text-[1.4rem] w-fit bg-orange hover:bg-white hover:text-orange hover:border-orange' to={'/games'}>
+        <Link className='border border-orange rounded-[15px]  flex items-center p-3 text-[1.4rem] w-fit bg-orange hover:bg-white hover:bg-transparent duration-500  hover:text-orange' to={'/games'}>
           <i className="fa-solid fa-circle-chevron-right px-2"></i>
           <p>Geri</p>
         </Link>
       </div>
-      <div className='flex justify-evenly md:flex-row md:h-[80vh] xs:flex-col xs:py-5 xs:gap-3 xs:h-fit'>
+      <div className='flex justify-evenly md:flex-row md:h-[80vh] lg:h-fit xs:flex-col xs:py-5 xs:gap-3 xs:h-fit'>
 
         <div className='flex justify-center items-center'>
           <img className='lg:w-[35vw] md:h-[70vh] md:w-[45vw] lg:h-[70vh] xs:w-[70vw] xs:h-[50vh] object-cover border rounded-[15px]' src={games.img} alt="image" />
@@ -34,7 +34,7 @@ function SingleGamePage() {
             <p className='font-bold'>{games.price}</p>
           </div>
           <div className='px-3'>
-            <Modal text='BUY' style="md:w-[15vw] xs:w-fit p-2" />
+            <Modal text='BUY' style="md:w-[15vw] xs:w-fit p-2 duration-500" />
           </div>
         </div>
       </div>
