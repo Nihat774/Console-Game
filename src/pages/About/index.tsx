@@ -120,7 +120,7 @@ function AboutPage() {
       <div className="flex justify-evenly  bg-gray h-fit text-white xs:flex-col lg:flex-row xs:gap-5 ">
         <div className="flex flex-col justify-end ">
           <img
-            className="lg:h-[60vh] lg:w-[30vw] rounded-t-[10px] xs:h-[50vh] xs:w-[100vh] object-cover-"
+            className="lg:h-[60vh] lg:w-[30vw] rounded-t-[10px] xs:h-[50vh] xs:w-[100vh] object-cover"
             src="/about/photo2.webp"
             alt=""
           />
@@ -144,7 +144,7 @@ function AboutPage() {
         <TeamCard img="/about/1.png" name="Nihat Məmmədov" text="Game dev" />
         <TeamCard img="/about/2.png" name="Fərid Abbaslı" text="3D design " />
         <TeamCard img="/about/3.webp" name="Murad Babayev" text="Mobile dev" />
-        <TeamCard img="/about/4.png" name="Aslan Həmidli" text="Web dev" />
+       
       </div>
     </>
   );

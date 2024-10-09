@@ -21,7 +21,8 @@ function HomePage() {
               bilərsiniz.{" "}
             </p>
             <Button
-              onClick={() => pathname("/about")}
+            
+              onClick={() => pathname('/about')}
               txt1="Ətraflı"
               txt2={<i className="fa-solid fa-caret-right"></i>}
               still="rounded-[10px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] hover:bg-transparent"

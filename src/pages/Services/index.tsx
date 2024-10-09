@@ -1,19 +1,20 @@
-import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 
+import { Link } from "react-router-dom";
+import Button2 from "../../ui/Button2";
 
 function ServicesPage() {
   return (
     <>
-      <div className="contanier mx-auto bg-black">
-        <section className="bg-black flex flex-col items-center md:h-[70vh] xs:h-fit justify-center gap-7">
+      <div className=" bg-black">
+        <section className="container mx-auto flex flex-col items-center md:h-[70vh] xs:h-fit justify-center gap-7">
           <div className="flex flex-col items-center gap-5 text-white">
             <p className="flex items-center gap-2">
               <Link to={"/"} className="text-[1.3rem]">
-                Home{" "}
+                Home
               </Link>
               <i className="fa-solid fa-chevron-right"></i>
-              <p className="text-orange text-[1.3rem]">Services</p>
+              <span className="text-orange text-[1.3rem]">Services</span>
             </p>
             <p className="text-[1.5rem]">
               Lorem ipsum, dolor sit amet consectetur adipisicing.
@@ -21,10 +22,10 @@ function ServicesPage() {
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           </div>
 
-          <div className="flex md:flex-row xs:flex-col justify-around bg-gray items-center border rounded-[15px] md:h-[30vh] w-[70vw] xs:h-fit xs:gap-7 xs:py-5">
+          <div className="flex md:flex-row xs:flex-col justify-evenly bg-gray items-center border rounded-[15px] md:h-[30vh] w-[70vw] xs:h-fit xs:gap-7 xs:py-5">
             <div className="flex h-full  gap-5 justify-center items-center">
               <p>
-                <i className=" rounded-full p-5 fa-solid fa-user text-orange bg-white"></i>
+                <i className="rounded-full p-5 fa-solid fa-user text-orange bg-white"></i>
               </p>
               <div className=" text-white">
                 <CountUp
@@ -41,7 +42,7 @@ function ServicesPage() {
 
             <div className="flex h-full gap-3 items-center">
               <p>
-                <i className="border rounded-full p-5 fa-solid fa-location-dot text-orange bg-white "></i>
+                <i className="border rounded-full p-5 fa-solid fa-location-dot text-orange bg-white"></i>
               </p>
               <div className=" text-white">
                 <CountUp
@@ -54,13 +55,12 @@ function ServicesPage() {
               </div>
             </div>
 
-            {/* <div className="h-[20vh] w-[2px] bg-zinc-400"></div> */}
             <div className="md:h-[20vh] md:w-[2px] xs:h-[2px] xs:w-[20vh] bg-zinc-400"></div>
-            <div className="flex  h-full  gap-3 items-center">
+            <div className="flex h-full gap-3 items-center">
               <p>
                 <i className="border rounded-full p-5 fa-solid fa-bars-progress text-orange bg-white"></i>
               </p>
-              <div className=" text-white">
+              <div className="text-white">
                 <CountUp
                   className="text-[1.3rem] font-bold"
                   end={40}
@@ -83,24 +83,8 @@ function ServicesPage() {
             ></iframe>
           </div>
 
-
-              <p className="flex gap-2 items-center">
-                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
-                Lorem
-                <span className="">ipsum dolor sit.</span>
-              </p>
-
-              <p className="flex gap-2 items-center">
-                <i className="rounded-full bg-green fa-regular fa-circle-check h-fit  w-fit"></i>
-                Lorem
-                <span className="">ipsum dolor sit.</span>
-              </p>
-
-
-          </div>
-
-          <div className="flex flex-col gap-5 md:w-[30vw] xs:w-full xs:p-3  text-white ">
-            <p className="text-[1.4rem] font-semibold ">
+          <div className="flex flex-col gap-4 md:w-[38vw] xs:w-full xs:p-3  text-white">
+            <p className="text-[1.4rem] font-semibold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
               fugiat.
             </p>
@@ -119,9 +103,6 @@ function ServicesPage() {
           </div>
         </section>
 
-        <section>
-          <Swipper />
-        </section>
       </div>
     </>
   );

@@ -70,10 +70,10 @@ function GamesPage() {
                     </div>
                     <i className="fa-solid fa-cart-shopping text-[2rem] text-white"></i>
                   </NavLink>
-                  <div className="border w-fit rounded-[10px] hover:scale-105 duration-500">
+                  <div className="shadow-xl w-fit rounded-[10px] hover:scale-105 duration-500">
                     <div onClick={() => gameLocation(`${id}`)}>
                       <img
-                        className="cursor-pointer lg:w-[23vw] md:w-[45vw] md:h-[60vh] xs:w-[90vw] xs:h-[55vh] md:object-cover xs:object-fill rounded-[10px]"
+                        className="cursor-pointer lg:w-[20vw] md:w-[45vw] md:h-[55vh] xs:w-[90vw] xs:h-[55vh] md:object-cover xs:object-fill rounded-[10px]"
                         src={img}
                         alt={name}
                       />

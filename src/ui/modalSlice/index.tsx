@@ -1,8 +1,8 @@
 import { IModal } from "../../components/MyTypes";
-
-function Modal({ text, style }: IModal) {
+function Modal({ text, style, handleSubmit ,ShowAlert }: IModal) {
   return (
     <>
+     
       <label
         htmlFor="my_modal_6"
         className={`${style} btn border bg-orange  text-[1.3rem]  hover:bg-white hover:text-orange  hover:border-orange`}
@@ -16,7 +16,7 @@ function Modal({ text, style }: IModal) {
         className="modal flex flex-col gap-5  lg:h-[100vh] justify-center md:h-[60vh] xs:h-fit"
         role="dialog"
       >
-        <form className="modal-box flex flex-col gap-5 lg:w-[35vw] lg:h-[68vh] md:h-[45vh]">
+        <form onSubmit={handleSubmit} className="modal-box flex flex-col gap-5 lg:w-[35vw] lg:h-[68vh] md:h-[45vh]">
           <ruby className=" flex flex-col gap-1 ">
             <div className="flex justify-between">
               <rt className="text-[1.2rem]">Card code</rt>
@@ -75,9 +75,12 @@ function Modal({ text, style }: IModal) {
             </div>
           </div>
           <div className="flex md:flex-row xs:flex-row md:gap-2 justify-between lg:w-[24vw]">
-            <button className=" rounded-[10px] text-[1.4rem] px-4 h-[8vh] bg-zinc-100 font-medium">
+            <button onClick={ShowAlert}
+               className=  " rounded-[10px] text-[1.4rem] px-4 h-[8vh] bg-zinc-100 font-medium">
               Təsdiqlə
             </button>
+         
+           
             <label
               htmlFor="my_modal_6"
               className="btn p-3 text-[1.4rem] font-medium"
