@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../state/cartSlice";
 import { RootState } from "../../state/store";
 
+
 function GamesPage() {
   const url = "http://localhost:3000/games";
   const [games, setGames] = useState<IAllGames[]>([]);

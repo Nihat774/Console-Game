@@ -4,12 +4,42 @@ import Button from "../../ui/Button";
 import Button2 from "../../ui/Button2";
 import Card from "../../ui/Card";
 import MyAccordion from "../../ui/Accordion";
+import {motion} from 'framer-motion'
+const containerVariants = {
+  hidden: {
+    x: "100vw",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      delay: 0.2,
+      stiffness:60
+    },
+  },
+  exit: {
+    x: "-100vh",
+    transition: {
+      ease: "easeInOut",
+    },
+  },
+};
+
+
 function HomePage() {
   let pathname = useNavigate();
   return (
     <>
-      <div className="w-full  bg-black p-5">
-        <section className=" container mx-auto text-white flex justify-around ">
+      <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+
+      className="w-full  bg-black p-5">
+        <section  className=" container mx-auto text-white flex justify-around ">
           <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-7">
             <p className="text-orange font-bold text-[1.4rem]">3D game Dev </p>
             <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold lg:text-[3.4rem] lg:w-[40vw] md:w-[31vw] ">
@@ -189,7 +219,7 @@ function HomePage() {
           </div>
           <Button2 />
         </section>
-      </div>
+      </motion.div>
     </>
   );
 }

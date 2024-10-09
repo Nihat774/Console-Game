@@ -53,9 +53,9 @@ function LikedPage() {
     return (
       <>
         <div className="container mx-auto">
-          <div className="h-[10vh] flex flex-col justify-center w-fit">
+          <div className="h-[15vh] flex flex-col justify-center w-fit">
             <Link
-              className="border p-3 bg-orange text-white text-[1.3rem] font-semibold rounded-[15px]"
+              className="border p-3 bg-orange text-white text-[1.3rem] font-semibold rounded-[15px] flex flex-col justify-center"
               to={"/games"}
             >
               Geri
@@ -75,7 +75,7 @@ function LikedPage() {
         <div className="container mx-auto">
           <div className=" h-[14vh] flex justify-between items-center">
             <Link
-              className="border p-3 bg-orange text-white text-[1.3rem] font-semibold rounded-[15px]"
+              className="border  p-3 bg-orange text-white text-[1.3rem] font-semibold rounded-[15px]"
               to={"/games"}
             >
               Geri
@@ -87,14 +87,14 @@ function LikedPage() {
               style="w-fit text-white"
             />
           </div>
-          <div className="grid lg:grid-cols-4 gap-3 place-items-center xs:grid-cols-2 md:grid-cols-3 py-5">
+          <div className="grid lg:grid-cols-4 gap-3 place-items-center xs:grid-cols-1 md:grid-cols-3 py-5">
             {cartGame.map((game) => {
               return (
                 <React.Fragment key={game.id}>
                   <div className=" border p-3 rounded-[20px] xs:w-full lg:w-[23vw]  flex flex-col gap-3 ">
                     <p className="flex justify-end">
                       <i
-                        className="fa-solid fa-xmark border flex justify-end h-fit w-fit py-1 px-2 border-black"
+                        className="fa-solid fa-xmark  flex justify-end h-fit w-fit py-1 px-2 border-black"
                         onClick={() => handleClick(game.id)}
                       ></i>
                     </p>

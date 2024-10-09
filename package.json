@@ -22,7 +22,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@reduxjs/toolkit": "^2.2.7",
     "font-awesome": "^4.7.0",
-    "framer-motion": "^11.5.4",
+    "framer-motion": "^11.11.4",
     "google-fonts": "^1.0.0",
     "json-server": "^1.0.0-beta.2",
     "react": "^18.3.1",

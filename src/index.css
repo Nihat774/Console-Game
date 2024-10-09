@@ -7,8 +7,10 @@
 @apply underline text-orange
   }
 }
-/* @layer components{
-.contanier{
-  @apply ;
-}
+
+/* @layer utilities {
+ body {
+    overflow-x:"hidden"
+  }
+
 } */

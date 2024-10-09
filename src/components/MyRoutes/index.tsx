@@ -1,6 +1,8 @@
 import { lazy, Suspense } from 'react'
 import LoadingPage from '../../pages/Loading'
 import { Route, Routes } from 'react-router-dom'
+import {AnimatePresence} from "framer-motion"
+import { useLocation } from 'react-router-dom'
 const HomePage = lazy(() => import("../../pages/Home"))
 const AboutPage = lazy(() => import("../../pages/About"))
 const ContactPage = lazy(() => import("../../pages/Contact"))
@@ -11,11 +13,16 @@ const ServicesPage = lazy(() => import("../../pages/Services"))
 const SingleGamePage = lazy(()=>import("../SingleGame"))
 const LikedPage = lazy(()=>import('../../pages/LikedPage'))
 
+
 function MyRoutes() {
+    const location=useLocation();
     return (
         <>
+        
                 <Suspense fallback={<LoadingPage />}>
-                    <Routes>
+                <AnimatePresence mode='wait'>
+
+                    <Routes location={location} key={location.key}>
                         <Route path='/' element={<HomePage />} />
                         <Route path='/about' element={<AboutPage />} />
                         <Route path='/contact' element={<ContactPage />} />
@@ -26,6 +33,7 @@ function MyRoutes() {
                         <Route path='*' element={<NotFoundPage />} />
                         <Route path="likedgame" element={<LikedPage/>} />
                     </Routes>
+                </AnimatePresence>
                 </Suspense>
         </>
     )
