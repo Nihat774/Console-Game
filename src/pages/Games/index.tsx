@@ -4,7 +4,8 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../state/cartSlice";
 import { RootState } from "../../state/store";
-
+import {motion} from 'framer-motion'
+import { containerVariants } from "../../utils/variants";
 
 function GamesPage() {
   const url = "https://console-game-db.vercel.app/games";
@@ -35,7 +36,13 @@ function GamesPage() {
 
   return (
     <>
-      <div className="bg-orange px-3 items-center">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+  
+      className="bg-orange px-3 items-center">
         <div className="md:flex md:flex-row md:h-[12vh] lg:h-[15vh] xs:flex-col xs:p-4 xs:gap-7 justify-between items-center">
           <Link
             to={"/"}
@@ -54,7 +61,7 @@ function GamesPage() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="contanier px-3">
         <div className="grid lg:grid-cols-4 md:gap-4 xs:grid-cols-1 xs:place-items-center xs:gap-3 md:grid-cols-2 p-5">
           {filteredGames.map(

@@ -5,27 +5,8 @@ import Button2 from "../../ui/Button2";
 import Card from "../../ui/Card";
 import MyAccordion from "../../ui/Accordion";
 import {motion} from 'framer-motion'
-const containerVariants = {
-  hidden: {
-    x: "100vw",
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      delay: 0.2,
-      stiffness:60
-    },
-  },
-  exit: {
-    x: "-100vh",
-    transition: {
-      ease: "easeInOut",
-    },
-  },
-};
+import { containerVariants } from "../../utils/variants";
+import ScrollAnimation from "../../utils/ScrollAnimation";
 
 
 function HomePage() {
@@ -40,6 +21,7 @@ function HomePage() {
 
       className="w-full  bg-black p-5">
         <section  className=" container mx-auto text-white flex justify-around ">
+        <ScrollAnimation>
           <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-7">
             <p className="text-orange font-bold text-[1.4rem]">3D game Dev </p>
             <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold lg:text-[3.4rem] lg:w-[40vw] md:w-[31vw] ">
@@ -58,7 +40,8 @@ function HomePage() {
               still="rounded-[10px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] hover:bg-transparent"
             />
           </div>
-
+          </ScrollAnimation>
+          <ScrollAnimation>
           <div className="">
 
             <div className="lg:h-[85vh] md:w-[40vw] md:h-[40vh] md:object-contain md:flex xs:hidden ">
@@ -69,8 +52,10 @@ function HomePage() {
               />
             </div>
           </div>
-        </section>
 
+        </ScrollAnimation>
+        </section>
+        <ScrollAnimation>
         <section className="">
           <div className="flex justify-between  place-items-center bg-black  lg:h-[20vh] xs:h-[15vh]">
             <p className="md:text-[1.8rem] xs:text-[1.4rem] font-bold text-white  ml-[5vw]">
@@ -83,7 +68,7 @@ function HomePage() {
             <Data />
           </div>
         </section>
-
+        </ScrollAnimation>
         <section className="bg-black flex flex-col gap-4 ">
           <div className=" text-white flex justify-center ">
             <p className="md:text-[2rem] font-bold md:w-[70vw] lg:w-[50vw] py-3 xs:full xs:text-[1.5rem] xs:px-4">

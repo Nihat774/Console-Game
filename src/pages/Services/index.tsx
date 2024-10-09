@@ -3,11 +3,18 @@ import CountUp from "react-countup";
 
 import Button2 from "../../ui/Button2";
 import Swipper from "../../ui/SwipperToServices";
+import {motion} from 'framer-motion'
+import { containerVariants } from "../../utils/variants";
 // import Swipper from "../../ui/SwipperToServices";
 function ServicesPage() {
   return (
     <>
-      <div className=" bg-black ">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+   className=" bg-black ">
         <section className=" flex flex-col container mx-auto items-center md:h-[70vh] xs:h-fit justify-center gap-7">
           <div className="flex flex-col  items-center gap-5 py-5 text-white">
             <p className="flex items-center gap-2">
@@ -190,7 +197,7 @@ function ServicesPage() {
         <section>
           <Swipper />
         </section>
-      </div>
+      </motion.div>
     </>
   );
 }

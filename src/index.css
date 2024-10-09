@@ -8,9 +8,7 @@
   }
 }
 
-/* @layer utilities {
- body {
-    overflow-x:"hidden"
-  }
-
-} */
+body {
+  @apply overflow-x-hidden;
+  @apply bg-black;
+}

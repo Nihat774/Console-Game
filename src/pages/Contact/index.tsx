@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
 import Icon from "../../ui/SocialIcon";
 import Phone from "../../ui/Phone";
+import {motion} from 'framer-motion'
+import { containerVariants } from "../../utils/variants";
 function ContactPage() {
   return (
     <>
-      <section className="bg-black text-white py-8">
+      <motion.section
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+  
+      className="bg-black text-white py-8">
         <div className="text-center">
           <ul className="flex justify-center gap-4">
             <li>
@@ -115,7 +123,7 @@ Oyun platforması hər yaşa uyğun təcrübə təklif edir.
             <Phone />
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

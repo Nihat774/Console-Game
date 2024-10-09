@@ -4,6 +4,8 @@ import { RootState } from "../../state/store";
 import Modal from "../../ui/modalSlice";
 import React, { useCallback, useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import {motion} from 'framer-motion'
+import { containerVariants } from "../../utils/variants";
 
 function LikedPage() {
   const data = useSelector((state: RootState) => state.cart.value);
@@ -52,7 +54,11 @@ function LikedPage() {
   if (!cartGame.length) {
     return (
       <>
-        <div className="container mx-auto">
+        <motion.div   variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+ className="container mx-auto">
           <div className="h-[15vh] flex flex-col justify-center w-fit">
             <Link
               className="border p-3 bg-orange text-white text-[1.3rem] font-semibold rounded-[15px] flex flex-col justify-center"
@@ -66,7 +72,7 @@ function LikedPage() {
               Səbətiniz boşdur.
             </p>
           </div>
-        </div>
+        </motion.div>
       </>
     );
   } else {

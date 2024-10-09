@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import {motion} from 'framer-motion'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -14,12 +14,17 @@ import Button from "../../ui/Button";
 import { Link, useNavigate } from "react-router-dom";
 import TeamCard from "../../ui/TeamCardAbout";
 import CardInfo from "../../ui/CardAbout";
+import { containerVariants } from "../../utils/variants";
 
 function AboutPage() {
   const location = useNavigate()
   return (
     <>
-      <div className="flex justify-evenly; bg-black text-white lg:flex-row xs:flex-col">
+      <motion.div  variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+ className="flex justify-evenly; bg-black text-white lg:flex-row xs:flex-col">
         <div className="px-10 lg:w-[50%] xs:w-[100%] flex flex-col items-center">
           <div className="lg:w-[30vw] lg:h-[70vh] md:h-[40vh] xs:w-[80vw] xs:h-fit xs:gap-3 py-7 flex flex-col justify-evenly">
             <div className="">
@@ -90,7 +95,7 @@ function AboutPage() {
             </SwiperSlide>
           </Swiper>
         </div>
-      </div>
+      </motion.div>
       <div className="bg-black text-white py-5 lg:h-[100vh] xs:h-fit">
         <h3 className="text-2xl flex items-center px-10 font-bold h-[20vh] ">
           Why work with us
