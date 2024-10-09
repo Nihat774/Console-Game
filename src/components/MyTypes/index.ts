@@ -71,7 +71,7 @@ export type Animate = {
 };
 export interface IModal {
   style: string;
-  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  handleSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
   ShowAlert:()=>void
   text: string;
 }

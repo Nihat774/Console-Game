@@ -14,11 +14,10 @@ function ContactPage() {
             <li className="text-orange">Əlaqə</li>
           </ul>
           <h2 className="text-3xl font-semibold mt-4">
-            Lorem Ipsum is simply dummy text of the printing and.
+          Oyunlar hər gün yenilənərək daha maraqlı olur.
           </h2>
           <p className="mt-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          Platformamız, oyunsevərlərə geniş oyun kataloqu ilə fərqli janrlarda keyfiyyətli təcrübələr yaşamağa imkan tanıyır.
           </p>
         </div>
 
@@ -63,7 +62,8 @@ function ContactPage() {
           <div className="flex items-center gap-4">
             <i className="fa-solid fa-location-dot text-2xl"></i>
             <span className="text-lg w-56">
-              but also the leap into electronic typesetting
+              
+Oyun platforması hər yaşa uyğun təcrübə təklif edir.
             </span>
           </div>
         </div>
