@@ -47,7 +47,7 @@ function HomePage() {
             <div className="lg:h-[85vh] md:w-[40vw] md:h-[40vh] md:object-contain md:flex xs:hidden ">
               <img
                 className="w-[100%] h-[100%]"
-                src="../public/home/joy_stick 1.png"
+                src="/home/joy_stick 1.png"
                 alt="console page"
               />
             </div>
