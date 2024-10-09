@@ -70,8 +70,8 @@ export type Animate = {
   sequence: any;
 };
 export interface IModal {
-  style: string;
+  style?: string;
   handleSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
-  ShowAlert:()=>void
-  text: string;
+  ShowAlert?:()=>void
+  text?: string;
 }

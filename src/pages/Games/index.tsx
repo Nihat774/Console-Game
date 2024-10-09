@@ -7,7 +7,7 @@ import { RootState } from "../../state/store";
 
 
 function GamesPage() {
-  const url = "http://localhost:3000/games";
+  const url = "https://console-game-db.vercel.app/games";
   const [games, setGames] = useState<IAllGames[]>([]);
   const [clickedItems, setClickedItems] = useState<number[]>([]);
 

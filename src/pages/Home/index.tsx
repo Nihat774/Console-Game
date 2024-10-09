@@ -60,21 +60,7 @@ function HomePage() {
           </div>
 
           <div className="">
-            <img
-              className="absolute  md:hidden lg:right-[36%] lg:block lg:top-[30%] xs:hidden"
-              src="/home/cry 1.png"
-              alt=""
-            />
-            <img
-              className="absolute lg:right-[12%] lg:top-[35%] md:top-[17%] md:right-[14%] md:block xs:hidden"
-              src="/home/unreal 1.png"
-              alt=""
-            />
-            <img
-              className="absolute lg:top-[50%] lg:left-[50%] md:top-[57%] md:left-[57%] md:block xs:hidden"
-              src="/home/unity 1.png"
-              alt=""
-            />
+
             <div className="lg:h-[85vh] md:w-[40vw] md:h-[40vh] md:object-contain md:flex xs:hidden ">
               <img
                 className="w-[100%] h-[100%]"

@@ -3,7 +3,7 @@ import { INewsType } from "../MyTypes";
 import CvButton from "../../ui/CvButton";
 export function AllNews() {
     const [news, setNews] = useState([])
-    const url = "http://localhost:3000/ourTeams"
+    const url = "https://console-game-db.vercel.app/ourTeams"
     useEffect(() => {
         fetch(url)
             .then((response) => response.json())

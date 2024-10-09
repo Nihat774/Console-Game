@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Data() {
     const [allgames, setPages] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3000/games")
+        fetch("https://console-game-db.vercel.app/games")
             .then((response) => response.json())
             .then((data) => setPages(data))
     }, [])
