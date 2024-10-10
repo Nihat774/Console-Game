@@ -17,8 +17,8 @@ function Data() {
                         <Link key={id} to={`/games/${id}`} className=''>
                             <div>
                                 <img className='lg:w-[22vw] lg:h-[50vh] md:w-[40vw] md:h-[35vh] xs:w-[75vw] xs:h-[40vh] rounded-[15px] object-cover' src={img} alt="" />
-                                <p className='flex gap-2 font-bold  p-4 justify-center text-white'>
-                                    <img src="../public/home/fire 1.svg" className='bg-black' alt="" />
+                                <p className='flex gap-2 font-bold  p-4 justify-center text-orange'>
+                                    <img src="../public/home/fire 1.svg" className= ' bg-orange' alt="" />
                                     {` ${followers} Followers`}</p>
                             </div>
 
