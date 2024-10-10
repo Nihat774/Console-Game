@@ -43,26 +43,27 @@ function GamesPage() {
         exit="exit"
   
       className="bg-orange px-3 items-center">
-        <div className="md:flex md:flex-row md:h-[12vh] lg:h-[15vh] xs:flex-col xs:p-4 xs:gap-7 justify-between items-center">
+        <div className="md:flex md:flex-row md:h-[12vh] lg:h-[15vh]  xs:flex-col xs:p-4 xs:justify-center md:justify-between items-center">
           <Link
             to={"/"}
-            className="md:text-[2rem] xs:text-[1.7rem] text-black font-bold"
+            className="md:text-[2rem] xs:text-[1.7rem]  text-black font-bold"
           >
             consolegame.com
           </Link>
-          <div className="flex justify-between xs:w-full lg:w-[40%] sticky top-[150px] bg-orange">
+          <div className="flex justify-between xs:w-full lg:w-[40%] sticky top-[150px] bg-orange py-3">
             <input
               type="text"
               maxLength={10}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="md:w-[30vw] xs:w-[45vw] xs:py-2 lg:h-[10vh] md:h-[7vh] md:px-3 rounded-[15px] px-2 text-[1.4rem]"
+              className="md:w-[30vw] xs:w-[65vw] xs:py-2 lg:h-[10vh] md:h-[7vh] md:px-3 rounded-[15px] px-2 text-[1.4rem]"
               placeholder="Oyun Axtar"
             />
           </div>
         </div>
       </motion.div>
       <div className="contanier px-3">
+        {/* parent element */}
         <div className="grid lg:grid-cols-4 md:gap-4 xs:grid-cols-1 xs:place-items-center xs:gap-3 md:grid-cols-2 p-5">
           {filteredGames.map(
             ({ name, img, oldPrice, price, id }: IAllGames) => {
@@ -70,8 +71,8 @@ function GamesPage() {
               return (
                 <div key={id}>
                   <NavLink
-                    to={"/likedgame"}
-                    className="items-center border p-5 rounded-full fixed z-50 xs:bottom-[10%] md:bottom-[8%] md:left-[15px] lg:left-[4%] bg-orange"
+                    to={"/likedgame"} 
+                    className="items-center  p-5 rounded-full fixed z-50 xs:bottom-[10%] md:bottom-[8%] md:left-[15px] lg:left-[4%] bg-orange"
                   >
                     <div className="w-fit px-2 h-[26px] rounded-[15px] bg-black absolute xs:right-[10px] top-0 md:right-[5px] lg:right-[8.5%] text-white text-center">
                       {cartGame.length}

@@ -14,7 +14,7 @@ function ServicesPage() {
         initial="hidden"
         animate="visible"
         exit="exit"
-   className=" bg-black ">
+   className=" bg-black container mx-auto ">
         <section className=" flex flex-col container mx-auto items-center md:h-[70vh] xs:h-fit justify-center gap-7">
           <div className="flex flex-col  items-center gap-5 py-5 text-white">
             <p className="flex items-center gap-2">
@@ -49,7 +49,7 @@ function ServicesPage() {
               </div>
             </div>
 
-            <div className="md:h-[20vh] md:w-[2px] xs:h-[2px] xs:w-[20vh] bg-zinc-400"></div>
+            <div className="md:h-[20vh] md:w-[2px] xs:h-[2px] xs:w-[40vw] bg-zinc-400"></div>
 
             <div className="flex h-full gap-3 items-center">
               <p>
@@ -67,7 +67,7 @@ function ServicesPage() {
             </div>
 
           
-            <div className="md:h-[20vh] md:w-[2px] xs:h-[2px] xs:w-[20vh] bg-zinc-400"></div>
+            <div className="md:h-[20vh] md:w-[2px] xs:h-[2px] xs:w-[40vw] bg-zinc-400"></div>
             <div className="flex  h-full  gap-3 items-center">
               <p>
                 <i className="border rounded-full p-5 fa-solid fa-bars-progress text-orange bg-white"></i>
@@ -91,7 +91,7 @@ function ServicesPage() {
               src="https://www.youtube.com/embed/y6vWl-8_0QI?si=DtcBOX_0IjNZyrSZ"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              className="rounded-[20px] md:w-[40vw] md:h-[50vh] xs:w-[80vw] xs:h-[40vh] "
+              className="rounded-[20px] md:w-[40vw] md:h-[70vh] xs:w-[80vw] xs:h-[40vh] "
             ></iframe>
           </div>
 
@@ -164,7 +164,7 @@ function ServicesPage() {
           </div>
           <div className=" items-center justify-center flex ">
             <img
-              className="object-cover md:w-[30vw] md:h-[50vh] xs:h-[40vh] xs:w-[80%]  border-white"
+              className="object-cover md:w-[30vw] md:h-[50vh] xs:h-[40vh] xs:w-[90%]  border-white"
               src="/games/game4.webp"
               alt="game"
             />

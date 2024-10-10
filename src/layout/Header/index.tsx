@@ -59,8 +59,8 @@ function Header() {
         </div>
       </header>
       {/* PHONE NAVBAR */}
-      <header className="w-full bg-white text-black  border h-fit xs:sticky xs:top-0 z-50 lg:hidden ">
-        <div className="flex justify-between items-center  p-3">
+      <header className="w-full  text-black bg-white  border h-fit xs:sticky xs:top-0 z-50 lg:hidden ">
+        <div className="flex justify-between items-center  px-3 py-2">
           <div className="">
             <p className="text-[1.5rem] text-black font-bold">Console Game</p>
           </div>

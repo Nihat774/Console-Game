@@ -4,105 +4,106 @@ import Button from "../../ui/Button";
 import Button2 from "../../ui/Button2";
 import Card from "../../ui/Card";
 import MyAccordion from "../../ui/Accordion";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 import { containerVariants } from "../../utils/variants";
 import ScrollAnimation from "../../utils/ScrollAnimation";
-
 
 function HomePage() {
   let pathname = useNavigate();
   return (
     <>
       <motion.div
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-
-      className="w-full  bg-black p-5">
-        <section  className=" container mx-auto text-white flex justify-around ">
-        <ScrollAnimation>
-          <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-7">
-            <p className="text-orange font-bold text-[1.4rem]">3D game Dev </p>
-            <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold lg:text-[3.4rem] lg:w-[40vw] md:w-[31vw] ">
-              Müştərilərimiz üçün hansı işləri görürük ?
-            </p>
-            <p className="lg:w-[30vw] lg:text-[1.4rem] md:w-[40vw]">
-              Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı
-              və yeni oyunların hazırlanmasında bizim komandaya güvənə
-              bilərsiniz.{" "}
-            </p>
-            <Button
-            
-              onClick={() => pathname('/about')}
-              txt1="Ətraflı"
-              txt2={<i className="fa-solid fa-caret-right"></i>}
-              still="rounded-[10px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] hover:bg-transparent"
-            />
-          </div>
-          </ScrollAnimation>
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        className="w-full  bg-black p-5"
+      >
+        <section className=" container mx-auto text-white flex justify-around ">
           <ScrollAnimation>
-          <div className="">
-
-            <div className="lg:h-[85vh] md:w-[40vw] md:h-[40vh] md:object-contain md:flex xs:hidden ">
-              <img
-                className="w-[100%] h-[100%]"
-                src="/home/joy_stick 1.png"
-                alt="console page"
+            <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-7">
+              <p className="text-orange font-bold text-[1.4rem]">
+                3D game Dev{" "}
+              </p>
+              <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold lg:text-[3.4rem] lg:w-[40vw] md:w-[31vw] ">
+                Müştərilərimiz üçün hansı işləri görürük ?
+              </p>
+              <p className="lg:w-[30vw] lg:text-[1.4rem] md:w-[40vw]">
+                Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı
+                və yeni oyunların hazırlanmasında bizim komandaya güvənə
+                bilərsiniz.{" "}
+              </p>
+              <Button
+                onClick={() => pathname("/about")}
+                txt1="Ətraflı"
+                txt2={<i className="fa-solid fa-caret-right"></i>}
+                still="rounded-[10px] md:w-[15vw] xs:w-[30vw] xs:py-1 md:py-3 text-[1.4rem] hover:bg-transparent"
               />
             </div>
-          </div>
-
-        </ScrollAnimation>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="">
+              <div className="lg:h-[85vh] md:w-[40vw] md:h-[40vh] md:object-contain md:flex xs:hidden ">
+                <img
+                  className="w-[100%] h-[100%]"
+                  src="/home/joy_stick 1.png"
+                  alt="console page"
+                />
+              </div>
+            </div>
+          </ScrollAnimation>
         </section>
         <ScrollAnimation>
-        <section className="">
-          <div className="flex justify-between  place-items-center bg-black  lg:h-[20vh] xs:h-[15vh]">
-            <p className="md:text-[1.8rem] xs:text-[1.4rem] font-bold text-white  ml-[5vw]">
-              Hazırda trend olan oyunlarımız
-            </p>
-            <Button2 />
-          </div>
+          <section className="">
+            <div className="flex justify-between  place-items-center bg-black  lg:h-[20vh] xs:h-[15vh]">
+              <p className="md:text-[1.8rem] xs:text-[1.4rem] font-bold text-white  ml-[5vw]">
+                Hazırda trend olan oyunlarımız
+              </p>
+              <Button2 />
+            </div>
 
-          <div className="grid lg:grid-cols-4 gap-5 md:grid-cols-2 xs:grid-cols-1 place-items-center bg-black xs:h-fit xs:py-5 md:h-fit">
-            <Data />
-          </div>
-        </section>
+            <div className="grid lg:grid-cols-4 gap-5 md:grid-cols-2 xs:grid-cols-1 place-items-center bg-black xs:h-fit xs:py-5 md:h-fit">
+              <Data />
+            </div>
+          </section>
         </ScrollAnimation>
-        <section className="bg-black flex flex-col gap-4 ">
-          <div className=" text-white flex justify-center ">
-            <p className="md:text-[2rem] font-bold md:w-[70vw] lg:w-[50vw] py-3 xs:full xs:text-[1.5rem] xs:px-4">
-              Köhnə oyunlardan yoruldunuz? Elə isə doğru məkandasınız.
-            </p>
-          </div>
 
-          <div className="md:w-full xs-full  flex flex-col md:items-center xs:items-center justify-evenly ">
-            <p className="lg:text-[1.3rem] md:text-[1.5rem] font-bold  md:w-[35vw] xs-full xs:py-3 text-white">
-              Console Game
-            </p>
-            <p
-              className="text-wstone
+        <ScrollAnimation>
+          <section className="bg-black flex flex-col gap-4 ">
+            <div className=" text-white flex justify-center ">
+              <p className="md:text-[2rem] font-bold md:w-[70vw] lg:w-[50vw] py-3 xs:full xs:text-[1.5rem] xs:px-4">
+                Köhnə oyunlardan yoruldunuz? Elə isə doğru məkandasınız.
+              </p>
+            </div>
+
+            <div className="md:w-full xs-full  flex flex-col md:items-center xs:items-center justify-evenly ">
+              <p className="lg:text-[1.3rem] md:text-[1.5rem] font-bold  md:w-[35vw] xs-full xs:py-3 text-white">
+                Console Game
+              </p>
+              <p
+                className="text-wstone
            md:w-[70vw] xs:w-full md:text-[1.6rem] lg:text-[1.4rem] xs:text-[1.2rem] xs:p-3"
-            >
-              Yeni,effektiv oyunlarımızı sizin istifadənizə verməkdən qürür
-              duyuruq.{" "}
-            </p>
-          </div>
+              >
+                Yeni,effektiv oyunlarımızı sizin istifadənizə verməkdən qürür
+                duyuruq.{" "}
+              </p>
+            </div>
 
-          <div className="flex justify-center md:h-[80vh]  items-center  md:w-full  xs:h-fit p-5">
-            <iframe
-            autoFocus
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/v-vqi0UaUdE?si=DjvQtmxCwwYgNefd"
-              title="YouTube video player"
-              className=" rounded-[20px] md:w-[60vw] md:h-[60vh] xs:w-full xs:h-[40vh]"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              
-            ></iframe>
-          </div>
-        </section>
+            <div className="flex justify-center md:h-[80vh]  items-center  md:w-full  xs:h-fit p-5">
+              <iframe
+                autoFocus
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/v-vqi0UaUdE?si=DjvQtmxCwwYgNefd"
+                title="YouTube video player"
+                className=" rounded-[20px] md:w-[60vw] md:h-[60vh] xs:w-full xs:h-[40vh]"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
+          </section>
+        </ScrollAnimation>
 
+        <ScrollAnimation>
         <section className=" relative bg-[url('/home/bg-image.png')] bg-no-repeat bg-cover md:h-[100vh] xs:h-fit text-white text-center">
           <div className="absolute bg-[rgba(0,0,0,0.7)] inset-0"></div>
           <article className="flex flex-col  place-items-center">
@@ -139,13 +140,19 @@ function HomePage() {
             </div>
           </article>
         </section>
+        </ScrollAnimation>
+
+
+        <ScrollAnimation>
         <section className="bg-black">
           <p className="bg-black text-white text-[1.5rem] font-bold py-3 text-center">
             Ən çox verilən suallar
           </p>
           <MyAccordion />
         </section>
+        </ScrollAnimation>
 
+        <ScrollAnimation>
         <section className="bg-black text-white flex flex-col place-items-center justify-evenly xs:py-4 xs:gap-5 md:h-[90vh] lg:h-[110vh] xs:h-fit">
           <div className="flex flex-col gap-5 xs:p-3">
             <p className="md:text-[2rem] xs:text-[1.7rem] font-bold ">
@@ -190,6 +197,7 @@ function HomePage() {
           </div>
           <Button2 />
         </section>
+        </ScrollAnimation>
       </motion.div>
     </>
   );
