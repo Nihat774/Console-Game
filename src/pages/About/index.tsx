@@ -158,13 +158,13 @@ function AboutPage() {
       <ScrollAnimation>
         <div className=" bg-black text-white lg:h-[70vh]  flex items-center justify-evenly lg:flex-row xs:flex-col xs:gap-5 xs:py-5 ">
           <TeamCard
-            img="/my fotonew.jpg"
+            img="/photos/my fotonew.jpg"
             name="Nihat Məmmədov"
             text="Game dev"
           />
-          <TeamCard img="/about/2.png" name="Fərid Abbaslı" text="3D design " />
+          <TeamCard img="/photos/feridfoto.jpg" name="Fərid Abbaslı" text="3D design " />
           <TeamCard
-            img="/about/3.webp"
+            img="/photos/muradfoto.jpg"
             name="Murad Babayev"
             text="Mobile dev"
           />

@@ -18,6 +18,7 @@ function LikedPage() {
       text: "Bizi seçdiyiniz üçün təşəkkürlər",
       icon: "success",
       confirmButtonText: "Tamam",
+      
     }).then(() => {});
   }, []);
   function increment() {
@@ -36,8 +37,12 @@ function LikedPage() {
     (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       showAlert();
+      setTimeout(()=>{
+        window.location.reload()
+      },500)
     },
     [showAlert]
+    
   );
 
   useEffect(() => {

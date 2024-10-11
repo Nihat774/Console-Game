@@ -25,10 +25,10 @@ function HomePage() {
               <p className="text-orange font-bold text-[1.4rem]">
                 3D game Dev{" "}
               </p>
-              <p className="md:text-[2.7rem] xs:text-[1.3rem] font-bold lg:text-[3.4rem] lg:w-[40vw] md:w-[31vw] ">
+              <p className=" md:text-[2.7rem] xs:text-[1.3rem] font-bold lg:text-[3.4rem] lg:w-[40vw] md:w-[31vw] ">
                 Müştərilərimiz üçün hansı işləri görürük ?
               </p>
-              <p className="lg:w-[30vw] lg:text-[1.4rem] md:w-[40vw]">
+              <p className="font-costum lg:w-[30vw] lg:text-[1.4rem] md:w-[40vw]">
                 Yeni , maraqlı və yüksək keyfiyyətli PC , PS4 oyunlarının satışı
                 və yeni oyunların hazırlanmasında bizim komandaya güvənə
                 bilərsiniz.{" "}

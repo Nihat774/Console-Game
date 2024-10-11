@@ -180,23 +180,23 @@
   "ourTeams": [
     {
       "id": 21,
-      "img": "/my fotonew.jpg",
+      "img": "/photos/muradfoto.jpg",
       "name": "Nihat Məmmədov",
       "specialty": "Web Developer",
-      "about": "Hər kəsə salam , mənim 20 yaşım var, Hal-hazırda web developer olaraq işləyirəm . Sizlərə yeni üev oyunlar hazırlamaqdan məmnunluq duyuram . Oynayın, əylənin və dostlarınızla yarışın!",
+      "about": "Hər kəsə salam , mənim 19 yaşım var, Hal-hazırda web developer olaraq işləyirəm . Sizlərə yeni üev oyunlar hazırlamaqdan məmnunluq duyuram . Oynayın, əylənin və dostlarınızla yarışın!",
       "cv": "/CV/Nihat CV.pdf"
     },
     {
       "id": 22,
-      "img": "/feridfoto.jpg",
+      "img": "/photos/feridfoto.jpg",
       "name": "Fərid Abbaslı",
       "specialty": "3D Design",
-      "about": "Hər kəsə salam.Mən Fərid Abbaslı. 23 yaşım var. 3D dizayner olaraq işləyirəm. Bir çox xarici layihələrdə aktivlik göstərmişəm. Oyunlarınızın dizaynında bizə güvənə bilərsiniz. ",
+      "about": "Hər kəsə salam.Mən Fərid Abbaslı. 18 yaşım var. 3D dizayner olaraq işləyirəm. Bir çox xarici layihələrdə aktivlik göstərmişəm. Oyunlarınızın dizaynında bizə güvənə bilərsiniz. ",
       "cv": "/CV/Fərid CV.pdf"
     },
     {
       "id": 23,
-      "img": "../news/man-carousel-3.jpeg",
+      "img": "/photos/muradfoto.jpg",
       "name": "Murad Babayev",
       "specialty": "Mobile Developer",
       "about": "Hər kəsə salam. Mən Murad Babayev.Bu komandada Mobile developer olaraq işləyirəm. Yeni texnologiyalardan istifadə etdiyim üçün layihələrim daha maraqlı bəyəniləndir.",

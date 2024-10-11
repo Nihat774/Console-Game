@@ -12,3 +12,9 @@ body {
   @apply overflow-x-hidden;
   @apply bg-black;
 }
+
+@font-face {
+  font-family: 'oceanwide';
+  src: url('/fonts/semibold-oceanwide-39941/Oceanwide-Semibold.otf') format('OpenType');
+  /* Fontun doğru formatını qeyd edin */
+}

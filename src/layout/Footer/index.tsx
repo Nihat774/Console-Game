@@ -10,14 +10,18 @@ function Footer() {
         <div className="p-5">
           <div className="flex xs:flex-col md:flex-row justify-around gap-4 p-4">
             <div className=" flex flex-col gap-4">
-              <Link to={"/"} className="text-[1.5rem] font-bold">Console Game </Link>
+            <Link to={"/"} className="hover:text-orange duration-500">
+              <img className=" h-[12vh] object-cover  w-[15vw]" src="/logo/faiconLogo.svg" alt="Game logo" />
+            </Link>
 
               <p className="md:w-[20vw] xs:w-full text-[1.4rem]">
                 Console Game komandası olaraq xidmətinizdəyik.
               </p>
-              <Link to={"/"} className="text-orange text-[1.2rem]">
+              <Link to={"/"} className="text-orange text-[1.2rem]">\
                 consolegame.com
               </Link>
+
+       
             </div>
 
             <div className="flex flex-col gap-4 xs:text-[1.5rem] ">

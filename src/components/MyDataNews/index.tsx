@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { INewsType } from "../MyTypes";
 import CvButton from "../../ui/CvButton";
+import ScrollAnimation from "../../utils/ScrollAnimation";
 export function AllNews() {
     const [news, setNews] = useState([])
     const url = "https://console-game-db.vercel.app/ourTeams"
@@ -13,6 +14,7 @@ export function AllNews() {
         <>
             {news.map(({ id, name, img, specialty, about, cv }: INewsType) => {
                 return (
+                    <ScrollAnimation>
                     <div  key={id} className="bg-black flex justify-center">
                         <div className="xs:flex-col flex lg:flex-row justify-evenly bg-qara border-1 p-3 h-fit w-[80vw] gap-5  ">
                             <div >
@@ -27,6 +29,7 @@ export function AllNews() {
                             </div>
                         </div>
                     </div>
+                    </ScrollAnimation>
                 )
             })}
         </>

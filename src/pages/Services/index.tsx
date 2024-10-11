@@ -5,6 +5,7 @@ import Button2 from "../../ui/Button2";
 import Swipper from "../../ui/SwipperToServices";
 import {motion} from 'framer-motion'
 import { containerVariants } from "../../utils/variants";
+import ScrollAnimation from "../../utils/ScrollAnimation";
 function ServicesPage() {
   return (
     <>
@@ -14,6 +15,8 @@ function ServicesPage() {
         animate="visible"
         exit="exit"
    className=" bg-black container mx-auto ">
+
+<ScrollAnimation>
         <section className=" flex flex-col container mx-auto items-center md:h-[70vh] xs:h-fit justify-center gap-7">
           <div className="flex flex-col  items-center gap-5 py-5 text-white">
             <p className="flex items-center gap-2">
@@ -83,7 +86,9 @@ function ServicesPage() {
             </div>
           </div>
         </section>
+        </ScrollAnimation>
 
+        <ScrollAnimation>
         <section className="flex md:flex-row xs:flex-col xs:py-5 xs:gap-5 justify-center lg:gap-7 items-center md:h-[70vh]   xs:h-fit bg-black">
           <div >
             <iframe
@@ -145,7 +150,9 @@ function ServicesPage() {
             </div>
           </div>
         </section>
+        </ScrollAnimation>
 
+        <ScrollAnimation>
         <section className="flex md:flex-row xs:flex-col justify-evenly  items-center bg-black md:h-[70vh] xs:h-fit">
           <div className="flex flex-col gap-5 md:w-[35vw] xs:w-full xs:p-5  text-white">
             <p className="text-[1.2rem]  xs:w-full ">
@@ -169,7 +176,9 @@ function ServicesPage() {
             />
           </div>
         </section>
+        </ScrollAnimation>
 
+        <ScrollAnimation>
         <section className="flex md:flex-row xs:flex-col justify-evenly items-center xs:py-5 md:h-[70vh] xs:h-fit bg-black">
           <div className="flex items-center justify-center">
             <img
@@ -179,7 +188,7 @@ function ServicesPage() {
             />
           </div>
 
-          <div className="flex flex-col gap-5 md:w-[30vw] xs:w-full lg:w-[50vw] xs:p-3  text-white ">
+          <div className="flex flex-col gap-5 md:w-[30vw] xs:w-full lg:w-[40vw] xs:p-3  text-white ">
             <p className="text-[1.4rem] font-semibold ">
             Həmçinin, mütəmadi olaraq yenilənən oyun kolleksiyamız sayəsində daim yeni macəralara atılmaq imkanınız olacaq.
             </p>
@@ -192,6 +201,7 @@ function ServicesPage() {
             <Button2 />
           </div>
         </section>
+        </ScrollAnimation>
 
         <section>
           <Swipper />

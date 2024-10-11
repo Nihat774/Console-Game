@@ -50,7 +50,7 @@ function GamesPage() {
           >
             consolegame.com
           </Link>
-          <div className="flex justify-between xs:w-full lg:w-[40%] sticky top-[150px] bg-orange py-3">
+          <div className="flex justify-between xs:w-full md:w-fit sticky top-[150px] bg-orange py-3">
             <input
               type="text"
               maxLength={10}

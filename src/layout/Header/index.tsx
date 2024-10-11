@@ -18,11 +18,11 @@ function Header() {
         <div className="container mx-auto flex  justify-between ">
           <div className="font-bold text-[1.8rem]  items-center lg:flex xs:hidden">
             <Link to={"/"} className="hover:text-orange duration-500">
-              Console Game
+              <img className=" h-[12vh] object-cover  w-[15vw]" src="/logo/faiconLogo.svg" alt="Game logo" />
             </Link>
           </div>
 
-          <nav className="lg:flex lg:text-[1.3rem] 2xl:text-[1.8rem] px-5 lg:font-semibold gap-9 items-center xs:hidden text-white">
+          <nav className="lg:flex lg:text-[1.5rem] 2xl:text-[1.8rem] px-5 lg:font-semibold gap-9 items-center xs:hidden text-white">
             <NavLink to={"/"}>Əsas səhifə</NavLink>
             <NavLink
               className={({ isActive }) => (isActive ? "active" : "")}
