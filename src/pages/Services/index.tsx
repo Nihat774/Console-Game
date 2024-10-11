@@ -5,7 +5,6 @@ import Button2 from "../../ui/Button2";
 import Swipper from "../../ui/SwipperToServices";
 import {motion} from 'framer-motion'
 import { containerVariants } from "../../utils/variants";
-// import Swipper from "../../ui/SwipperToServices";
 function ServicesPage() {
   return (
     <>
@@ -19,10 +18,10 @@ function ServicesPage() {
           <div className="flex flex-col  items-center gap-5 py-5 text-white">
             <p className="flex items-center gap-2">
               <Link to={"/"} className="text-[1.3rem]">
-                Home{" "}
+                Əsas səhifə{" "}
               </Link>
               <i className="fa-solid fa-chevron-right"></i>
-              <p className="text-orange text-[1.3rem]">Services</p>
+              <p className="text-orange text-[1.3rem]">Servis</p>
             </p>
             <p className="text-[1.5rem] px-7">
             Oyun Dünyasının Sərhədsiz Macəraları
@@ -41,7 +40,7 @@ function ServicesPage() {
               <div className=" text-white">
                 <CountUp
                   className="text-[1.7rem] font-bold"
-                  end={20}
+                  end={30}
                   duration={2}
                 />
                 <span className="text-[1.7rem] font-bold">+</span>
@@ -58,7 +57,7 @@ function ServicesPage() {
               <div className=" text-white">
                 <CountUp
                   className="text-[1.7rem] font-bold"
-                  end={15}
+                  end={25}
                   duration={2}
                 />
                 <span className="text-[1.7rem] font-bold">+</span>
