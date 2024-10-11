@@ -16,7 +16,7 @@ function ContactPage() {
         <div className="text-center">
           <ul className="flex justify-center gap-4">
             <li>
-              <Link to="/">Əsas səhifə</Link>
+              <Link to="/" className="hover:text-orange">Əsas səhifə</Link>
             </li>
             <li>&gt;</li>
             <li className="">Əlaqə</li>
@@ -47,23 +47,23 @@ function ContactPage() {
             <span className="font-medium xs:text-[1.4rem] md:text-[1rem]">Follow us</span>
             <div className="flex gap-4 md:justify-end md:place-items-end xs:justify-evenly py-2 ">
               <Icon link="https://www.facebook.com/">
-                <i className="hover:text-blue-500 fa-brands fa-facebook-f  text-[1.4rem] border rounded-full py-2 px-3 text-black bg-white"></i>
+                <i className="hover:bg-blue-500 fa-brands fa-facebook-f  text-[1.4rem] border rounded-full py-2 px-3 text-black bg-white"></i>
               </Icon>
               <Icon link="https://www.instagram.com/">
-                <i className="hover:text-blue-500 fa-brands fa-instagram text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
+                <i className="hover:bg-blue-500 fa-brands fa-instagram text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
               </Icon>
               <Icon link="https://twitter.com/?lang=tr">
-                <i className="hover:text-blue-500 fa-brands fa-twitter text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
+                <i className="hover:bg-blue-500 fa-brands fa-twitter text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
               </Icon>
               <Icon link="https://linkedin.com/">
-                <i className="hover:text-blue-500 fa-brands fa-linkedin-in text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
+                <i className="hover:bg-blue-500 fa-brands fa-linkedin-in text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
               </Icon>
             </div>
           </div>
           <div className=" flex md:flex-row xs:flex-col items-center gap-4">
             <p className="md:w-[5px] md:h-[20vh] xs:w-[25vw] xs:h-[5px]"></p>
             <i className="fa-solid fa-phone-volume text-2xl"></i>
-            <Link to="tel:+994557748548" className="text-lg">
+            <Link to="tel:+994557748548" className="text-lg hover:text-orange">
               +994 55 774 85 48 
             </Link>
           </div>
@@ -116,7 +116,7 @@ function ContactPage() {
                 type="submit"
                 className="w-full bg-orange-600 py-3 border bg-orange hover:bg-transparent hover:border-orange hover:text-orange duration-500 rounded-lg text-white font-semibold hover:bg-orange-500"
               >
-                Get in touch
+                Göndər
               </button>
             </form>
             <Phone />

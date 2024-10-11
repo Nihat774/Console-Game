@@ -15,7 +15,7 @@ export function AllNews() {
             {news.map(({ id, name, img, specialty, about, cv }: INewsType) => {
                 return (
                     <ScrollAnimation>
-                    <div  key={id} className="bg-black flex justify-center">
+                    <div id={`${id}`} key={id} className="bg-black flex justify-center">
                         <div className="xs:flex-col flex lg:flex-row justify-evenly bg-qara border-1 p-3 h-fit w-[80vw] gap-5  ">
                             <div >
                                 <img className=" xs:h-[40vh] xs:w-full flex  lg:h-[60vh] lg:w-[35vw] object-cover rounded-[10px]" src={img} alt="game-image" />
