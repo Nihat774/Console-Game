@@ -43,9 +43,9 @@ function HomePage() {
           </ScrollAnimation>
           <ScrollAnimation>
             <div className="">
-              <div className="lg:h-[85vh] md:w-[40vw] md:h-[40vh] md:object-contain md:flex xs:hidden ">
+              <div className="lg:h-[85vh] md:w-[40vw]  md:h-[40vh] md:object-contain md:flex xs:hidden ">
                 <img
-                  className="w-[100%] h-[100%]"
+                  className="w-[100%] h-[100%] xs:absolute xs:left-[15%]"
                   src="/home/joy_stick 1.png"
                   alt="console page"
                 />

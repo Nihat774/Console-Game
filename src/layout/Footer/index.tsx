@@ -17,7 +17,7 @@ function Footer() {
               <p className="md:w-[20vw] xs:w-full text-[1.4rem]">
                 Console Game komandası olaraq xidmətinizdəyik.
               </p>
-              <Link to={"/"} className="text-orange text-[1.2rem]">\
+              <Link to={"/"} className="text-orange text-[1.2rem]">
                 consolegame.com
               </Link>
 
@@ -50,7 +50,7 @@ function Footer() {
                 saytımıza qoşulun!
               </p>
               <Link
-                to={"tel:+90889097890"}
+                to={"tel:+994557748548"}
                 className="md:w-[20vw] xs:w-full xs:text-[1.4rem] hover:text-orange"
               >
                 +994 55 774 85 48
