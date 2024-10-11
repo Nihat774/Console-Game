@@ -184,7 +184,7 @@
       "name": "Nihat Məmmədov",
       "specialty": "Web Developer",
       "about": "Hər kəsə salam , mənim 20 yaşım var, Hal-hazırda web developer olaraq işləyirəm . Sizlərə yeni üev oyunlar hazırlamaqdan məmnunluq duyuram . Oynayın, əylənin və dostlarınızla yarışın!",
-      "cv": "public/CV/Nihat CV.pdf"
+      "cv": "/CV/Nihat CV.pdf"
     },
     {
       "id": 22,
@@ -192,7 +192,7 @@
       "name": "Fərid Abbaslı",
       "specialty": "3D Design",
       "about": "Hər kəsə salam.Mən Fərid Abbaslı. 23 yaşım var. 3D dizayner olaraq işləyirəm. Bir çox xarici layihələrdə aktivlik göstərmişəm. Oyunlarınızın dizaynında bizə güvənə bilərsiniz. ",
-      "cv": "public/CV/Fərid CV.pdf"
+      "cv": "/CV/Fərid CV.pdf"
     },
     {
       "id": 23,
@@ -200,7 +200,7 @@
       "name": "Murad Babayev",
       "specialty": "Mobile Developer",
       "about": "Hər kəsə salam. Mən Murad Babayev.Bu komandada Mobile developer olaraq işləyirəm. Yeni texnologiyalardan istifadə etdiyim üçün layihələrim daha maraqlı bəyəniləndir.",
-      "cv": "public/CV/Murad CV.pdf"
+      "cv": "/CV/Murad CV.pdf"
     }
   ]
 }
