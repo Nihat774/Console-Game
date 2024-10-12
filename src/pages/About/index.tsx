@@ -49,7 +49,7 @@ function AboutPage() {
 
             <Button
               onClick={() => location("/games")}
-              still="xs:w-[50vw] lg:w-[16vw] p-2 text-[1.4rem] rounded-[10px] hover:bg-transparent"
+              still="xs:w-[50vw] hover:text-orange lg:w-[16vw] p-2 text-[1.4rem] rounded-[10px] hover:bg-transparent"
               txt2={<i className="fa-solid fa-arrow-right"></i>}
               txt1="Oyunlar"
             />

@@ -52,7 +52,7 @@ function Header() {
               txt1="Əlaqə"
               txt2=""
               onClick={() => location("/contact")}
-              still="rounded-[10px] p-2 hover:bg-transparent"
+              still="hover:text-orange rounded-[10px] p-2 hover:bg-transparent"
             />
           </nav>
                    <Login />
@@ -110,7 +110,7 @@ function Header() {
               onClick={() => {
                 location("/contact");
               }}
-              still="rounded-[10px] p-3 w-fit"
+              still="rounded-[10px] p-3 w-fit text-white"
             />
           </div>
 

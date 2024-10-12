@@ -11,7 +11,7 @@ function Footer() {
           <div className="flex xs:flex-col md:flex-row justify-around gap-4 p-4">
             <div className=" flex flex-col gap-4">
             <Link to={"/"} className="hover:text-orange duration-500">
-              <img className=" h-[12vh] object-cover  w-[15vw]" src="/logo/faiconLogo.svg" alt="Game logo" />
+              <img className=" h-[12vh] object-cover  xs:w-[23vw] md:w-[15vw]" src="/logo/faiconLogo.svg" alt="Game logo" />
             </Link>
 
               <p className="md:w-[20vw] xs:w-full text-[1.4rem]">
