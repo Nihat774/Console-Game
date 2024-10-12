@@ -83,34 +83,36 @@ function ContactPage() {
           </p>
           <div className=" w-[80vw] flex xs:flex-col md:flex-row xs:gap-7 items-center">
             <form className="w-full max-w-lg mx-auto flex flex-col gap-4">
-              <div className="flex gap-4">
+              <div className="flex gap-4 ">
                 <input
+                required
                   type="text"
-                  id="first-name"
-                  name="first-name"
+               
                   placeholder="First Name"
-                  className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
+                  className="w-full px-4 py-3 rounded-lg text-black"
                 />
                 <input
+                required
                   type="text"
                   id="last-name"
                   name="last-name"
                   placeholder="Last Name"
-                  className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
+                  className="w-full px-4 py-3 rounded-lg text-black bg-gray-800"
                 />
               </div>
               <input
+              required
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Email Address"
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
+                className="w-full px-4 py-3 rounded-lg text-black bg-gray-800 "
               />
               <textarea
                 id="message"
                 name="message"
                 placeholder="Message"
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white resize-none h-32"
+                className="w-full px-4 py-3 rounded-lg text-black bg-gray-800 resize-none h-32"
               ></textarea>
               <button
                 type="submit"
