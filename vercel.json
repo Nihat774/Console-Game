@@ -1,8 +1,11 @@
-{
+
+
+  {
     "rewrites": [
       {
         "source": "/(.*)",
-        "destination": "/contact"
+        "destination": "/index.html"
       }
     ]
   }
+  
