@@ -16,6 +16,7 @@ function ServicesPage() {
         initial="hidden"
         animate="visible"
         exit="exit"
+
         className={`bg-black container mx-auto ${darkMode ? "bg-black text-white" : "bg-white text-black"} `}>
 
         <ScrollAnimation>
@@ -34,6 +35,33 @@ function ServicesPage() {
               </p>
               <p className={`${darkMode?"text-white":"text-black"}`}> İstər yeni çıxan oyunlar, istərsə də klassik əsərlər - hamısı bir arada, hər kəsin zövqünə uyğun bir şey var.
                 İstər yeni çıxan oyunlar, istərsə də klassik əsərlər - hamısı bir arada, hər kəsin zövqünə uyğun bir şey var.
+
+
+
+<ScrollAnimation>
+        <section className=" flex flex-col container mx-auto items-center md:h-[70vh] xs:h-fit justify-center gap-7">
+          <div className="flex flex-col  items-center gap-5 py-5 text-white">
+            <p className="flex items-center gap-2">
+              <Link to={"/"} className="text-[1.3rem]">
+                Əsas səhifə{" "}
+              </Link>
+              <i className="fa-solid fa-chevron-right"></i>
+              <p className="text-orange text-[1.3rem]">Servis</p>
+            </p>
+            <p className="text-[1.5rem] px-7">
+            Oyun Dünyasının Sərhədsiz Macəraları
+
+            </p>
+            <p> İstər yeni çıxan oyunlar, istərsə də klassik əsərlər - hamısı bir arada, hər kəsin zövqünə uyğun bir şey var.
+ İstər yeni çıxan oyunlar, istərsə də klassik əsərlər - hamısı bir arada, hər kəsin zövqünə uyğun bir şey var.
+            </p>
+          </div>
+
+          <div className="flex md:flex-row xs:flex-col justify-evenly py-5 bg-gray items-center border rounded-[15px] md:h-[30vh] w-[70vw] xs:h-fit xs:gap-7 xs:py-5">
+            <div className="flex h-full  gap-5  items-center">
+              <p>
+                <i className=" rounded-full p-5 fa-solid fa-user text-orange bg-white"></i>
+
               </p>
             </div>
 

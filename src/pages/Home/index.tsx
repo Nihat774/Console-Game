@@ -49,8 +49,8 @@ function HomePage() {
             <div className="">
               <div className="lg:h-[85vh] md:w-[40vw]  md:h-[40vh] md:object-contain md:flex xs:hidden ">
                 <img
-                  className="w-[100%] h-[100%] xs:absolute xs:left-[15%]"
-                  src={`${darkMode?"/home/joy_stick 1.png":"/home/bgImageforLight.png"}`}
+                  className="w-[100%] h-[100%] xs:absolute xs:left-[0%] md:left-[10%] object-contain"
+                  src={`${darkMode?"/home/bg-excample.png":"/home/bgImageforLight.png"}`}
                   alt="console page"
                 />
               </div>
