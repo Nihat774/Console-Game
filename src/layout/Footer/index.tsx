@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import Icon from "../../ui/SocialIcon";
 import Copy from "../CopyRight";
 import ShareButton from "../../ui/ShareButton";
+import { useMode } from "../../Context";
 
 function Footer() {
+  const {darkMode} = useMode()
   return (
     <>
-      <footer className=" bg-black text-white ">
+      <footer className={` ${darkMode?"bg-black text-white":"bg-white text-black"}`}>
         <div className="p-5">
           <div className="flex xs:flex-col md:flex-row justify-around gap-4 p-4">
             <div className=" flex flex-col gap-4">

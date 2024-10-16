@@ -7,9 +7,13 @@ import MyAccordion from "../../ui/Accordion";
 import { motion } from "framer-motion";
 import { containerVariants } from "../../utils/variants";
 import ScrollAnimation from "../../utils/ScrollAnimation";
+import { useMode } from "../../Context";
+
+
 
 function HomePage() {
   let pathname = useNavigate();
+  const {darkMode} = useMode()
   return (
     <>
       <motion.div
@@ -17,11 +21,11 @@ function HomePage() {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="w-full  bg-black p-5"
+        className={`w-full py-5 ${darkMode?"bg-black text-white":"bg-white text-black"}`}
       >
-        <section className=" container mx-auto text-white flex justify-around ">
+        <section className={`container mx-auto flex justify-around `}>
           <ScrollAnimation>
-            <div className="md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-7">
+            <div className={`md:w-[30vw]  lg:w-full xs:w-full xs:px-5 flex flex-col gap-7`}>
               <p className="text-orange font-bold text-[1.4rem]">
                 3D game Dev{" "}
               </p>
@@ -46,7 +50,7 @@ function HomePage() {
               <div className="lg:h-[85vh] md:w-[40vw]  md:h-[40vh] md:object-contain md:flex xs:hidden ">
                 <img
                   className="w-[100%] h-[100%] xs:absolute xs:left-[15%]"
-                  src="/home/joy_stick 1.png"
+                  src={`${darkMode?"/home/joy_stick 1.png":"/home/bgImageforLight.png"}`}
                   alt="console page"
                 />
               </div>
@@ -55,37 +59,36 @@ function HomePage() {
         </section>
         <ScrollAnimation>
           <section className="">
-            <div className="flex justify-between  place-items-center bg-black  lg:h-[20vh] xs:h-[15vh]">
-              <p className="md:text-[1.8rem] xs:text-[1.4rem] font-bold text-white  ml-[5vw]">
+            <div className={`flex justify-between items-center ${darkMode?"bg-black text-white":"bg-white text-white"}  lg:h-[20vh] xs:h-[15vh]`}>
+              <p className={`md:text-[1.8rem] xs:text-[1.4rem] font-bold ${darkMode?"text-white":"text-black"} ml-[5vw]`}>
                 Hazırda trend olan oyunlarımız
               </p>
               <Button2 />
             </div>
 
-            <div className="grid lg:grid-cols-4 gap-5 md:grid-cols-2 xs:grid-cols-1 place-items-center bg-black xs:h-fit xs:py-5 md:h-fit">
+            <div className= {`px-5 grid lg:grid-cols-4 gap-5 md:grid-cols-2 xs:grid-cols-1 place-items-center ${darkMode?"bg-black":"bg-white"} xs:h-fit xs:py-5 md:h-fit`}>
               <Data />
             </div>
           </section>
         </ScrollAnimation>
 
         <ScrollAnimation>
-          <section className="bg-black flex flex-col gap-4 ">
-            <div className=" text-white flex justify-center ">
+          <section className={`"bg-black flex flex-col gap-4 `}>
+            <div className={`${darkMode?"text-white":"text-black"} flex justify-center`}>
               <p className="md:text-[2rem] font-bold md:w-[70vw] lg:w-[50vw] py-3 xs:full xs:text-[1.5rem] xs:px-4">
                 Köhnə oyunlardan yoruldunuz? Elə isə doğru məkandasınız.
               </p>
             </div>
 
             <div className="md:w-full xs-full  flex flex-col md:items-center xs:items-center justify-evenly ">
-              <p className="lg:text-[1.3rem] md:text-[1.5rem] font-bold  md:w-[35vw] xs-full xs:py-3 text-white">
+              <p className="lg:text-[1.3rem] md:text-[1.5rem] xs:text-[1.6rem] font-bold md:w-[48vw] xs-full xs:py-3">
                 Console Game
               </p>
               <p
-                className="text-wstone
-           md:w-[70vw] xs:w-full md:text-[1.6rem] lg:text-[1.4rem] xs:text-[1.2rem] xs:p-3"
+                className={`text-wstone}
+           md:w-[50vw] xs:w-full md:text-[1.6rem] lg:text-[1.4rem] xs:text-[1.2rem] xs:p-3`}
               >
-                Yeni,effektiv oyunlarımızı sizin istifadənizə verməkdən qürür
-                duyuruq.{" "}
+                Yeni,effektiv oyunlarımızı sizin istifadənizə verdiyimiz üçün şadıq.{" "}
               </p>
             </div>
 
@@ -144,8 +147,8 @@ function HomePage() {
 
 
         <ScrollAnimation>
-        <section className="bg-black">
-          <p className="bg-black text-white text-[1.5rem] font-bold py-3 text-center">
+        <section className={`${darkMode}`}>
+          <p className=" text-white text-[1.5rem] font-bold py-3 text-center">
             Ən çox verilən suallar
           </p>
           <MyAccordion />
@@ -153,7 +156,7 @@ function HomePage() {
         </ScrollAnimation>
 
         <ScrollAnimation>
-        <section className="bg-black text-white flex flex-col place-items-center justify-evenly xs:py-4 xs:gap-5 md:h-[90vh] lg:h-[110vh] xs:h-fit">
+        <section className={`${darkMode?"bg-black":"text-black"} flex flex-col place-items-center justify-evenly xs:py-4 xs:gap-5 md:h-[90vh] lg:h-[110vh] xs:h-fit`}>
           <div className="flex flex-col gap-5 xs:p-3">
             <p className="md:text-[2rem] xs:text-[1.7rem] font-bold ">
               Hazırladığımız oyunlar

@@ -75,3 +75,7 @@ export interface IModal {
   ShowAlert?:()=>void
   text?: string;
 }
+export interface ModeContextType {
+  darkMode: boolean;
+  toggleDarkMode: () => void;
+}
