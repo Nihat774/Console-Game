@@ -3,8 +3,10 @@ import Icon from "../../ui/SocialIcon";
 import Phone from "../../ui/Phone";
 import { motion } from "framer-motion";
 import { containerVariants } from "../../utils/variants";
+import { useMode } from "../../Context";
 
 function ContactPage() {
+  const {darkMode} = useMode()
   return (
     <>
       <motion.section
@@ -12,10 +14,10 @@ function ContactPage() {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="bg-black text-white py-8"
+        className={`bg-black text-white py-8 ${darkMode?"bg-black text-white":"bg-white text-black"}`}
       >
-        <div className="text-center">
-          <ul className="flex justify-center gap-4">
+        <div className={`text-center   ${darkMode?"bg-black text-white":"bg-white text-black"}`}>
+          <ul className={`flex justify-center gap-4 `}>
             <li>
               <Link to="/" className="hover:text-orange">
                 Əsas səhifə
@@ -82,7 +84,7 @@ function ContactPage() {
         </div>
 
         {/* Əlaqə formu */}
-        <div className="bg-[#1c140f] py-12 text-center relative flex flex-col items-center">
+        <div className={`bg-[#1c140f] py-12 text-center relative flex flex-col items-center  ${darkMode?"bg-black text-white":"bg-white text-black"}`}>
           <h4 className="md:text-3xl xs:text-[1.4rem] mb-4">
             Ətraflı mlumat üçün bizə yazın
           </h4>
