@@ -14,7 +14,7 @@ function ContactPage() {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className={`bg-black text-white py-8 ${darkMode?"bg-black text-white":"bg-white text-black"}`}
+        className={`py-8 ${darkMode?"bg-black text-white":"bg-white text-black"}`}
       >
         <div className={`text-center   ${darkMode?"bg-black text-white":"bg-white text-black"}`}>
           <ul className={`flex justify-center gap-4 `}>
@@ -91,12 +91,13 @@ function ContactPage() {
           <p className="mb-8">Oyunların qiymətləri və təsvirləri göstərilir.</p>
           <div className=" w-[80vw] flex xs:flex-col md:flex-row xs:gap-7 items-center">
             <form  className="w-full max-w-lg mx-auto flex flex-col gap-4">
+              <p className="text-[1.6rem] font-semibold">Əlaqə formu</p>
               <div className="flex gap-4 ">
                 <input
                   required
                   type="text"
                   placeholder="First Name"
-                  className="w-full px-4 py-3 rounded-lg text-black"
+                  className="w-full px-4 py-3 rounded-lg text-black border"
                 />
                 <input
                   required
@@ -104,7 +105,7 @@ function ContactPage() {
                   id="last-name"
                   name="last-name"
                   placeholder="Last Name"
-                  className="w-full px-4 py-3 rounded-lg text-black bg-gray-800"
+                  className="w-full px-4 py-3 rounded-lg text-black bg-gray-800 border"
                 />
               </div>
               <input
@@ -113,13 +114,13 @@ function ContactPage() {
                 id="email"
                 name="email"
                 placeholder="Email Address"
-                className="w-full px-4 py-3 rounded-lg text-black bg-gray-800 "
+                className="w-full px-4 py-3 rounded-lg text-black bg-gray-800 border "
               />
               <textarea
                 id="message"
                 name="message"
                 placeholder="Message"
-                className="w-full px-4 py-3 rounded-lg text-black bg-gray-800 resize-none h-32"
+                className="w-full px-4 py-3 rounded-lg text-black border bg-gray-800 resize-none h-32"
               ></textarea>
               <button
                 type="submit"

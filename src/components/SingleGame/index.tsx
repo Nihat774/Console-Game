@@ -15,7 +15,7 @@ function SingleGamePage({ handleSubmit, ShowAlert }: IModal) {
   return (
     <>
       <div
-        className={`h-[12vh] flex pl-5 items-center  md:w-full  xs:w-fit ${
+        className={`h-[12vh] flex pl-5 items-center  md:w-full   ${
           darkMode ? "bg-black text-white" : "bg-white text-black"
         } `}
       >
