@@ -14,7 +14,7 @@ function ServicesPage() {
         initial="hidden"
         animate="visible"
         exit="exit"
-   className=" bg-black container mx-auto ">
+   className=" bg-black  ">
 
 <ScrollAnimation>
         <section className=" flex flex-col container mx-auto items-center md:h-[70vh] xs:h-fit justify-center gap-7">
