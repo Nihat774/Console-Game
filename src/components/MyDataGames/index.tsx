@@ -1,6 +1,6 @@
 import  {  useState } from "react"
 import { Link } from "react-router-dom"
-import { IData } from "../MyTypes"
+import { IAllGames } from "../MyTypes"
 export function AllGames() {
   const [games, setGames] = useState([])
   const url = "http://localhost:3000/allgames"
@@ -9,7 +9,7 @@ export function AllGames() {
     .then((data) => setGames(data))
     return (
     <>
-      {games.map(({id, name, img, oldPrice, price}:IData) => { 
+      {games.map(({id, name, img, oldPrice, price}:IAllGames) => { 
         return (
        
             <Link key={id} to={`${url}/${id}`}>

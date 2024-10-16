@@ -8,7 +8,7 @@ function SingleGamePage({handleSubmit,ShowAlert}:IModal) {
   // console.log(id);
   const [games, setGames] = useState<any | (() => void)>([]);
   useEffect(() => {
-    fetch(`http://localhost:3000/games/${id}`)
+    fetch(`https://console-game-db.vercel.app/games/${id}`)
       .then((response) => response.json())
       .then((data) => setGames(data));
   }, [id]);

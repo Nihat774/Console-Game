@@ -4,6 +4,8 @@ import { RootState } from "../../state/store";
 import Modal from "../../ui/modalSlice";
 import React, { useCallback, useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion";
+import { containerVariants } from "../../utils/variants";
 
 function LikedPage() {
   const data = useSelector((state: RootState) => state.cart.value);
@@ -12,13 +14,12 @@ function LikedPage() {
 
   const showAlert = useCallback(() => {
     Swal.fire({
-      title: 'Sifarişiniz təsdiqləndi!',
-      text: 'Bizi seçdiyiniz üçün təşəkkürlər',
-      icon: 'success',
-      confirmButtonText: 'Tamam',
-    }).then(() => {
-     
-    });
+      title: "Sifarişiniz təsdiqləndi!",
+      text: "Bizi seçdiyiniz üçün təşəkkürlər",
+      icon: "success",
+      confirmButtonText: "Tamam",
+      
+    }).then(() => {});
   }, []);
   function increment() {
     if (say < 3) {
@@ -32,10 +33,17 @@ function LikedPage() {
       setSay(say - 1);
     }
   }
-  const handleSubmit = useCallback((event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); 
-    showAlert(); 
-  }, [showAlert]);
+  const handleSubmit = useCallback(
+    (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      showAlert();
+      setTimeout(()=>{
+        window.location.reload()
+      },500)
+    },
+    [showAlert]
+    
+  );
 
   useEffect(() => {
     setCartGame(data);
@@ -52,21 +60,27 @@ function LikedPage() {
   if (!cartGame.length) {
     return (
       <>
-        <div className="container mx-auto">
-          <div className="h-[15vh] flex flex-col justify-center w-fit">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          className="container mx-auto"
+        >
+          <div className="h-[15vh] flex flex-col items-center justify-center w-fit">
             <Link
-              className="border p-3 bg-orange text-white text-[1.3rem] font-semibold rounded-[15px] flex flex-col justify-center"
+              className="py-2 px-[4vw] bg-orange text-white text-[1.3rem] font-semibold rounded-[15px] flex flex-col justify-center"
               to={"/games"}
             >
               Geri
             </Link>
           </div>
           <div className="flex justify-center h-[60vh] items-center">
-            <p className="border text-[1.4rem] bg-orange text-white p-3">
+            <p className="border text-[1.4rem] bg-orange text-white p-2">
               Səbətiniz boşdur.
             </p>
           </div>
-        </div>
+        </motion.div>
       </>
     );
   } else {
@@ -81,7 +95,7 @@ function LikedPage() {
               Geri
             </Link>
             <Modal
-            ShowAlert = {showAlert}
+              ShowAlert={showAlert}
               handleSubmit={handleSubmit}
               text="Səbəti təsdiqlə"
               style="w-fit text-white"

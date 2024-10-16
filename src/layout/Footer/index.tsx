@@ -2,15 +2,19 @@ import { Link } from "react-router-dom";
 import Icon from "../../ui/SocialIcon";
 import Copy from "../CopyRight";
 import ShareButton from "../../ui/ShareButton";
+import { useMode } from "../../Context";
 
 function Footer() {
+  const {darkMode} = useMode()
   return (
     <>
-      <footer className=" bg-black text-white ">
+      <footer className={` ${darkMode?"bg-black text-white":"bg-white text-black"}`}>
         <div className="p-5">
           <div className="flex xs:flex-col md:flex-row justify-around gap-4 p-4">
             <div className=" flex flex-col gap-4">
-              <Link to={"/"} className="text-[1.5rem] font-bold">Console Game </Link>
+            <Link to={"/"} className="">
+              <img className=" h-[12vh] object-cover  xs:w-[43vw] md:w-[15vw]" src="/logo/faiconLogo.svg" alt="Game logo" />
+            </Link>
 
               <p className="md:w-[20vw] xs:w-full text-[1.4rem]">
                 Console Game komandası olaraq xidmətinizdəyik.
@@ -18,6 +22,8 @@ function Footer() {
               <Link to={"/"} className="text-orange text-[1.2rem]">
                 consolegame.com
               </Link>
+
+       
             </div>
 
             <div className="flex flex-col gap-4 xs:text-[1.5rem] ">
@@ -46,7 +52,7 @@ function Footer() {
                 saytımıza qoşulun!
               </p>
               <Link
-                to={"tel:+90889097890"}
+                to={"tel:+994557748548"}
                 className="md:w-[20vw] xs:w-full xs:text-[1.4rem] hover:text-orange"
               >
                 +994 55 774 85 48

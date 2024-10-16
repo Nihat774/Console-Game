@@ -3,6 +3,7 @@ export default {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -19,12 +20,11 @@ export default {
        'gradient':'#d9822b',
        'gradient1':'#ed8be1'
         
-      },
+      }
     },
   
     fontFamily: {
-      'rubik': ' "Rubik", sans-serif',
-      'poppins': ' "Poppins" , sans-serif',
+      custom: ['oceanwide', 'sans-serif'],
 
     },
     screens: {

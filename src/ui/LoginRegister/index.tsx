@@ -11,7 +11,7 @@ function Login() {
       <div className="flex items-center ">
             <SignedOut>
               <SignInButton mode="modal">
-                <button className="border hover:bg-transparent hover:text-orange duration-500 hover:border-orange p-3 text-white text-[1.4rem] font-semibold">Giriş et</button>
+                <button className={` text-orange border rounded-[10px] border-orange hover:bg-transparent hover:text-orange duration-500 hover:border-orange p-2 text-[1.4rem] font-semibold`}>Giriş et</button>
               </SignInButton>
             </SignedOut>
             <SignedIn>
