@@ -57,8 +57,8 @@ function Header() {
             />
           </nav>
           <div className=" flex items-center gap-5">
-            <Login />
             <Mode />
+            <Login />
           </div>
         </div>
       </header>
@@ -81,7 +81,7 @@ function Header() {
          </div>
         </div>
         <nav
-          className={`flex flex-col gap-5  xs:py-3 xs:text-[1.5rem] xs:font-semibold ${darkMode?"text-white":"text-black"} h-fit text-center ${
+          className={`flex  flex-col gap-5  xs:py-3 xs:text-[1.5rem] xs:font-semibold ${darkMode?"text-white":"text-black"} h-fit text-center ${
             clicked ? "flex" : "hidden"
           }`}
         >
