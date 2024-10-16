@@ -6,6 +6,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 import { containerVariants } from "../../utils/variants";
+import { useMode } from "../../Context";
 
 function LikedPage() {
   const data = useSelector((state: RootState) => state.cart.value);
@@ -56,7 +57,7 @@ function LikedPage() {
       })
     );
   };
-
+const {darkMode} = useMode()
   if (!cartGame.length) {
     return (
       <>
@@ -65,11 +66,11 @@ function LikedPage() {
           initial="hidden"
           animate="visible"
           exit="exit"
-          className="container mx-auto"
+          className={`${darkMode?"bg-black text-white":"bg-white text-black"} mx-auto `}
         >
-          <div className="h-[15vh] flex flex-col items-center justify-center w-fit">
+          <div className={`h-[15vh] flex flex-col items-center justify-center w-fit px-5`}>
             <Link
-              className="py-2 px-[4vw] bg-orange text-white text-[1.3rem] font-semibold rounded-[15px] flex flex-col justify-center"
+              className="py-2 px-3 bg-orange text-white text-[1.3rem] font-semibold rounded-[15px] flex flex-col justify-center"
               to={"/games"}
             >
               Geri
@@ -86,8 +87,8 @@ function LikedPage() {
   } else {
     return (
       <>
-        <div className="container mx-auto">
-          <div className=" h-[14vh] flex justify-between items-center">
+        <div className={`${darkMode?"bg-black text-white":"bg-white text-black"} p-7`}>
+          <div className={` h-[14vh] flex justify-between items-center`}>
             <Link
               className="border  p-3 bg-orange text-white text-[1.3rem] font-semibold rounded-[15px]"
               to={"/games"}
@@ -98,10 +99,10 @@ function LikedPage() {
               ShowAlert={showAlert}
               handleSubmit={handleSubmit}
               text="Səbəti təsdiqlə"
-              style="w-fit text-white"
+              style="w-fit text-white "
             />
           </div>
-          <div className="grid lg:grid-cols-4 gap-3 place-items-center xs:grid-cols-1 md:grid-cols-3 py-5">
+          <div className=" grid lg:grid-cols-4 gap-3 place-items-center xs:grid-cols-1 md:grid-cols-3 py-5">
             {cartGame.map((game) => {
               return (
                 <React.Fragment key={game.id}>

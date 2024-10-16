@@ -6,6 +6,7 @@ import { addToCart } from "../../state/cartSlice";
 import { RootState } from "../../state/store";
 import {motion} from 'framer-motion'
 import { containerVariants } from "../../utils/variants";
+import { useMode } from "../../Context";
 
 function GamesPage() {
   const url = "https://console-game-db.vercel.app/games";
@@ -33,7 +34,7 @@ function GamesPage() {
       setClickedItems((prevItems) => [...prevItems, id]);
     }
   };
-
+const {darkMode} = useMode()
   return (
     <>
       <motion.div
@@ -56,15 +57,15 @@ function GamesPage() {
               maxLength={10}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="md:w-[30vw] xs:w-[65vw] xs:py-2 lg:h-[10vh] md:h-[7vh] md:px-3 rounded-[15px] px-2 text-[1.4rem]"
+              className=" md:w-[30vw] xs:w-[65vw] xs:py-2 lg:h-[10vh] md:h-[7vh] md:px-3 rounded-[15px] px-2 text-[1.4rem]"
               placeholder="Oyun Axtar"
             />
           </div>
         </div>
       </motion.div>
-      <div className="contanier px-3">
-        {/* parent element */}
-        <div className="grid lg:grid-cols-4 md:gap-4 xs:grid-cols-1 xs:place-items-center xs:gap-3 md:grid-cols-2 p-5">
+      <div className="contanier bg-white">
+       
+        <div className={`${darkMode?"bg-black text-white":"bg-white text-black"} grid lg:grid-cols-4 md:gap-4 xs:grid-cols-1 xs:place-items-center xs:gap-3 md:grid-cols-2 p-5`}>
           {filteredGames.map(
             ({ name, img, oldPrice, price, id }: IAllGames) => {
               const isClicked = clickedItems.includes(id);

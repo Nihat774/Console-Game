@@ -2,19 +2,23 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Modal from "../../ui/modalSlice";
 import { IModal } from "../MyTypes";
-function SingleGamePage({handleSubmit,ShowAlert}:IModal) {
-  // const param = useNavigate()
+import { useMode } from "../../Context";
+function SingleGamePage({ handleSubmit, ShowAlert }: IModal) {
   const { id } = useParams<{ id: string }>();
-  // console.log(id);
   const [games, setGames] = useState<any | (() => void)>([]);
   useEffect(() => {
     fetch(`https://console-game-db.vercel.app/games/${id}`)
       .then((response) => response.json())
       .then((data) => setGames(data));
   }, [id]);
+  const { darkMode } = useMode();
   return (
     <>
-      <div className="h-[12vh] flex flex-col items-center justify-center md:w-[17vw] xs:w-fit">
+      <div
+        className={`h-[12vh] flex pl-5 items-center  md:w-full  xs:w-fit ${
+          darkMode ? "bg-black text-white" : "bg-white text-black"
+        } `}
+      >
         <Link
           className="border border-orange rounded-[15px]  flex items-center p-3 text-[1.4rem] w-fit bg-orange hover:bg-white hover:bg-transparent duration-500  hover:text-orange"
           to={"/games"}
@@ -23,7 +27,11 @@ function SingleGamePage({handleSubmit,ShowAlert}:IModal) {
           <p>Geri</p>
         </Link>
       </div>
-      <div className="flex justify-evenly md:flex-row md:h-[80vh] lg:h-fit xs:flex-col xs:py-5 xs:gap-3 xs:h-fit">
+      <div
+        className={`${
+          darkMode ? "bg-black text-white" : "bg-white text-black"
+        } flex justify-evenly  md:flex-row md:h-[80vh] lg:h-fit xs:flex-col xs:py-5 xs:gap-3 xs:h-fit`}
+      >
         <div className="flex justify-center items-center">
           <img
             className="lg:w-[35vw] md:h-[70vh] md:w-[45vw] lg:h-[70vh] xs:w-[70vw] xs:h-[50vh] object-cover border rounded-[15px]"

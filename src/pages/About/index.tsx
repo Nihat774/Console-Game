@@ -16,9 +16,11 @@ import TeamCard from "../../ui/TeamCardAbout";
 import CardInfo from "../../ui/CardAbout";
 import { containerVariants } from "../../utils/variants";
 import ScrollAnimation from "../../utils/ScrollAnimation";
+import { useMode } from "../../Context";
 
 function AboutPage() {
   const location = useNavigate();
+  const {darkMode} = useMode()
   return (
     <>
       <motion.div
@@ -26,10 +28,10 @@ function AboutPage() {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="flex justify-evenly; bg-black text-white lg:flex-row xs:flex-col"
+        className={`flex justify-evenly ${darkMode?"bg-black text-white ":"bg-white text-black"}  lg:flex-row xs:flex-col`}
       >
         <div className="px-10 lg:w-[50%] xs:w-[100%] flex flex-col items-center">
-          <div className="lg:w-[30vw] lg:h-[70vh] md:h-[40vh] xs:w-[80vw] xs:h-fit xs:gap-3 py-7 flex flex-col justify-evenly">
+          <div className="lg:w-[30vw] lg:h-[70vh] md:h-[43vh] xs:w-[80vw] xs:h-fit xs:gap-3 py-7  flex flex-col justify-evenly">
             <div className="">
               <Link to={"/"} className="text-[1.5rem]">
                 Əsas səhifə
@@ -101,7 +103,9 @@ function AboutPage() {
       </motion.div>
 
       <ScrollAnimation>
-        <div className="bg-black text-white py-5 lg:h-[100vh] xs:h-fit">
+        <div className={`py-5 lg:h-[100vh] xs:h-fit 
+          ${darkMode?"bg-black text-white":"bg-white text-black"}
+          `}>
           <h3 className="text-2xl flex items-center px-10 font-bold h-[20vh] ">
             Nə üçün bizi seçməlisiniz ?
           </h3>
@@ -129,23 +133,23 @@ function AboutPage() {
       </ScrollAnimation>
 
       <ScrollAnimation>
-        <div className="flex justify-evenly  bg-gray h-fit text-white xs:flex-col lg:flex-row xs:gap-5 ">
+        <div className={`${darkMode?"bg-gray text-white":"bg-neutral-500 text-black"} flex justify-evenly h-fit  xs:flex-col lg:flex-row xs:gap-5 `}>
           <div className="flex flex-col justify-end ">
             <img
-              className="lg:h-[60vh] lg:w-[30vw] rounded-t-[10px] xs:h-[50vh] xs:w-[100vh] object-cover"
+              className="lg:h-[60vh] md:w-full md:h-[70vh] lg:w-[30vw] rounded-t-[10px] xs:h-[50vh] xs:w-[100vh] object-cover"
               src="/about/photo2.webp"
               alt=""
             />
           </div>
 
-          <div className=" md:h-[30vh] lg:w-[30%] lg:h-fit flex flex-col justify-center  gap-7 xs:p-5">
+          <div className=" md:h-fit lg:w-[35%] lg:h-fit flex flex-col justify-center  gap-7 xs:p-5">
             <p className="font-semibold text-[1.4rem]">
               Möhtəşəm qrafik dizayn
             </p>
             <h3 className="text-4xl font-semibold">
               Hər zaman müştərilərimizə ən yaxşı oyunları təmin etməyə sadiqik.
             </h3>
-            <p>
+            <p className="text-[1.4rem]">
               Komandamız, istifadəçilər üçün ən yaxşı təcrübəni təmin etmək
               məqsədilə daim çalışır və oyun kataloqunu mütəmadi olaraq
               yeniləyir.Saytımızın istifadəçi dostu interfeysi ilə oyunları
@@ -156,7 +160,7 @@ function AboutPage() {
       </ScrollAnimation>
 
       <ScrollAnimation>
-        <div className=" bg-black text-white lg:h-[70vh]  flex items-center justify-evenly lg:flex-row xs:flex-col xs:gap-5 xs:py-5 ">
+        <div className={` ${darkMode?"bg-black text-white":"bg-white text-black"} lg:h-[60vh]  flex items-center justify-evenly lg:flex-row xs:flex-col xs:gap-5 xs:py-5 `}>
           <TeamCard
             img="/photos/my fotonew.jpg"
             name="Nihat Məmmədov"
