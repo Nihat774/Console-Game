@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Icon from "../../ui/SocialIcon";
 import Phone from "../../ui/Phone";
 import { motion } from "framer-motion";
