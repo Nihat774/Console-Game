@@ -76,16 +76,16 @@ function Footer() {
               </div>
               <div className="flex gap-4 md:justify-end md:place-items-end xs:justify-evenly py-2 ">
                 <Icon link="https://www.facebook.com/">
-                  <i className="fa-brands fa-facebook-f  text-[1.4rem] border rounded-full py-2 px-3 text-black bg-white"></i>
+                  <i className="fa-brands fa-facebook-f  text-[1.4rem] border rounded-full py-2 px-3 text-black bg-white hover:bg-blue-500 hover:text-white"></i>
                 </Icon>
                 <Icon link="https://www.instagram.com/">
-                  <i className="fa-brands fa-instagram text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
+                  <i className="fa-brands fa-instagram text-[1.4rem] border rounded-full p-2 text-black bg-white hover:bg-blue-500 hover:text-white"></i>
                 </Icon>
                 <Icon link="https://twitter.com/?lang=tr">
-                  <i className="fa-brands fa-twitter text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
+                  <i className="fa-brands fa-twitter text-[1.4rem] border rounded-full p-2 text-black bg-white hover:bg-blue-500 hover:text-white"></i>
                 </Icon>
                 <Icon link="https://linkedin.com/">
-                  <i className="fa-brands fa-linkedin-in text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
+                  <i className="fa-brands fa-linkedin-in text-[1.4rem] border rounded-full p-2 text-black bg-white hover:bg-blue-500 hover:text-white"></i>
                 </Icon>
               </div>
             </div>
