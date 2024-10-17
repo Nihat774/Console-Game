@@ -3,6 +3,9 @@ import Icon from "../../ui/SocialIcon";
 import Copy from "../CopyRight";
 import ShareButton from "../../ui/ShareButton";
 import { useMode } from "../../Context";
+import Free from "../../pages/Palastine";
+
+
 
 function Footer() {
   const {darkMode} = useMode()
@@ -89,6 +92,7 @@ function Footer() {
           </div>
         </div>
         <Copy />
+        <Free />
       </footer>
     </>
   );

@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { ModeContextType } from "../components/MyTypes";
 
-
 const ModeContext = createContext<ModeContextType | undefined>(undefined);
 
 export const ModeProvider = ({ children }: any) => {

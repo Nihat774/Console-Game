@@ -12,7 +12,7 @@ function NewsPage() {
         initial="hidden"
         animate="visible"
         exit="exit"
-   className={`flex justify-center py-5   ${darkMode?"bg-black text-white":"bg-white text-black"}`}>
+   className={`flex justify-center py-5 ${darkMode?"bg-black text-white":"bg-white text-black"}`}>
         <p className="text-[1.7rem] font-semibold text-orange w-[80vw]">Komanda üzvlərimiz</p>
       </motion.div>
       <AllNews />

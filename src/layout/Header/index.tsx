@@ -4,7 +4,6 @@ import { useState } from "react";
 import Login from "../../ui/LoginRegister";
 import Mode from "../../Mode";
 import { useMode } from "../../Context";
-
 function Header() {
   let location = useNavigate();
   const [clicked, setClicked] = useState(false);
@@ -15,6 +14,7 @@ function Header() {
   return (
     <>
       {/* DESKOP NAVBAR  */}
+      
       <header className={` items-center sticky top-0 z-40  xs:hidden bg-black text-white ${darkMode?"bg-black text-white":"bg-white text-black"} lg:flex bg- p-5 justify-between`}>
         <div className="container mx-auto flex  justify-between items-center">
           <div className="font-bold text-[1.8rem]  items-center lg:flex xs:hidden">

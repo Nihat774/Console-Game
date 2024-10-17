@@ -2,7 +2,7 @@
 function LoadingPage() {
     return (
         <>
-            <div className='h-[80vh] flex items-center justify-center'>
+            <div className={`h-[80vh] flex items-center justify-center`}>
             <span className="loading loading-spinner loading-xs"></span>
             <span className="loading loading-spinner loading-sm"></span>
             <span className="loading loading-spinner loading-md"></span>
