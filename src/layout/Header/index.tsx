@@ -9,9 +9,7 @@ import { navlinkType } from "../../components/MyTypes";
 function Header() {
   let location = useNavigate();
   const { darkMode } = useMode();
-
   const [isVisible, setIsvisible] = useState(false);
-
   return (
     <>
       {/* DESKOP NAVBAR  */}
@@ -38,7 +36,13 @@ function Header() {
             } lg:flex lg:text-[1.5rem] 2xl:text-[1.8rem] px-5 lg:font-semibold gap-9 items-center xs:hidden`}
           >
             {navLinks.map(({ name, path }: navlinkType) => (
-              <>{<NavLink to={path}>{name}</NavLink>}</>
+              <>{<NavLink
+              className={({isActive})=>
+              isActive?"text-orange underline":""
+              }
+                  to={path}>
+                  {name}
+                </NavLink>}</>
             ))}
             <Button
               txt1="Əlaqə"
@@ -97,7 +101,9 @@ function Header() {
               <NavLink
                 onClick={() => setIsvisible(!isVisible)}
                 to={item.path}
-                className={``}
+                className={({ isActive }) => 
+                  isActive ? "text-orange underline" : ""
+                }
               >
                 {item.name}
               </NavLink>
