@@ -54,16 +54,16 @@ function ContactPage() {
             </span>
             <div className="flex gap-4 md:justify-end md:place-items-end xs:justify-evenly py-2 ">
               <Icon link="https://www.facebook.com/">
-                <i className="hover:bg-blue-500 fa-brands fa-facebook-f  text-[1.4rem] border rounded-full py-2 px-3 text-black bg-white"></i>
+                <i className="hover:bg-blue-500 hover:text-white fa-brands fa-facebook-f  text-[1.4rem] border rounded-full py-2 px-3 text-black bg-white"></i>
               </Icon>
               <Icon link="https://www.instagram.com/">
-                <i className="hover:bg-blue-500 fa-brands fa-instagram text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
+                <i className="hover:bg-blue-500 hover:text-white fa-brands fa-instagram text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
               </Icon>
               <Icon link="https://twitter.com/?lang=tr">
-                <i className="hover:bg-blue-500 fa-brands fa-twitter text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
+                <i className="hover:bg-blue-500 hover:text-white fa-brands fa-twitter text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
               </Icon>
               <Icon link="https://linkedin.com/">
-                <i className="hover:bg-blue-500 fa-brands fa-linkedin-in text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
+                <i className="hover:bg-blue-500 hover:text-white fa-brands fa-linkedin-in text-[1.4rem] border rounded-full p-2 text-black bg-white"></i>
               </Icon>
             </div>
           </div>
