@@ -6,7 +6,7 @@ import { containerVariants } from "../../utils/variants";
 import { useMode } from "../../Context";
 
 function ContactPage() {
-  const {darkMode} = useMode()
+  const { darkMode } = useMode();
   return (
     <>
       <motion.section
@@ -14,9 +14,15 @@ function ContactPage() {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className={`py-8 ${darkMode?"bg-black text-white":"bg-white text-black"}`}
+        className={`py-8 ${
+          darkMode ? "bg-black text-white" : "bg-white text-black"
+        }`}
       >
-        <div className={`text-center   ${darkMode?"bg-black text-white":"bg-white text-black"}`}>
+        <div
+          className={`text-center   ${
+            darkMode ? "bg-black text-white" : "bg-white text-black"
+          }`}
+        >
           <ul className={`flex justify-center gap-4 `}>
             <li>
               <Link to="/" className="hover:text-orange">
@@ -24,7 +30,7 @@ function ContactPage() {
               </Link>
             </li>
             <li>&gt;</li>
-            <li className="">Əlaqə</li>
+            <li className="text-orange">Əlaqə</li>
           </ul>
           <h2 className="md:text-3xl xs:text-[1rem] font-semibold p-3">
             Oyunlar hər gün yenilənərək daha maraqlı olur.
@@ -84,13 +90,17 @@ function ContactPage() {
         </div>
 
         {/* Əlaqə formu */}
-        <div className={`bg-[#1c140f] py-12 text-center relative flex flex-col items-center  ${darkMode?"bg-black text-white":"bg-white text-black"}`}>
+        <div
+          className={`bg-[#1c140f] py-12 text-center relative flex flex-col items-center  ${
+            darkMode ? "bg-black text-white" : "bg-white text-black"
+          }`}
+        >
           <h4 className="md:text-3xl xs:text-[1.4rem] mb-4">
             Ətraflı mlumat üçün bizə yazın
           </h4>
           <p className="mb-8">Oyunların qiymətləri və təsvirləri göstərilir.</p>
           <div className=" w-[80vw] flex xs:flex-col md:flex-row xs:gap-7 items-center">
-            <form  className="w-full max-w-lg mx-auto flex flex-col gap-4">
+            <form className="w-full max-w-lg mx-auto flex flex-col gap-4">
               <p className="text-[1.6rem] font-semibold">Əlaqə formu</p>
               <div className="flex gap-4 ">
                 <input

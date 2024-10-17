@@ -12,10 +12,17 @@ export const ModeProvider = ({ children }: any) => {
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => {
       const newMode = !prevMode;
+      if (newMode) {
+        document.body.style.backgroundColor = "black";
+      } else {
+        document.body.style.backgroundColor = "white";
+      }
       localStorage.setItem("darkMode", JSON.stringify(newMode));
       return newMode;
     });
   };
+
+
 
   useEffect(() => {
     if (darkMode) {

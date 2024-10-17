@@ -79,3 +79,7 @@ export interface ModeContextType {
   darkMode: boolean;
   toggleDarkMode: () => void;
 }
+export interface navlinkType {
+  name :string,
+  path:string
+}

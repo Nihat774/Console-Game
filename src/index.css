@@ -8,12 +8,12 @@
   }
 }
 
-body {
-  @apply overflow-x-hidden 
-}
-
 @font-face {
   font-family: 'oceanwide';
   src: url('/fonts/semibold-oceanwide-39941/Oceanwide-Semibold.otf') format('OpenType');
 
+}
+body {
+
+  font-family: 'oceanwide';
 }

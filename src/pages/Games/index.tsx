@@ -43,7 +43,7 @@ const {darkMode} = useMode()
         animate="visible"
         exit="exit"
   
-      className="bg-orange px-3 items-center">
+      className="bg-orange px-9 items-center">
         <div className="md:flex md:flex-row md:h-[12vh] lg:h-[15vh]  xs:flex-col xs:p-4 xs:justify-center md:justify-between items-center">
           <Link
             to={"/"}
@@ -75,7 +75,7 @@ const {darkMode} = useMode()
                     to={"/likedgame"} 
                     className="items-center  p-5 rounded-full fixed z-50 xs:bottom-[10%] md:bottom-[8%] md:left-[15px] lg:left-[4%] bg-orange"
                   >
-                    <div className="w-fit px-2 h-[26px] rounded-[15px] bg-black absolute xs:right-[10px] top-0 md:right-[5px] lg:right-[8.5%] text-white text-center">
+                    <div className="w-fit px-2 pt-1 h-[26px] rounded-[15px] bg-black absolute xs:right-[10px] top-0 md:right-[5px] lg:right-[8.5%] text-white text-center">
                       {cartGame.length}
                     </div>
                     <i className="fa-solid fa-cart-shopping text-[2rem] text-white"></i>
