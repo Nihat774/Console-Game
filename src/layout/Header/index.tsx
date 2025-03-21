@@ -65,13 +65,13 @@ function Header() {
       >
         <div className="flex justify-between items-center  px-3 py-2">
           <div className="">
-            <p
+            <NavLink to={"/"}
               className={`text-[1.5rem] ${
                 darkMode ? "text-white" : "text-black"
               } font-bold`}
             >
               Console Game
-            </p>
+            </NavLink>
           </div>
           <div className="flex items-center gap-3">
             <Mode />
@@ -114,7 +114,8 @@ function Header() {
               txt1="Əlaqə"
               txt2=""
               onClick={() => {
-                location("/contact");
+                location("/contact")
+                 setIsvisible(!isVisible);
               }}
               still="rounded-[10px]  w-fit text-white "
             />

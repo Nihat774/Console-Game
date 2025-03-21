@@ -106,7 +106,7 @@ const {darkMode} = useMode()
             {cartGame.map((game) => {
               return (
                 <React.Fragment key={game.id}>
-                  <div className=" border p-3 rounded-[20px] xs:w-full lg:w-[23vw]  flex flex-col gap-3 ">
+                  <div className=" border p-3 rounded-[20px] xs:w-full lg:w-[20vw]  flex flex-col gap-3 ">
                     <p className="flex justify-end">
                       <i
                         className="fa-solid fa-xmark  flex justify-end h-fit w-fit py-1 px-2 border-black"
@@ -118,12 +118,12 @@ const {darkMode} = useMode()
                         <img
                           className="lg:w-[12vw] lg:h-[150px] xs:w-[100vw] xs:h-[30vh] rounded-[15px] object-cover"
                           src={game.img}
-                          alt=""
+                          alt={game.name}
                         />
                       </div>
 
                       <div className="flex flex-col gap-3 py-2">
-                        <p className="text-[1.5rem] font-semibold">
+                        <p className="text-[1.5rem] font-semibold  h-[13vh] flex flex-col justify-center">
                           Oyun adı : {game.name}
                         </p>
 
