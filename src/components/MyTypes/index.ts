@@ -1,6 +1,8 @@
-export type IChildren = {
-  children: object;
-};
+import { ReactNode } from "react";
+
+export interface IChildren {
+  children: ReactNode;
+}
 export type IButton = {
   txt2: React.ReactNode;
   onClick?: () =>void;

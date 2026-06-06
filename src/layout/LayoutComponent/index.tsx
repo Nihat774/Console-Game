@@ -9,7 +9,9 @@ function LayoutComponent({children}:IChildren
   return (
     <>
       <Header />
-      {children}
+     <div className="px-4 md:px-8">
+       {children}
+     </div>
       <SubHeading />
       <Footer />
     </>

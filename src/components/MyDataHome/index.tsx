@@ -12,7 +12,7 @@ function Data() {
     return (
         <>
             {
-                allgames.slice(0,4).map(({ followers, img, id }: IGames) => {
+                allgames.slice(0,3).map(({ followers, img, id }: IGames) => {
                     return (
                         <Link key={id} to={`/games/${id}`} className=''>
                             <div>

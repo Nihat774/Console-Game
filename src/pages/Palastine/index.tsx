@@ -4,7 +4,7 @@ function Free() {
   const { darkMode } = useMode();
   return (
     <>
-      <section className="flex flex-col">
+      <section className="flex flex-col -mx-4 md:-mx-14">
         <p
           className={`flex justify-center font-semibold text-[1.5rem] py-2 ${
             darkMode ? "bg-white text-black" : "bg-black text-white"
